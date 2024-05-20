@@ -21,7 +21,7 @@ def create_empty_json_file():
     # Save the json file
     json.dump(run_dict, open(save_evaluation_path, 'w+'))
 
-def compute_evaluations_metrics(run_number, sampling_number):
+def compute_evaluations_metrics(key, run_number, sampling_number, output_dict):
     run_index = 'run_'+run_number
     sample_index = 'sampling_'+sampling_number
     json_df = json.load(open(save_evaluation_path))
@@ -44,6 +44,7 @@ def compute_evaluations_metrics(run_number, sampling_number):
 
         # Evaluate the model on the test set, and for every signature save the evaluation metrics in a dictionary
         evaluation = predictor.evaluate(test_df)
+        output_dict[key] = evaluation
         return evaluation
 
 if __name__ == '__main__':
@@ -67,11 +68,15 @@ if __name__ == '__main__':
     labels = bin_gt_df.columns[1:]
     problem_type = ['binary'] * len(labels)
     time_limit = 5
+    output_dict = {}
 
+    signature_inference_threads = []
     for run in run_values:
-        run_index = 'run_'+run
         for sample in sampling_values:
-                json_df = json.load(open(save_evaluation_path))
-                evaluation = compute_evaluations_metrics(run, sample)
-                json_df['run_'+run]['sampling_'+sample] = evaluation
-                json.dump(json_df, open(save_evaluation_path, 'w'))
+            t = threading.Thread(target=compute_evaluations_metrics, args=(sample, run, sample,output_dict))
+            signature_inference_threads.append(t)
+            t.start()
+
+        for t in signature_inference_threads:
+            t.join()
+        print(output_dict)
