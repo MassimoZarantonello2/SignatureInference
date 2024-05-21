@@ -48,6 +48,7 @@ if __name__ == '__main__':
     bin_gt_df = pd.read_csv(bin_ground_truth_path)
 
     # The training data is sampled based on these values, each sampling dataset is composed by a fraction of the total data
+    # NOTE: this script will generate a thread for every sampling value
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
@@ -62,20 +63,25 @@ if __name__ == '__main__':
         signature_inference_threads = []
         start_time = time.time()
         for sample in sampling_values:
+            #Compute the index in witch the evaluation metrics will be saved
             run_index = 'run_'+run
             sample_index = 'sampling_'+sample
             json_df = json.load(open(save_evaluation_path))
+            # If it already exists, skip the computation
             if json_df[run_index][sample_index] != {}:
                 continue
             else:
+                # Else generate a thread to compute the specific sample
                 t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
                 signature_inference_threads.append(t)
                 t.start()
 
         for t in signature_inference_threads:
             t.join()
+
         end_time = time.time()
         computed_time = end_time - start_time
+        # After all the threads stopped save the results contained inside output_dic in the json file
         for key in output_dict:
             json_df['run_'+run]['sampling_'+key] = output_dict[key]
 
