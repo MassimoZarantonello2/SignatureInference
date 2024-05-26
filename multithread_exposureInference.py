@@ -60,30 +60,29 @@ if __name__ == '__main__':
     output_dict = {}
 
     for run in run_values:
+        run_index = 'run_'+run
         signature_inference_threads = []
-        start_time = time.time()
-        for sample in sampling_values:
-            #Compute the index in witch the evaluation metrics will be saved
-            run_index = 'run_'+run
-            sample_index = 'sampling_'+sample
-            json_df = json.load(open(save_evaluation_path))
-            # If it already exists, skip the computation
-            if json_df[run_index][sample_index] != {}:
-                continue
-            else:
-                # Else generate a thread to compute the specific sample
-                t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
-                signature_inference_threads.append(t)
-                t.start()
+        json_df = json.load(open(save_evaluation_path))
+        if json_df[run_index] == {}:
+            for sample in sampling_values:
+                sample_index = 'sampling_'+sample
+                # If it already exists, skip the computation
+                if json_df[run_index][sample_index] != {}:
+                    continue
+                else:
+                    # Else generate a thread to compute the specific sample
+                    t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
+                    signature_inference_threads.append(t)
+                    t.start()
 
-        for t in signature_inference_threads:
-            t.join()
+            for t in signature_inference_threads:
+                t.join()
 
-        end_time = time.time()
-        computed_time = end_time - start_time
-        # After all the threads stopped save the results contained inside output_dic in the json file
-        for key in output_dict:
-            json_df['run_'+run]['sampling_'+key] = output_dict[key]
+            # After all the threads stopped save the results contained inside output_dic in the json file
+            for key in output_dict:
+                json_df['run_'+run]['sampling_'+key] = output_dict[key]
 
-        if signature_inference_threads.__len__() != 0:
-            json.dump(json_df, open(save_evaluation_path, 'w'))
+            if signature_inference_threads.__len__() != 0:
+                json.dump(json_df, open(save_evaluation_path, 'w'))
+
+            break
