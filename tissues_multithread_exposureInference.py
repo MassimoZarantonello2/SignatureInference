@@ -1,9 +1,9 @@
 import pandas as pd
-import numpy as np
 from utils.MultiLabelPredictor import MultilabelPredictor
 import json
 import time
 import threading
+import os
 
 def create_empty_json_file():
 # Create the structure of the json file
@@ -21,9 +21,11 @@ def create_empty_json_file():
 def compute_evaluations_metrics(key, output_dict):
     # Load the dataset for traning based on the sampling size
     sampled_dataset = pd.read_csv(runs_path + run + data_path + sample + '.csv')
+    tissues_dataset = pd.read_csv(tissues_path)
     
     # Merge the sampled dataset with the ground truth dataset and drop the column
     run_dataset = pd.merge(sampled_dataset, bin_gt_df, on='Unnamed: 0')
+    run_dataset = pd.merge(run_dataset, tissues_dataset, on='Unnamed: 0')
     run_dataset.drop(columns=['Unnamed: 0'], inplace=True)
 
     # Split the dataset into training and testing
@@ -42,7 +44,8 @@ if __name__ == '__main__':
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './evaluations.json'
+    save_evaluation_path = './with_tissues_evaluations.json'
+    tissues_path = './simulations/ground_truth/tumor_site.csv'
 
     # Load the binarized ground truth data
     bin_gt_df = pd.read_csv(bin_ground_truth_path)
@@ -58,6 +61,9 @@ if __name__ == '__main__':
     problem_type = ['binary'] * len(labels)
     time_limit = 5
     output_dict = {}
+
+    if not os.path.exists(save_evaluation_path):
+        create_empty_json_file()
 
     for run in run_values:
         run_index = 'run_'+run
