@@ -38,6 +38,7 @@ def compute_evaluations_metrics(key, output_dict):
     return output_dict 
 
 if __name__ == '__main__':
+    keep_going = False
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
@@ -84,4 +85,7 @@ if __name__ == '__main__':
             if signature_inference_threads.__len__() != 0:
                 json.dump(json_df, open(save_evaluation_path, 'w'))
 
-            break
+            if keep_going:
+                continue
+            else:
+                break
