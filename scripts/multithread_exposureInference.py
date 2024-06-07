@@ -1,4 +1,6 @@
 import pandas as pd
+import sys
+sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 import json
 import time
@@ -42,7 +44,7 @@ if __name__ == '__main__':
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './evaluations.json'
+    save_evaluation_path = './results/evaluations.json'
 
     # Load the binarized ground truth data
     bin_gt_df = pd.read_csv(bin_ground_truth_path)
@@ -59,31 +61,28 @@ if __name__ == '__main__':
     time_limit = 5
     output_dict = {}
 
+    json_df = json.load(open(save_evaluation_path))
     for run in run_values:
         run_index = 'run_'+run
         signature_inference_threads = []
-        json_df = json.load(open(save_evaluation_path))
-        if json_df[run_index] == {}:
-            for sample in sampling_values:
-                sample_index = 'sampling_'+sample
-                # If it already exists, skip the computation
-                if json_df[run_index][sample_index] != {}:
-                    continue
-                else:
-                    # Else generate a thread to compute the specific sample
-                    t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
-                    signature_inference_threads.append(t)
-                    t.start()
+        for sample in sampling_values:
+            sample_index = 'sampling_'+sample
+            # If it already exists, skip the computation
+            if json_df[run_index][sample_index] == {}:
+                # Else generate a thread to compute the specific sample
+                t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
+                signature_inference_threads.append(t)
+                t.start()
 
-            for t in signature_inference_threads:
-                t.join()
+        for t in signature_inference_threads:
+            t.join()
 
-            # After all the threads stopped save the results contained inside output_dic in the json file
-            for key in output_dict:
-                json_df['run_'+run]['sampling_'+key] = output_dict[key]
+        # After all the threads stopped save the results contained inside output_dic in the json file
+        for key in output_dict:
+            json_df['run_'+run]['sampling_'+key] = output_dict[key]
 
-            if signature_inference_threads.__len__() != 0:
-                json.dump(json_df, open(save_evaluation_path, 'w'))
+        if signature_inference_threads.__len__() != 0:
+            json.dump(json_df, open(save_evaluation_path, 'w'))
 
             if keep_going:
                 continue

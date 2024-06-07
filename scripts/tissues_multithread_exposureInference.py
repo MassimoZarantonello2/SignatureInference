@@ -1,4 +1,6 @@
 import pandas as pd
+import sys
+sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 import json
 import time
@@ -27,6 +29,7 @@ def compute_evaluations_metrics(key, output_dict):
     run_dataset = pd.merge(sampled_dataset, bin_gt_df, on='Unnamed: 0')
     run_dataset = pd.merge(run_dataset, tissues_dataset, on='Unnamed: 0')
     run_dataset.drop(columns=['Unnamed: 0'], inplace=True)
+    run_dataset.drop(columns=['Cohort'], inplace=True)
 
     # Split the dataset into training and testing
     train_df = run_dataset.sample(frac = train_test_split_value, random_state=42)
@@ -73,9 +76,7 @@ if __name__ == '__main__':
         for sample in sampling_values:
             sample_index = 'sampling_'+sample
             # If it already exists, skip the computation
-            if json_df[run_index][sample_index] != {}:
-                continue
-            else:
+            if json_df[run_index][sample_index] == {}:
                 # Else generate a thread to compute the specific sample
                 t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
                 signature_inference_threads.append(t)
