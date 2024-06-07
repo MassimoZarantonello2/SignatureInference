@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import sys
+sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 import csv
 import os
@@ -67,6 +69,7 @@ for run in run_values:
             evaluation = predictor.evaluate(test_df)
             json_df['run_'+run]['sampling_'+sample] = evaluation
             json.dump(json_df, open(save_evaluation_path, 'w'))
+            break
         else:
             continue
     
