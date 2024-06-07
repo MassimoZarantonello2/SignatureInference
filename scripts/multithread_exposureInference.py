@@ -59,10 +59,10 @@ if __name__ == '__main__':
     labels = bin_gt_df.columns[1:]
     problem_type = ['binary'] * len(labels)
     time_limit = 5
-    output_dict = {}
 
     json_df = json.load(open(save_evaluation_path))
     for run in run_values:
+        output_dict = {}
         run_index = 'run_'+run
         signature_inference_threads = []
         for sample in sampling_values:
