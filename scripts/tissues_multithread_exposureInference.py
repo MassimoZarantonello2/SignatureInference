@@ -47,7 +47,7 @@ if __name__ == '__main__':
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './with_tissues_evaluations.json'
+    save_evaluation_path = './results/with_tissues_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
 
     # Load the binarized ground truth data
@@ -63,7 +63,6 @@ if __name__ == '__main__':
     labels = bin_gt_df.columns[1:]
     problem_type = ['binary'] * len(labels)
     time_limit = 5
-    output_dict = {}
 
     if not os.path.exists(save_evaluation_path):
         create_empty_json_file()
@@ -72,6 +71,7 @@ if __name__ == '__main__':
         run_index = 'run_'+run
         signature_inference_threads = []
         json_df = json.load(open(save_evaluation_path))
+        output_dict = {}
 
         for sample in sampling_values:
             sample_index = 'sampling_'+sample
