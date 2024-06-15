@@ -4,8 +4,9 @@ sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 from utils.ModelsHyperparameters import ModelsHyperparameters
 import json
-import time
 import threading
+import time
+import os
 
 def create_empty_json_file():
 # Create the structure of the json file
@@ -60,6 +61,9 @@ if __name__ == '__main__':
     labels = bin_gt_df.columns[1:]
     problem_type = ['binary'] * len(labels)
     time_limit = 10
+
+    if not os.path.exists(save_evaluation_path):
+        create_empty_json_file()
 
     json_df = json.load(open(save_evaluation_path))
     for run in run_values:
