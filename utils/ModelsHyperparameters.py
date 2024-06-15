@@ -20,8 +20,8 @@ class ModelsHyperparameters:
                         {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression']}},
                     ],
                     'KNN': [
-                        {'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}, 'n_jobs': 8},
-                        {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}, 'n_jobs': 8},
+                        {'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}, 'n_jobs': 4},
+                        {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}, 'n_jobs': 4},
                     ],
                 }
     
