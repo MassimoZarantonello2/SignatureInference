@@ -19,16 +19,16 @@ def create_empty_json_file():
     # Save the json file
     json.dump(run_dict, open(save_evaluation_path, 'w+'))
 
-def compute_evaluations_metrics(key, output_dict):
+def compute_evaluations_metrics(key, run, output_dict, bin_gt_df):
     # Load the dataset for traning based on the sampling size
-    sampled_dataset = pd.read_csv(runs_path + run + data_path + sample + '.csv')
+    sampled_dataset = pd.read_csv(runs_path + run + data_path + key + '.csv')
     
     # Merge the sampled dataset with the ground truth dataset and drop the column
     run_dataset = pd.merge(sampled_dataset, bin_gt_df, on='Unnamed: 0')
     run_dataset.drop(columns=['Unnamed: 0'], inplace=True)
 
     # Split the dataset into training and testing
-    train_df = run_dataset.sample(frac = train_test_split_value, random_state=42)
+    train_df = run_dataset.sample(frac = 0.8, random_state=42)
     test_df = run_dataset.drop(train_df.index)
     # Create the model
     predictor = MultilabelPredictor(labels=labels, problem_types=problem_type)
@@ -58,26 +58,27 @@ if __name__ == '__main__':
     # Get the leabels which are the names of the columns or the signature names and other parameters for tuning the model
     labels = bin_gt_df.columns[1:]
     problem_type = ['binary'] * len(labels)
-    time_limit = 5
+    time_limit = 10
 
     json_df = json.load(open(save_evaluation_path))
     for run in run_values:
         output_dict = {}
-        run_index = 'run_'+run
+        run_index = 'run_' + run
         signature_inference_threads = []
         for sample in sampling_values:
-            sample_index = 'sampling_'+sample
+            sample_index = 'sampling_' + sample
             # If it already exists, skip the computation
             if json_df[run_index][sample_index] == {}:
                 # Else generate a thread to compute the specific sample
-                t = threading.Thread(target=compute_evaluations_metrics, args=(sample, output_dict))
+                t = threading.Thread(target=compute_evaluations_metrics, args=(sample, run, output_dict, bin_gt_df))
                 signature_inference_threads.append(t)
                 t.start()
+            else:
+                print("Skipping run: " + run + " sampling: " + sample + " as it already exists in the json file")
 
         for t in signature_inference_threads:
             t.join()
 
-        # After all the threads stopped save the results contained inside output_dic in the json file
         for key in output_dict:
             json_df['run_'+run]['sampling_'+key] = output_dict[key]
 
