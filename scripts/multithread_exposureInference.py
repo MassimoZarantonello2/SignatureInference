@@ -2,6 +2,7 @@ import pandas as pd
 import sys
 sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
+from utils.ModelsHyperparameters import ModelsHyperparameters
 import json
 import time
 import threading
@@ -32,7 +33,7 @@ def compute_evaluations_metrics(key, run, output_dict, bin_gt_df):
     test_df = run_dataset.drop(train_df.index)
     # Create the model
     predictor = MultilabelPredictor(labels=labels, problem_types=problem_type)
-    predictor.fit(train_df, time_limit=time_limit)
+    predictor.fit(train_df, time_limit=time_limit, hyperparer = ModelsHyperparameters().get_hyperparameters())
 
     # Evaluate the model on the test set, and for every signature save the evaluation metrics in a dictionary
     evaluation = predictor.evaluate(test_df)
