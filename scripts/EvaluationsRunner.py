@@ -61,7 +61,7 @@ class EvaluationsRunner:
             target_class = predictor.get_predictor(evaluation)
             evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
 
-        return evaluation
+        return evaluations
     
     def threaded_evaluation(self, run, sample, output_dict):
         '''
@@ -111,7 +111,7 @@ class EvaluationsRunner:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
             # This is to stop the code after the first run
-            break
+            #break
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
@@ -119,10 +119,10 @@ if __name__ == "__main__":
     data_path = '/trinucleotides_counts_sampling_'
     save_evaluation_path = './results/with_best_model_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
-    sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
+    sampling_values = ['1']#,'0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = 20
+    time_limit = 10
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
