@@ -19,9 +19,9 @@ def create_empty_json_file():
             sample_dict[sample_index] = {}
             run_dict[run_index] = sample_dict
     # Save the json file
-    json.dump(run_dict, open(save_evaluation_path, 'w+'))
+    json.dump(run_dict, open(save_evaluations_path, 'w+'))
 
-def compute_evaluations_metrics(key, run, output_dict, bin_gt_df):
+def compute_evaluationss_metrics(key, run, output_dict, bin_gt_df):
     # Load the dataset for traning based on the sampling size
     sampled_dataset = pd.read_csv(runs_path + run + data_path + key + '.csv')
     
@@ -34,26 +34,30 @@ def compute_evaluations_metrics(key, run, output_dict, bin_gt_df):
     test_df = run_dataset.drop(train_df.index)
     # Create the model
     predictor = MultilabelPredictor(labels=labels, problem_types=problem_type)
-    predictor.fit(train_df, time_limit=time_limit) #, hyperparameters = ModelsHyperparameters().get_hyperparameters())
+    predictor.fit(train_df, time_limit=time_limit)
 
-    # Evaluate the model on the test set, and for every signature save the evaluation metrics in a dictionary
-    evaluation = predictor.evaluate(test_df)
-    output_dict[key] = evaluation
-    return output_dict 
+    # Evaluate the model on the test set, and for every signature save the evaluations metrics in a dictionary
+    evaluations = predictor.evaluate(test_df)
+    for evaluation in evaluations:
+        target_class = predictor.get_predictor(evaluation)
+        evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+
+    output_dict[key] = evaluations
+    return output_dict
 
 if __name__ == '__main__':
     keep_going = False
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './results/evaluations.json'
+    save_evaluations_path = './results/new_evaluationss.json'
 
     # Load the binarized ground truth data
     bin_gt_df = pd.read_csv(bin_ground_truth_path)
 
     # The training data is sampled based on these values, each sampling dataset is composed by a fraction of the total data
     # NOTE: this script will generate a thread for every sampling value
-    sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
+    sampling_values = ['1','0.9']#,'0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
 
@@ -62,10 +66,10 @@ if __name__ == '__main__':
     problem_type = ['binary'] * len(labels)
     time_limit = 10
 
-    if not os.path.exists(save_evaluation_path):
+    if not os.path.exists(save_evaluations_path):
         create_empty_json_file()
 
-    json_df = json.load(open(save_evaluation_path))
+    json_df = json.load(open(save_evaluations_path))
     for run in run_values:
         output_dict = {}
         run_index = 'run_' + run
@@ -75,7 +79,7 @@ if __name__ == '__main__':
             # If it already exists, skip the computation
             if json_df[run_index][sample_index] == {}:
                 # Else generate a thread to compute the specific sample
-                t = threading.Thread(target=compute_evaluations_metrics, args=(sample, run, output_dict, bin_gt_df))
+                t = threading.Thread(target=compute_evaluationss_metrics, args=(sample, run, output_dict, bin_gt_df))
                 signature_inference_threads.append(t)
                 t.start()
             else:
@@ -87,8 +91,11 @@ if __name__ == '__main__':
         for key in output_dict:
             json_df['run_'+run]['sampling_'+key] = output_dict[key]
 
+        # Write the results to the json file
         if signature_inference_threads.__len__() != 0:
-            json.dump(json_df, open(save_evaluation_path, 'w'))
+            json.dump(json_df, open(save_evaluations_path, 'w'))
+
+
 
             if keep_going:
                 continue

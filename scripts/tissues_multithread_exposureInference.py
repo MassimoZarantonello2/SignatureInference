@@ -21,6 +21,7 @@ def create_empty_json_file():
     json.dump(run_dict, open(save_evaluation_path, 'w+'))
 
 def compute_evaluations_metrics(key, output_dict):
+
     # Load the dataset for traning based on the sampling size
     sampled_dataset = pd.read_csv(runs_path + run + data_path + sample + '.csv')
     tissues_dataset = pd.read_csv(tissues_path)
@@ -34,6 +35,10 @@ def compute_evaluations_metrics(key, output_dict):
     # Split the dataset into training and testing
     train_df = run_dataset.sample(frac = train_test_split_value, random_state=42)
     test_df = run_dataset.drop(train_df.index)
+
+    # Drop the tissues column from the test dataset     [Check if it is necessary]
+    test_df.drop(columns=['Tumor_Site'], inplace=True)
+
     # Create the model
     predictor = MultilabelPredictor(labels=labels, problem_types=problem_type)
     predictor.fit(train_df, time_limit=time_limit)
@@ -61,6 +66,10 @@ if __name__ == '__main__':
 
     # Get the leabels which are the names of the columns or the signature names and other parameters for tuning the model
     labels = bin_gt_df.columns[1:]
+
+    # Add the tissues to the predicted labels
+    labels.append('Tumor_Site')
+
     problem_type = ['binary'] * len(labels)
     time_limit = 5
 
