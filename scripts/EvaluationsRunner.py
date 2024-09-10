@@ -117,12 +117,12 @@ if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './results/new_evaluations.json'
+    save_evaluation_path = './results/with_best_model_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
-    sampling_values = ['1']#,'0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
+    sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = 5
+    time_limit = 20
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
