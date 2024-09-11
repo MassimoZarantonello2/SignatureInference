@@ -100,6 +100,8 @@ class EvaluationsRunner:
                     t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict))
                     signature_inference_thread.append(t)
                     t.start()
+                else:
+                    print(f'Skiping run {run} and sample {sample}')
 
             for t in signature_inference_thread:
                 t.join()
