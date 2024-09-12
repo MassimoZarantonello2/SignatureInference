@@ -119,7 +119,7 @@ if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './results/with_best_model_evaluations.json'
+    save_evaluation_path = './results/tissues_out_model_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
@@ -143,12 +143,12 @@ if __name__ == "__main__":
     #+-------------------------------+---------------------------------------  
 
     #1  /   2
-    bin_ground_truth = pd.read_csv(bin_ground_truth_path)
+    #bin_ground_truth = pd.read_csv(bin_ground_truth_path)
 
     #3
-    #bin_ground_truth = pd.read_csv(bin_ground_truth_path)
-    #tissues_df = pd.read_csv(tissues_path)
-    #bin_ground_truth = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
+    bin_ground_truth = pd.read_csv(bin_ground_truth_path)
+    tissues_df = pd.read_csv(tissues_path)
+    bin_ground_truth = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
 
     er = EvaluationsRunner(bin_ground_truth,        # Give the binarized ground truth data
                            runs_path, data_path, 
