@@ -7,8 +7,8 @@ sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 
 class EvaluationsRunner:
-    def __init__(self, bin_ground_truth_df, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels):
-        self.bin_ground_truth_df = bin_ground_truth_df
+    def __init__(self, bin_ground_truth_path, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels):
+        self.bin_ground_truth_path = bin_ground_truth_path
         self.runs_path = runs_path
         self.data_path = data_path
         self.save_evaluation_path = save_evaluation_path
@@ -16,9 +16,7 @@ class EvaluationsRunner:
         self.run_values = run_values
         self.train_test_split_value = train_test_split_value
         self.time_limit = time_limit
-
         self.problem_type = problem_type if problem_type is None else ['binary'] * len(labels)
-        self.labels = labels if labels is not None else self.bin_ground_truth_df.columns[1:]
 
     def create_empty_json_file(self):
         # Create the structure of the json file
@@ -60,10 +58,11 @@ class EvaluationsRunner:
         for evaluation in evaluations:
             target_class = predictor.get_predictor(evaluation)
             evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+            predictor.delete_models()
 
         return evaluations
     
-    def threaded_evaluation(self, run, sample, output_dict):
+    def threaded_evaluation(self, run, sample, output_dict, tissues):
         '''
         ### Input
         - run: The run number
@@ -72,32 +71,39 @@ class EvaluationsRunner:
         ### Output
         - None
         '''
-        # 1 / 3
-        run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
-        evaluation_df = pd.merge(run_sample_df, self.bin_ground_truth_df, on='Unnamed: 0')
-        evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
-
-        # 2
-        #run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample)       # Load the dataset for traning based on the sampling size
-        #tissues_df = pd.read_csv(self.tissues_path)
-        #evaluation_df = pd.merge(run_sample_df, self.bin_ground_truth_df, on='Unnamed: 0') # Merge the sampled dataset with the ground truth dataset
+        if(tissues is None | tissues == 'prediction' ):
+            # 1 / 3
+            run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
+            evaluation_df = pd.merge(run_sample_df, self.bin_ground_truth_df, on='Unnamed: 0')
+            evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
+        elif(tissues == 'feature'):
+            # 2
+            run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample)
+            tissues_df = pd.read_csv(self.tissues_path)
+            evaluation_df = pd.merge(run_sample_df, self.bin_ground_truth_df, on='Unnamed: 0')
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
         output_dict[sample] = evaluation
 
-    def run_evaluations(self):
+    def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
             self.create_empty_json_file()
 
+        bin_ground_truth_df = pd.read_csv(self.bin_ground_truth_path)
+        if(tissues == 'prediction'):
+            tissues_df = pd.read_csv(tissues_path)
+            bin_ground_truth_df = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
+        self.labels = labels if labels is not None else self.bin_ground_truth_df.columns[1:]
+
         for run in self.run_values:
-            run_index = 'run_'+run
+            run_index = 'run_' + run
             signature_inference_thread = []
             all_evaluations_df = json.load(open(self.save_evaluation_path))
             output_dict = {}
             for sample in self.sampling_values:
-                sample_index = 'sampling_'+sample
+                sample_index = 'sampling_' + sample
                 if all_evaluations_df[run_index][sample_index] == {}:
-                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict))
+                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues))
                     signature_inference_thread.append(t)
                     t.start()
                 else:
@@ -119,7 +125,7 @@ if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './results/tissues_out_model_evaluations.json'
+    save_evaluation_path = './results/model_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
@@ -142,16 +148,9 @@ if __name__ == "__main__":
     # Sample_run: Normal             |  GT: Add the tissues -> add tissues label
     #+-------------------------------+---------------------------------------  
 
-    # 1  /   2
-    bin_ground_truth = pd.read_csv(bin_ground_truth_path)
-
-    # #3
-    # bin_ground_truth = pd.read_csv(bin_ground_truth_path)
-    # tissues_df = pd.read_csv(tissues_path)
-    # bin_ground_truth = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
-
-    er = EvaluationsRunner(bin_ground_truth,        # Give the binarized ground truth data
-                           runs_path, data_path, 
+    er = EvaluationsRunner(bin_ground_truth_path,        # Give the binarized ground truth data
+                           runs_path, 
+                           data_path, 
                            save_evaluation_path, 
                            sampling_values, 
                            run_values, 
@@ -160,4 +159,4 @@ if __name__ == "__main__":
                            problem_type = None,
                            labels = None)       # The labels are the names of the columns of the binarized ground truth df
     
-    er.run_evaluations()
+    er.run_evaluations(tissues = None)
