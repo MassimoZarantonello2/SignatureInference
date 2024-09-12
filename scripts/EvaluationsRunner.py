@@ -124,7 +124,7 @@ if __name__ == "__main__":
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = 10
+    time_limit = None
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
@@ -142,13 +142,13 @@ if __name__ == "__main__":
     # Sample_run: Normal             |  GT: Add the tissues -> add tissues label
     #+-------------------------------+---------------------------------------  
 
-    #1  /   2
-    #bin_ground_truth = pd.read_csv(bin_ground_truth_path)
-
-    #3
+    # 1  /   2
     bin_ground_truth = pd.read_csv(bin_ground_truth_path)
-    tissues_df = pd.read_csv(tissues_path)
-    bin_ground_truth = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
+
+    # #3
+    # bin_ground_truth = pd.read_csv(bin_ground_truth_path)
+    # tissues_df = pd.read_csv(tissues_path)
+    # bin_ground_truth = pd.merge(bin_ground_truth, tissues_df, on='Unnamed: 0')
 
     er = EvaluationsRunner(bin_ground_truth,        # Give the binarized ground truth data
                            runs_path, data_path, 
