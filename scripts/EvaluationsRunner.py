@@ -5,6 +5,7 @@ import pandas as pd
 import sys
 sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
+from utils.ModelsHyperparameters import ModelsHyperparameters
 
 class EvaluationsRunner:
     def __init__(self, ground_truth_path, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels):
@@ -53,7 +54,7 @@ class EvaluationsRunner:
         '''
         train_df = evaluation_df.sample(frac=self.train_test_split_value, random_state=42)
         test_df = evaluation_df.drop(train_df.index)
-
+        
         predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type)
         predictor.fit(train_df, time_limit=self.time_limit)
         evaluations = predictor.evaluate(test_df)
