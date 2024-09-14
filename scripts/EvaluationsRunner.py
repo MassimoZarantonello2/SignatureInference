@@ -2,6 +2,7 @@ import json
 import os
 import threading
 import pandas as pd
+import tempfile
 import sys
 sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
@@ -55,7 +56,8 @@ class EvaluationsRunner:
         train_df = evaluation_df.sample(frac=self.train_test_split_value, random_state=42)
         test_df = evaluation_df.drop(train_df.index)
         
-        predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type)
+        with tempfile.TemporaryDirectory() as temp_path:
+            predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
         predictor.fit(train_df, time_limit=self.time_limit)
         evaluations = predictor.evaluate(test_df)
         for evaluation in evaluations:
@@ -122,7 +124,7 @@ class EvaluationsRunner:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
             # This is to stop the code after the first run
-            #break
+            break
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
@@ -130,10 +132,10 @@ if __name__ == "__main__":
     data_path = '/trinucleotides_counts_sampling_'
     save_evaluation_path = './results/models_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
-    sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
+    sampling_values = ['1']#,'0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = None
+    time_limit = 5
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
