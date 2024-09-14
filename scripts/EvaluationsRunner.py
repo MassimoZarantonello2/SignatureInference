@@ -124,7 +124,7 @@ class EvaluationsRunner:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
             # This is to stop the code after the first run
-            break
+            #break
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
