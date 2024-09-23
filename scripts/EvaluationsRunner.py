@@ -58,11 +58,11 @@ class EvaluationsRunner:
         
         with tempfile.TemporaryDirectory() as temp_path:
             predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
-        predictor.fit(train_df, time_limit=self.time_limit)
-        evaluations = predictor.evaluate(test_df)
-        for evaluation in evaluations:
-            target_class = predictor.get_predictor(evaluation)
-            evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+            predictor.fit(train_df, time_limit=self.time_limit)
+            evaluations = predictor.evaluate(test_df)
+            for evaluation in evaluations:
+                target_class = predictor.get_predictor(evaluation)
+                evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
 
         return evaluations
     
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = None
+    time_limit = 20
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
