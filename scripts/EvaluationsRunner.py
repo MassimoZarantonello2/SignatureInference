@@ -123,7 +123,8 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
                 # This is to stop the code after a run
-                break
+                if(run == '10'):
+                    break
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = 20
+    time_limit = None
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
