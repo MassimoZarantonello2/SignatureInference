@@ -89,7 +89,7 @@ class EvaluationsRunner:
                     json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
                 # This is to stop the code after a run
-                if(run == '10'):
+                if(run == '13'):
                     break
 
 
