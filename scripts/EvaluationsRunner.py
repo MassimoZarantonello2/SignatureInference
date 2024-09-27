@@ -37,6 +37,36 @@ class EvaluationsRunner:
         with self.lock:
             json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
 
+    def compute_evaluations_metrics(self, evaluation_df):
+        '''
+        ### Input
+        - evaluation_df: The dataset that will be used to train and test the model
+        and returns the evaluation metrics for the model best trained on the sampled data and tested on the ground truth data
+        ### Output
+        - evaluation: A dictionary with the evaluation metrics of every signature for a specific run/sample \n
+            "Signature Name": { \n
+                    "accuracy":
+                    "balanced_accuracy": 
+                    "mcc":
+                    "roc_auc": 
+                    "f1": 
+                    "precision":
+                    "recall":
+                    "best_model": }
+        '''
+        train_df = evaluation_df.sample(frac=self.train_test_split_value, random_state=42)
+        test_df = evaluation_df.drop(train_df.index)
+        
+        with tempfile.TemporaryDirectory() as temp_path:
+            predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
+            predictor.fit(train_df, time_limit=self.time_limit)
+            evaluations = predictor.evaluate(test_df)
+            for evaluation in evaluations:
+                target_class = predictor.get_predictor(evaluation)
+                evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+
+        return evaluations
+
     def threaded_evaluation(self, run, sample, output_dict, tissues):
         run_sample_df = pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
         if tissues == 'feature':
