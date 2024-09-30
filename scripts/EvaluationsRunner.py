@@ -21,9 +21,9 @@ class EvaluationsRunner:
         self.time_limit = time_limit
         self.problem_type = problem_type if problem_type is None else ['binary'] * len(labels)
         self.labels = None
-        self.lock = threading.Lock()  # Create a lock object
 
     def create_empty_json_file(self):
+        # Create the structure of the json file
         run_dict = {}
         for run in self.run_values:
             run_index = 'run_'+run
@@ -33,9 +33,8 @@ class EvaluationsRunner:
                 sample_dict[sample_index] = {}
                 run_dict[run_index] = sample_dict
 
-        # Ensure thread-safety during file creation
-        with self.lock:
-            json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
+        # Save the json file
+        json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
 
     def compute_evaluations_metrics(self, evaluation_df):
         '''
@@ -66,9 +65,19 @@ class EvaluationsRunner:
                 evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
 
         return evaluations
-
+    
     def threaded_evaluation(self, run, sample, output_dict, tissues):
-        run_sample_df = pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
+        '''
+        ### Input
+        - run: The run number
+        - sample: The sampling value
+        - output_dict: The dictionary where the evaluation metrics will be saved
+        ### Output
+        - None
+        '''
+        # Create the evaluation dataframe
+        run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
+        # 2
         if tissues == 'feature':
             tissues_df = pd.read_csv(self.tissues_path).drop(columns=['Cohort'])
             run_sample_df = pd.merge(run_sample_df, tissues_df, on='Unnamed: 0')
@@ -82,7 +91,9 @@ class EvaluationsRunner:
         if not os.path.exists(self.save_evaluation_path):
             self.create_empty_json_file()
 
+        # Create the ground truth dataframe
         self.ground_truth_df = pd.read_csv(self.ground_truth_path)
+        # 3
         if tissues == 'prediction':
             tissues_df = pd.read_csv(tissues_path).drop(columns=['Cohort'])
             self.ground_truth_df = pd.merge(self.ground_truth, tissues_df, on='Unnamed: 0')
@@ -91,12 +102,8 @@ class EvaluationsRunner:
         for run in self.run_values:
             run_index = 'run_' + run
             signature_inference_thread = []
+            all_evaluations_df = json.load(open(self.save_evaluation_path))
             output_dict = {}
-
-            # Lock when reading from the file
-            with self.lock:
-                all_evaluations_df = json.load(open(self.save_evaluation_path))
-
             for sample in self.sampling_values:
                 sample_index = 'sampling_' + sample
                 if all_evaluations_df[run_index][sample_index] == {}:
@@ -110,18 +117,14 @@ class EvaluationsRunner:
             for t in signature_inference_thread:
                 t.join()
 
-            # Update the JSON file safely
-            with self.lock:
-                for key in output_dict:
-                    all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
-                
-                if signature_inference_thread:
-                    json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
+            for key in output_dict:
+                all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
 
+            if signature_inference_thread.__len__() != 0:
+                json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
                 # This is to stop the code after a run
-                if(run == '13'):
+                if(run == '10'):
                     break
-
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
