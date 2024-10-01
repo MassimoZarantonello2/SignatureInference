@@ -86,6 +86,7 @@ class EvaluationsRunner:
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
         output_dict[sample] = evaluation
+        return output_dict
 
     def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
@@ -122,9 +123,6 @@ class EvaluationsRunner:
 
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
-                # This is to stop the code after a run
-                if(run == '10'):
-                    break
 
 if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
