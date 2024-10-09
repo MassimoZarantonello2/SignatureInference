@@ -87,6 +87,8 @@ class EvaluationsRunner:
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
+        lc = LogClass(sample)
+        lc.log(f'Evaluated run {run} and sample {sample}')
         with lock:
             lc = LogClass(sample)
             lc.log(f'Run {run} and sample {sample} completed')
@@ -118,6 +120,8 @@ class EvaluationsRunner:
                 sample_index = 'sampling_' + sample
                 if all_evaluations_df[run_index][sample_index] == {}:
                     print(f'Running run {run} and sample {sample}')
+                    lc = LogClass(sample)
+                    lc.log(f'Starting run {run} and sample {sample}')
                     t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
                     signature_inference_thread.append(t)
                     t.start()
