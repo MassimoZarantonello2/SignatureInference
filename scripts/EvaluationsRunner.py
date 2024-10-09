@@ -3,6 +3,7 @@ import os
 import threading
 import pandas as pd
 import tempfile
+import argparse
 import sys
 sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
@@ -130,6 +131,10 @@ class EvaluationsRunner:
                     break
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description="Esecuzione del modello di valutazione con parametri opzionali")
+
+
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
@@ -141,10 +146,15 @@ if __name__ == "__main__":
     time_limit = None
     num_run = None
 
-    if len(sys.argv) == 2:
-        time_limit = int(sys.argv[1])
-    elif len(sys.argv) == 3:
-        num_run = (sys.argv[2])
+    parser.add_argument('--save_path', type=str, default='./results/models_evaluations.json', help='Path per salvare i risultati dell\'evaluation')
+    parser.add_argument('--time_limit', type=int, default=None, help='Tempo limite per il training dei modelli')
+    parser.add_argument('--num_run', type=str, default='100', help='Numero specifico di run da eseguire')
+
+    args = parser.parse_args()
+
+    save_evaluation_path = args.save_path
+    time_limit = args.time_limit
+    num_run = args.num_run
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
