@@ -69,6 +69,8 @@ class EvaluationsRunner:
         return evaluations
     
     def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
+        lc = LogClass(sample)
+        lc.log(f'Run {run} and sample {sample} entered the fucking method')
         '''
         ### Input
         - run: The run number
@@ -88,10 +90,10 @@ class EvaluationsRunner:
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
         lc = LogClass(sample)
-        lc.log(f'Evaluated run {run} and sample {sample}')
+        lc.log(f'Run {run} and sample {sample} evaluated')
         with lock:
             lc = LogClass(sample)
-            lc.log(f'Run {run} and sample {sample} completed')
+            lc.log(f'Run {run} and sample {sample} lock aquired')
             lc.log(f'Evaluation: {evaluation}')
             lc.log('-----------------------------------')
             output_dict[sample] = evaluation
