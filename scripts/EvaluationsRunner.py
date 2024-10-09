@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    save_evaluation_path = './results/'+args.save_path+'json'
+    save_evaluation_path = './results/'+args.save_path+'.json'
     time_limit = args.time_limit
     num_run = args.num_run
 
