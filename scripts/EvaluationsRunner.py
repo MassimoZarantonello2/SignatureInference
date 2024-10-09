@@ -152,9 +152,13 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    save_evaluation_path = args.save_path
+    save_evaluation_path = 'results/'+args.save_path+'json'
     time_limit = args.time_limit
     num_run = args.num_run
+
+    print(f"Save path: {save_evaluation_path}")
+    print(f"Time limit: {time_limit}")
+    print(f"Num run: {num_run}")
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
