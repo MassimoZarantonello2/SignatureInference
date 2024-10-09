@@ -1,0 +1,11 @@
+18:52:04: Starting run 1 and sample 0.04
+18:52:04: Run 1 and sample 0.04 entered the fucking method
+18:52:06: For sample 0.04 the train and test dataframes are created
+18:54:47: For sample 0.04 the models are trained
+18:55:04: For sample 0.04 the models are evaluated
+18:55:04: Error in sample 0.04: 'MultilabelPredictor' object has no attribute 'leaderboard'
+18:55:05: Run 1 and sample 0.04 lock aquired
+18:55:05: Evaluation: {}
+18:55:05: -----------------------------------
+18:55:05: Output dict: {'0.1': {}, '0.02': {}, '0.05': {}, '0.3': {}, '1': {}, '0.6': {}, '0.9': {}, '0.5': {}, '0.8': {}, '0.4': {}, '0.2': {}, '0.01': {}, '0.03': {}, '0.7': {}, '0.04': {}}
+18:55:05: ###################################
