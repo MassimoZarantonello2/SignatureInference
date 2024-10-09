@@ -38,7 +38,7 @@ class EvaluationsRunner:
         # Save the json file
         json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
 
-    def compute_evaluations_metrics(self, evaluation_df):
+    def compute_evaluations_metrics(self, evaluation_df,sample):
         '''
         ### Input
         - evaluation_df: The dataset that will be used to train and test the model
@@ -57,15 +57,18 @@ class EvaluationsRunner:
         '''
         train_df = evaluation_df.sample(frac=self.train_test_split_value, random_state=42)
         test_df = evaluation_df.drop(train_df.index)
-        
+        lc = LogClass(sample)
+        lc.log(f'For sample {sample} the train and test dataframes are created')
         with tempfile.TemporaryDirectory() as temp_path:
             predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
             predictor.fit(train_df, time_limit=self.time_limit)
+            lc.log(f'For sample {sample} the models are trained')
             evaluations = predictor.evaluate(test_df)
+            lc.log(f'For sample {sample} the models are evaluated')
             for evaluation in evaluations:
                 target_class = predictor.get_predictor(evaluation)
                 evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
-
+            lc.log(f'For sample {sample} the best models are saved')
         return evaluations
     
     def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
@@ -88,9 +91,8 @@ class EvaluationsRunner:
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on='Unnamed: 0')
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
 
-        evaluation = self.compute_evaluations_metrics(evaluation_df)
+        evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
         lc = LogClass(sample)
-        lc.log(f'Run {run} and sample {sample} evaluated')
         with lock:
             lc = LogClass(sample)
             lc.log(f'Run {run} and sample {sample} lock aquired')
