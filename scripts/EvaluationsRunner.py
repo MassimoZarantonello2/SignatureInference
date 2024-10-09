@@ -71,7 +71,6 @@ class EvaluationsRunner:
                     evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
                 lc.log(f'For sample {sample} the best models are saved')
             except Exception as e:
-                lc.log(f'For sample {sample} the models are not trained or evaluated XXXXXXXX')
                 lc.log(f'Error: {e}')
         return evaluations
     
