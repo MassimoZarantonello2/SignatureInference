@@ -8,6 +8,7 @@ import sys
 sys.path.append('./')
 from utils.MultiLabelPredictor import MultilabelPredictor
 from utils.ModelsHyperparameters import ModelsHyperparameters
+from utils.Log import LogClass
 
 class EvaluationsRunner:
     def __init__(self, ground_truth_path, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels):
@@ -87,7 +88,13 @@ class EvaluationsRunner:
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
         with lock:
+            lc = LockClass(sample)
+            lc.log(f'Run {run} and sample {sample} completed')
+            lc.log(f'Evaluation: {evaluation}')
+            lc.log('-----------------------------------')
             output_dict[sample] = evaluation
+            lc.log(f'Output dict: {output_dict}')
+            lc.log('###################################')
 
     def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
