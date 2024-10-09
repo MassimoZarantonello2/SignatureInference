@@ -1,4 +1,5 @@
 import os
+import time
 
 class LogClass:
     file_path = 'logs/'
@@ -11,4 +12,4 @@ class LogClass:
         if not os.path.exists(self.file_path):
             os.makedirs(self.file_path)
         with open(self.file_path + self.file_name, 'a+') as f:
-            f.write(message + '\n')
+            f.write(time.strftime("%H:%M:%S") + ': ' + message + '\n')
