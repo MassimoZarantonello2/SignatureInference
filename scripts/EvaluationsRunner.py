@@ -66,7 +66,7 @@ class EvaluationsRunner:
 
         return evaluations
     
-    def threaded_evaluation(self, run, sample, output_dict, tissues):
+    def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
         '''
         ### Input
         - run: The run number
@@ -85,8 +85,8 @@ class EvaluationsRunner:
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
-        output_dict[sample] = evaluation
-        return output_dict
+        with lock:
+            output_dict[sample] = evaluation
 
     def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
@@ -104,12 +104,13 @@ class EvaluationsRunner:
             run_index = 'run_' + run
             signature_inference_thread = []
             all_evaluations_df = json.load(open(self.save_evaluation_path))
+            lock = threading.Lock()
             output_dict = {}
             for sample in self.sampling_values:
                 sample_index = 'sampling_' + sample
                 if all_evaluations_df[run_index][sample_index] == {}:
                     print(f'Running run {run} and sample {sample}')
-                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues))
+                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
                     signature_inference_thread.append(t)
                     t.start()
                 else:
@@ -131,12 +132,12 @@ if __name__ == "__main__":
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
     data_path = '/trinucleotides_counts_sampling_'
-    save_evaluation_path = './results/models_evaluations.json'
+    save_evaluation_path = './results/locked_models_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
     sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
-    time_limit = None
+    time_limit = 5
 
     #+------------------------(1)Normal run of models-------------------------   
     #|TRAIN                          |  TEST
