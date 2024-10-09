@@ -88,7 +88,7 @@ class EvaluationsRunner:
 
         evaluation = self.compute_evaluations_metrics(evaluation_df)
         with lock:
-            lc = LockClass(sample)
+            lc = LogClass(sample)
             lc.log(f'Run {run} and sample {sample} completed')
             lc.log(f'Evaluation: {evaluation}')
             lc.log('-----------------------------------')
