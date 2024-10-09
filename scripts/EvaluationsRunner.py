@@ -146,13 +146,13 @@ if __name__ == "__main__":
     time_limit = None
     num_run = None
 
-    parser.add_argument('--save_path', type=str, default='./results/models_evaluations.json', help='Path per salvare i risultati dell\'evaluation')
+    parser.add_argument('--save_path', type=str, default='models_evaluations', help='Path per salvare i risultati dell\'evaluation')
     parser.add_argument('--time_limit', type=int, default=None, help='Tempo limite per il training dei modelli')
     parser.add_argument('--num_run', type=str, default='100', help='Numero specifico di run da eseguire')
 
     args = parser.parse_args()
 
-    save_evaluation_path = 'results/'+args.save_path+'json'
+    save_evaluation_path = './results/'+args.save_path+'json'
     time_limit = args.time_limit
     num_run = args.num_run
 
