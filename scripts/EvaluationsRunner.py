@@ -60,7 +60,6 @@ class EvaluationsRunner:
         lc = LogClass(sample)
         lc.log(f'For sample {sample} the train and test dataframes are created')
         with tempfile.TemporaryDirectory() as temp_path:
-            evaluation = {}
             try:
                 predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
                 predictor.fit(train_df, time_limit=self.time_limit)
@@ -68,11 +67,12 @@ class EvaluationsRunner:
                 evaluations = predictor.evaluate(test_df)
                 lc.log(f'For sample {sample} the models are evaluated')
                 for evaluation in evaluations:
-                    target_class = predictor
+                    target_class = predictor.get_predictor(evaluation)
                     evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+                lc.log(f'For sample {sample} the best models are saved')
             except Exception as e:
-                lc.log(f'Error in sample {sample}: {e}')
-                evaluations = {}
+                lc.log(f'For sample {sample} the models are not trained or evaluated XXXXXXXX')
+                lc.log(f'Error: {e}')
         return evaluations
     
     def threaded_evaluation(self, run, sample, output_dict, tissues, lock):

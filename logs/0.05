@@ -1,9 +1,0 @@
-18:52:04: Starting run 1 and sample 0.05
-18:52:04: Run 1 and sample 0.05 entered the fucking method
-18:52:06: For sample 0.05 the train and test dataframes are created
-18:52:12: Error in sample 0.05: Not enough time left to train models. Consider specifying a larger time_limit. Time remaining: -0.05s
-18:52:13: Run 1 and sample 0.05 lock aquired
-18:52:13: Evaluation: {}
-18:52:13: -----------------------------------
-18:52:13: Output dict: {'0.1': {}, '0.02': {}, '0.05': {}}
-18:52:13: ###################################
