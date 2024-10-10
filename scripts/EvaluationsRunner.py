@@ -59,24 +59,21 @@ class EvaluationsRunner:
         test_df = evaluation_df.drop(train_df.index)
         lc = LogClass(sample)
         lc.log(f'For sample {sample} the train and test dataframes are created')
-        with tempfile.TemporaryDirectory() as temp_path:
-            try:
-                predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
-                predictor.fit(train_df, time_limit=self.time_limit)
-                lc.log(f'For sample {sample} the models are trained')
-                evaluations = predictor.evaluate(test_df)
-                lc.log(f'For sample {sample} the models are evaluated')
-                for evaluation in evaluations:
-                    target_class = predictor.get_predictor(evaluation)
-                    evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
-                lc.log(f'For sample {sample} the best models are saved')
-            except Exception as e:
-                lc.log(f'Error: {e}')
+        try:
+            predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
+            predictor.fit(train_df, time_limit=self.time_limit)
+            lc.log(f'For sample {sample} the models are trained')
+            evaluations = predictor.evaluate(test_df)
+            lc.log(f'For sample {sample} the models are evaluated')
+            for evaluation in evaluations:
+                target_class = predictor.get_predictor(evaluation)
+                evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+            lc.log(f'For sample {sample} the best models are saved')
+        except Exception as e:
+            lc.log(f'Error: {e}')
         return evaluations
     
     def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
-        lc = LogClass(sample)
-        lc.log(f'Run {run} and sample {sample} entered the fucking method')
         '''
         ### Input
         - run: The run number
@@ -93,7 +90,7 @@ class EvaluationsRunner:
             run_sample_df = pd.merge(run_sample_df, tissues_df, on='Unnamed: 0')
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on='Unnamed: 0')
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
-
+        
         evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
         lc = LogClass(sample)
         with lock:
@@ -123,27 +120,29 @@ class EvaluationsRunner:
             all_evaluations_df = json.load(open(self.save_evaluation_path))
             lock = threading.Lock()
             output_dict = {}
-            for sample in self.sampling_values:
-                sample_index = 'sampling_' + sample
-                if all_evaluations_df[run_index][sample_index] == {}:
-                    print(f'Running run {run} and sample {sample}')
-                    lc = LogClass(sample)
-                    lc.log(f'Starting run {run} and sample {sample}')
-                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
-                    signature_inference_thread.append(t)
-                    t.start()
-                else:
-                    print(f'Skiping run {run} and sample {sample}')
+            # Creo la directory 
+            with tempfile.TemporaryDirectory() as temp_path:
+                for sample in self.sampling_values:
+                    sample_index = 'sampling_' + sample
+                    if all_evaluations_df[run_index][sample_index] == {}:
+                        print(f'Running run {run} and sample {sample}')
+                        lc = LogClass(sample)
+                        lc.log(f'Starting run {run} and sample {sample}')
+                        t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
+                        signature_inference_thread.append(t)
+                        t.start()
+                    else:
+                        print(f'Skiping run {run} and sample {sample}')
 
-            for t in signature_inference_thread:
-                t.join()
+                for t in signature_inference_thread:
+                    t.join()
 
-            for key in output_dict:
-                all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
+                for key in output_dict:
+                    all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
 
-            if signature_inference_thread.__len__() != 0:
-                json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
-            
+                if signature_inference_thread.__len__() != 0:
+                    json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
+
             if num_run is not None:
                 if run == num_run:
                     break
@@ -151,7 +150,6 @@ class EvaluationsRunner:
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Esecuzione del modello di valutazione con parametri opzionali")
-
 
     bin_ground_truth_path = './simulations/ground_truth/bin_exposures.csv'
     runs_path = './simulations/data/run_'
