@@ -101,8 +101,6 @@ class EvaluationsRunner:
             lc.log(f'Evaluation: {evaluation}')
             lc.log('-----------------------------------')
             output_dict[sample] = evaluation
-            lc.log(f'Output dict: {output_dict}')
-            lc.log('###################################')
 
     def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
@@ -143,6 +141,8 @@ class EvaluationsRunner:
 
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
+
+            os.remove('./AutogluonModels')
 
             if num_run is not None:
                 if run == num_run:
