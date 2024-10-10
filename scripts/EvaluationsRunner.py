@@ -146,7 +146,7 @@ class EvaluationsRunner:
             shutil.rmtree('./AutogluonModels')
 
             if num_run is not None:
-                if run == num_run:
+                if run >= num_run:
                     break
 
 if __name__ == "__main__":
