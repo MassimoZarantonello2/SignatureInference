@@ -38,7 +38,7 @@ class EvaluationsRunner:
         # Save the json file
         json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
 
-    def compute_evaluations_metrics(self, evaluation_df,sample):
+    def compute_evaluations_metrics(self, evaluation_df,sample, temp_path):
         '''
         ### Input
         - evaluation_df: The dataset that will be used to train and test the model
@@ -69,11 +69,13 @@ class EvaluationsRunner:
                 target_class = predictor.get_predictor(evaluation)
                 evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
             lc.log(f'For sample {sample} the best models are saved')
+            return evaluations
         except Exception as e:
             lc.log(f'Error: {e}')
-        return evaluations
+            print(f'Error: {e}')
+            return None
     
-    def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
+    def threaded_evaluation(self, run, sample, output_dict, tissues, lock, temp_path):
         '''
         ### Input
         - run: The run number
@@ -91,7 +93,7 @@ class EvaluationsRunner:
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on='Unnamed: 0')
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
         
-        evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
+        evaluation = self.compute_evaluations_metrics(evaluation_df, sample, temp_path)
         lc = LogClass(sample)
         with lock:
             lc = LogClass(sample)
@@ -128,7 +130,7 @@ class EvaluationsRunner:
                         print(f'Running run {run} and sample {sample}')
                         lc = LogClass(sample)
                         lc.log(f'Starting run {run} and sample {sample}')
-                        t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
+                        t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock, temp_path))
                         signature_inference_thread.append(t)
                         t.start()
                     else:
