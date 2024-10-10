@@ -124,7 +124,7 @@ class EvaluationsRunner:
             # Creo la directory 
             for sample in self.sampling_values:
                 sample_index = 'sampling_' + sample
-                if all_evaluations_df[run_index][sample_index] == {} || all_evaluations_df[run_index][sample_index] == None:
+                if all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None:
                     print(f'Running run {run} and sample {sample}')
                     lc = LogClass(sample)
                     lc.log(f'Starting run {run} and sample {sample}')
