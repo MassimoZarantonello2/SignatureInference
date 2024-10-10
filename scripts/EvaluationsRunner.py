@@ -143,7 +143,8 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
-            shutil.rmtree('./AutogluonModels')
+            if os.path.exists('./AutogluonModels'):
+                shutil.rmtree('./AutogluonModels')
 
             if num_run is not None:
                 if run >= num_run:
@@ -166,7 +167,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--save_path', type=str, default='models_evaluations', help='Path per salvare i risultati dell\'evaluation')
     parser.add_argument('--time_limit', type=int, default=None, help='Tempo limite per il training dei modelli')
-    parser.add_argument('--num_run', type=str, default='100', help='Numero specifico di run da eseguire')
+    parser.add_argument('--num_run', type=str, default=None, help='Numero specifico di run da eseguire')
 
     args = parser.parse_args()
 
