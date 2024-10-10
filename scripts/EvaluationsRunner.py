@@ -38,7 +38,7 @@ class EvaluationsRunner:
         # Save the json file
         json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
 
-    def compute_evaluations_metrics(self, evaluation_df,sample, temp_path):
+    def compute_evaluations_metrics(self, evaluation_df,sample):
         '''
         ### Input
         - evaluation_df: The dataset that will be used to train and test the model
@@ -60,7 +60,7 @@ class EvaluationsRunner:
         lc = LogClass(sample)
         lc.log(f'For sample {sample} the train and test dataframes are created')
         try:
-            predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type, path=temp_path)
+            predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type)
             predictor.fit(train_df, time_limit=self.time_limit)
             lc.log(f'For sample {sample} the models are trained')
             evaluations = predictor.evaluate(test_df)
@@ -75,7 +75,7 @@ class EvaluationsRunner:
             print(f'Error: {e}')
             return None
     
-    def threaded_evaluation(self, run, sample, output_dict, tissues, lock, temp_path):
+    def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
         '''
         ### Input
         - run: The run number
@@ -93,7 +93,7 @@ class EvaluationsRunner:
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on='Unnamed: 0')
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
         
-        evaluation = self.compute_evaluations_metrics(evaluation_df, sample, temp_path)
+        evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
         lc = LogClass(sample)
         with lock:
             lc = LogClass(sample)
@@ -123,27 +123,26 @@ class EvaluationsRunner:
             lock = threading.Lock()
             output_dict = {}
             # Creo la directory 
-            with tempfile.TemporaryDirectory() as temp_path:
-                for sample in self.sampling_values:
-                    sample_index = 'sampling_' + sample
-                    if all_evaluations_df[run_index][sample_index] == {}:
-                        print(f'Running run {run} and sample {sample}')
-                        lc = LogClass(sample)
-                        lc.log(f'Starting run {run} and sample {sample}')
-                        t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock, temp_path))
-                        signature_inference_thread.append(t)
-                        t.start()
-                    else:
-                        print(f'Skiping run {run} and sample {sample}')
+            for sample in self.sampling_values:
+                sample_index = 'sampling_' + sample
+                if all_evaluations_df[run_index][sample_index] == {}:
+                    print(f'Running run {run} and sample {sample}')
+                    lc = LogClass(sample)
+                    lc.log(f'Starting run {run} and sample {sample}')
+                    t = threading.Thread(target=self.threaded_evaluation, args=(run, sample, output_dict, tissues, lock))
+                    signature_inference_thread.append(t)
+                    t.start()
+                else:
+                    print(f'Skiping run {run} and sample {sample}')
 
-                for t in signature_inference_thread:
-                    t.join()
+            for t in signature_inference_thread:
+                t.join()
 
-                for key in output_dict:
-                    all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
+            for key in output_dict:
+                all_evaluations_df[run_index]['sampling_' + key] = output_dict[key]
 
-                if signature_inference_thread.__len__() != 0:
-                    json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
+            if signature_inference_thread.__len__() != 0:
+                json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
             if num_run is not None:
                 if run == num_run:
