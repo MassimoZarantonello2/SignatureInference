@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 import threading
 import pandas as pd
 import tempfile
@@ -142,7 +143,7 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
-            os.remove('./AutogluonModels')
+            shutil.rmtree('./AutogluonModels')
 
             if num_run is not None:
                 if run == num_run:
