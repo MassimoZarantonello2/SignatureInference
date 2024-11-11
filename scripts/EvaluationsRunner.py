@@ -12,7 +12,7 @@ from utils.ModelsHyperparameters import ModelsHyperparameters
 from utils.Log import LogClass
 
 class EvaluationsRunner:
-    def __init__(self, ground_truth_path, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels):
+    def __init__(self, ground_truth_path, runs_path, data_path, save_evaluation_path, sampling_values, run_values, train_test_split_value, time_limit, problem_type, labels, save_models = False):
         self.ground_truth_path = ground_truth_path
         self.ground_truth = None
         self.runs_path = runs_path
@@ -24,6 +24,10 @@ class EvaluationsRunner:
         self.time_limit = time_limit
         self.problem_type = problem_type if problem_type is None else ['binary'] * len(labels)
         self.labels = None
+        self.save_models = False
+
+        self.predictors = None
+        self.evaluations = []
 
     def create_empty_json_file(self):
         # Create the structure of the json file
@@ -63,10 +67,12 @@ class EvaluationsRunner:
         try:
             predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type)
             predictor.fit(train_df, time_limit=self.time_limit)
+            self.predictor = predictor
             lc.log(f'For sample {sample} the models are trained')
             evaluations = predictor.evaluate(test_df)
             lc.log(f'For sample {sample} the models are evaluated')
             for evaluation in evaluations:
+                self.evaluations.append(evaluation)
                 target_class = predictor.get_predictor(evaluation)
                 evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
             lc.log(f'For sample {sample} the best models are saved')
@@ -143,12 +149,13 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, 'w'))
 
-            # if os.path.exists('./AutogluonModels'):
-            #     shutil.rmtree('./AutogluonModels')
 
-            if num_run is not None:
-                if run >= num_run:
-                    break
+            if self.save_models and os.path.exists('./AutogluonModels'):
+                shutil.rmtree('./AutogluonModels')
+
+            # if num_run is not None:
+            #     if run >= num_run:
+            #         break
 
 if __name__ == "__main__":
 
