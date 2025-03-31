@@ -27,7 +27,7 @@ class EvaluationsRunner:
         self.save_models = False
 
         self.predictors = None
-        self.evaluations = []
+        self.per_signature_evaluations, self.per_sample_evaluations = [],[]
 
     def create_empty_json_file(self):
         # Create the structure of the json file
@@ -58,7 +58,7 @@ class EvaluationsRunner:
                     "f1": 
                     "precision":
                     "recall":
-                    "best_model": }
+                    "best_model": 
         '''
         train_df = evaluation_df.sample(frac=self.train_test_split_value, random_state=42)
         test_df = evaluation_df.drop(train_df.index)
@@ -72,7 +72,7 @@ class EvaluationsRunner:
             evaluations = predictor.evaluate(test_df)
             lc.log(f'For sample {sample} the models are evaluated')
             for evaluation in evaluations:
-                self.evaluations.append(evaluation)
+                self.per_signature_evaluations.append(evaluation)
                 target_class = predictor.get_predictor(evaluation)
                 evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
             lc.log(f'For sample {sample} the best models are saved')
@@ -101,6 +101,7 @@ class EvaluationsRunner:
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
         
         evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
+
         lc = LogClass(sample)
         with lock:
             lc = LogClass(sample)
