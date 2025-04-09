@@ -91,8 +91,8 @@ class EvaluationsRunner:
             for evaluation in evaluations:
                 self.evaluations.append(evaluation)
                 target_class = predictor.get_predictor(evaluation)
-                evaluations[evaluation]['best_model'] = target_class.leaderboard(
-                    silent=True).iloc[0]['model']
+                evaluations[evaluation]['best_models'] = target_class.leaderboard(
+                    silent=True).iloc[0:5]['model']
             lc.log(f'For sample {sample} the best models are saved')
             return evaluations
         except Exception as e:
