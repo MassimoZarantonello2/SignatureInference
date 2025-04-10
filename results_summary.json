@@ -1,0 +1,871 @@
+[
+    {
+        "signature": "S1 (SBS1 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.96875,
+        "best_model_metrics": {
+            "accuracy": 0.94,
+            "balanced_accuracy": 0.7784239604536203,
+            "mcc": 0.6198993724027771,
+            "roc_auc": 0.9764466414655423,
+            "f1": 0.9672131147540983,
+            "precision": 0.9567567567567568,
+            "recall": 0.9779005524861878
+        },
+        "best_model_fit_time": 0.09123635292053223,
+        "ensemble_models": [
+            "CatBoost"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.96875,
+                "fit_time": 3.7381234169006348
+            }
+        ]
+    },
+    {
+        "signature": "S2 (SBS2 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.875,
+        "best_model_metrics": {
+            "accuracy": 0.845,
+            "balanced_accuracy": 0.724025974025974,
+            "mcc": 0.5210068663874254,
+            "roc_auc": 0.8883399209486167,
+            "f1": 0.9040247678018576,
+            "precision": 0.863905325443787,
+            "recall": 0.948051948051948
+        },
+        "best_model_fit_time": 0.1004331111907959,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.875,
+                "fit_time": 0.6551876068115234
+            }
+        ]
+    },
+    {
+        "signature": "S3 (SBS3 - 0.97)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.85,
+        "best_model_metrics": {
+            "accuracy": 0.84,
+            "balanced_accuracy": 0.8385718645102227,
+            "mcc": 0.675496675857067,
+            "roc_auc": 0.9426304546841624,
+            "f1": 0.8181818181818182,
+            "precision": 0.8089887640449438,
+            "recall": 0.8275862068965517
+        },
+        "best_model_fit_time": 0.10405564308166504,
+        "ensemble_models": [
+            "NeuralNetTorch",
+            "LightGBMLarge",
+            "ExtraTreesEntr"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.83125,
+                "fit_time": 1.2150802612304688
+            },
+            {
+                "model_name": "LightGBMLarge",
+                "val_score": 0.71875,
+                "fit_time": 0.3598639965057373
+            },
+            {
+                "model_name": "ExtraTreesEntr",
+                "val_score": 0.7625,
+                "fit_time": 0.43138742446899414
+            }
+        ]
+    },
+    {
+        "signature": "S4 (SBS4 - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.76875,
+        "best_model_metrics": {
+            "accuracy": 0.795,
+            "balanced_accuracy": 0.7868357487922706,
+            "mcc": 0.5905863785521988,
+            "roc_auc": 0.911231884057971,
+            "f1": 0.8240343347639485,
+            "precision": 0.768,
+            "recall": 0.8888888888888888
+        },
+        "best_model_fit_time": 0.0628969669342041,
+        "ensemble_models": [
+            "LightGBMXT"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.76875,
+                "fit_time": 0.3987901210784912
+            }
+        ]
+    },
+    {
+        "signature": "S5 (SBS5 - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.90625,
+        "best_model_metrics": {
+            "accuracy": 0.85,
+            "balanced_accuracy": 0.8114973262032086,
+            "mcc": 0.6572800963301954,
+            "roc_auc": 0.9273618538324421,
+            "f1": 0.8913043478260869,
+            "precision": 0.8541666666666666,
+            "recall": 0.9318181818181818
+        },
+        "best_model_fit_time": 0.09790706634521484,
+        "ensemble_models": [
+            "NeuralNetTorch"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.90625,
+                "fit_time": 2.40461802482605
+            }
+        ]
+    },
+    {
+        "signature": "S6 (SBS7a - 1.00)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.89375,
+        "best_model_metrics": {
+            "accuracy": 0.845,
+            "balanced_accuracy": 0.614280652019844,
+            "mcc": 0.3259603038956537,
+            "roc_auc": 0.7946491849751948,
+            "f1": 0.9116809116809117,
+            "precision": 0.8648648648648649,
+            "recall": 0.963855421686747
+        },
+        "best_model_fit_time": 0.11065053939819336,
+        "ensemble_models": [
+            "CatBoost"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.89375,
+                "fit_time": 4.409436225891113
+            }
+        ]
+    },
+    {
+        "signature": "S7 (SBS7b - 0.96)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.81875,
+        "best_model_metrics": {
+            "accuracy": 0.73,
+            "balanced_accuracy": 0.65,
+            "mcc": 0.321898153229607,
+            "roc_auc": 0.7323809523809524,
+            "f1": 0.5,
+            "precision": 0.5625,
+            "recall": 0.45
+        },
+        "best_model_fit_time": 0.10985350608825684,
+        "ensemble_models": [
+            "XGBoost",
+            "LightGBMXT"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "XGBoost",
+                "val_score": 0.8125,
+                "fit_time": 1.2669615745544434
+            },
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.78125,
+                "fit_time": 0.30700087547302246
+            }
+        ]
+    },
+    {
+        "signature": "S8 (SBS8 - 0.92)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.80625,
+        "best_model_metrics": {
+            "accuracy": 0.745,
+            "balanced_accuracy": 0.7414322250639387,
+            "mcc": 0.480876183519391,
+            "roc_auc": 0.8431713554987212,
+            "f1": 0.775330396475771,
+            "precision": 0.7857142857142857,
+            "recall": 0.7652173913043478
+        },
+        "best_model_fit_time": 0.1232445240020752,
+        "ensemble_models": [
+            "LightGBM",
+            "NeuralNetFastAI"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.7875,
+                "fit_time": 0.7487881183624268
+            },
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.775,
+                "fit_time": 0.7520627975463867
+            }
+        ]
+    },
+    {
+        "signature": "S9 (SBS9 - 0.94)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.8875,
+        "best_model_metrics": {
+            "accuracy": 0.85,
+            "balanced_accuracy": 0.7961997451048546,
+            "mcc": 0.6398213395887058,
+            "roc_auc": 0.8996640018537828,
+            "f1": 0.7321428571428571,
+            "precision": 0.8367346938775511,
+            "recall": 0.6507936507936508
+        },
+        "best_model_fit_time": 0.11515998840332031,
+        "ensemble_models": [
+            "NeuralNetTorch",
+            "LightGBMXT"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.88125,
+                "fit_time": 1.454390525817871
+            },
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.83125,
+                "fit_time": 0.31969618797302246
+            }
+        ]
+    },
+    {
+        "signature": "S10 (SBS10a - 1.00)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.875,
+        "best_model_metrics": {
+            "accuracy": 0.805,
+            "balanced_accuracy": 0.71,
+            "mcc": 0.45049443614715134,
+            "roc_auc": 0.8258666666666666,
+            "f1": 0.5714285714285714,
+            "precision": 0.6341463414634146,
+            "recall": 0.52
+        },
+        "best_model_fit_time": 0.10953426361083984,
+        "ensemble_models": [
+            "NeuralNetTorch"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.875,
+                "fit_time": 1.859544277191162
+            }
+        ]
+    },
+    {
+        "signature": "S11 (SBS10d - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.8375,
+        "best_model_metrics": {
+            "accuracy": 0.675,
+            "balanced_accuracy": 0.611003861003861,
+            "mcc": 0.25668300033378955,
+            "roc_auc": 0.7080652080652081,
+            "f1": 0.453781512605042,
+            "precision": 0.6,
+            "recall": 0.36486486486486486
+        },
+        "best_model_fit_time": 0.09531617164611816,
+        "ensemble_models": [
+            "CatBoost",
+            "KNeighborsDist"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.83125,
+                "fit_time": 5.463233232498169
+            },
+            {
+                "model_name": "KNeighborsDist",
+                "val_score": 0.7125,
+                "fit_time": 0.014492988586425781
+            }
+        ]
+    },
+    {
+        "signature": "S12 (SBS11 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.825,
+        "best_model_metrics": {
+            "accuracy": 0.815,
+            "balanced_accuracy": 0.5511517615176151,
+            "mcc": 0.172399705475229,
+            "roc_auc": 0.6473577235772359,
+            "f1": 0.2127659574468085,
+            "precision": 0.45454545454545453,
+            "recall": 0.1388888888888889
+        },
+        "best_model_fit_time": 0.10894393920898438,
+        "ensemble_models": [
+            "LightGBMXT"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.825,
+                "fit_time": 0.39531636238098145
+            }
+        ]
+    },
+    {
+        "signature": "S13 (SBS13 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.85,
+        "best_model_metrics": {
+            "accuracy": 0.815,
+            "balanced_accuracy": 0.8069053708439897,
+            "mcc": 0.6193801042615005,
+            "roc_auc": 0.8860358056265984,
+            "f1": 0.8425531914893617,
+            "precision": 0.825,
+            "recall": 0.8608695652173913
+        },
+        "best_model_fit_time": 0.11072230339050293,
+        "ensemble_models": [
+            "XGBoost"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "XGBoost",
+                "val_score": 0.85,
+                "fit_time": 1.0441958904266357
+            }
+        ]
+    },
+    {
+        "signature": "S14 (SBS14 - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.81875,
+        "best_model_metrics": {
+            "accuracy": 0.7,
+            "balanced_accuracy": 0.5202942668696093,
+            "mcc": 0.06006554474662097,
+            "roc_auc": 0.6624809741248098,
+            "f1": 0.1891891891891892,
+            "precision": 0.35,
+            "recall": 0.12962962962962962
+        },
+        "best_model_fit_time": 0.11691093444824219,
+        "ensemble_models": [
+            "NeuralNetFastAI",
+            "LightGBMXT",
+            "RandomForestEntr"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.775,
+                "fit_time": 0.8173108100891113
+            },
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.80625,
+                "fit_time": 0.40874743461608887
+            },
+            {
+                "model_name": "RandomForestEntr",
+                "val_score": 0.76875,
+                "fit_time": 0.6123614311218262
+            }
+        ]
+    },
+    {
+        "signature": "S15 (SBS15 - 0.97)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.7875,
+        "best_model_metrics": {
+            "accuracy": 0.7,
+            "balanced_accuracy": 0.7019704433497538,
+            "mcc": 0.39905629488495203,
+            "roc_auc": 0.7922824302134648,
+            "f1": 0.6666666666666666,
+            "precision": 0.625,
+            "recall": 0.7142857142857143
+        },
+        "best_model_fit_time": 0.12105512619018555,
+        "ensemble_models": [
+            "NeuralNetTorch",
+            "CatBoost",
+            "KNeighborsDist",
+            "NeuralNetFastAI"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.7625,
+                "fit_time": 1.8332841396331787
+            },
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.74375,
+                "fit_time": 2.6462671756744385
+            },
+            {
+                "model_name": "KNeighborsDist",
+                "val_score": 0.65,
+                "fit_time": 0.014398813247680664
+            },
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.74375,
+                "fit_time": 0.5996313095092773
+            }
+        ]
+    },
+    {
+        "signature": "S16 (SBS17 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.84375,
+        "best_model_metrics": {
+            "accuracy": 0.845,
+            "balanced_accuracy": 0.8325095252806096,
+            "mcc": 0.6786798125150952,
+            "roc_auc": 0.9293584594789415,
+            "f1": 0.802547770700637,
+            "precision": 0.8513513513513513,
+            "recall": 0.7590361445783133
+        },
+        "best_model_fit_time": 0.0897829532623291,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.84375,
+                "fit_time": 0.6791319847106934
+            }
+        ]
+    },
+    {
+        "signature": "S17 (SBS18 - 0.97)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.85,
+        "best_model_metrics": {
+            "accuracy": 0.82,
+            "balanced_accuracy": 0.8222492155076424,
+            "mcc": 0.6408758075072074,
+            "roc_auc": 0.8956372102439518,
+            "f1": 0.8064516129032258,
+            "precision": 0.7731958762886598,
+            "recall": 0.8426966292134831
+        },
+        "best_model_fit_time": 0.12346434593200684,
+        "ensemble_models": [
+            "LightGBM",
+            "NeuralNetFastAI",
+            "CatBoost",
+            "XGBoost",
+            "LightGBMXT"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.81875,
+                "fit_time": 0.5892980098724365
+            },
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.78125,
+                "fit_time": 0.7641408443450928
+            },
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.825,
+                "fit_time": 3.625004291534424
+            },
+            {
+                "model_name": "XGBoost",
+                "val_score": 0.81875,
+                "fit_time": 0.9928202629089355
+            },
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.775,
+                "fit_time": 0.34537220001220703
+            }
+        ]
+    },
+    {
+        "signature": "S18 (SBS19 - 0.95)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.8625,
+        "best_model_metrics": {
+            "accuracy": 0.74,
+            "balanced_accuracy": 0.7309818108732791,
+            "mcc": 0.4815230832015833,
+            "roc_auc": 0.7986132047030449,
+            "f1": 0.6829268292682927,
+            "precision": 0.7887323943661971,
+            "recall": 0.6021505376344086
+        },
+        "best_model_fit_time": 0.10188674926757812,
+        "ensemble_models": [
+            "NeuralNetFastAI",
+            "LightGBMXT",
+            "ExtraTreesEntr",
+            "ExtraTreesGini"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.81875,
+                "fit_time": 0.40424656867980957
+            },
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.83125,
+                "fit_time": 0.41381025314331055
+            },
+            {
+                "model_name": "ExtraTreesEntr",
+                "val_score": 0.81875,
+                "fit_time": 0.40450406074523926
+            },
+            {
+                "model_name": "ExtraTreesGini",
+                "val_score": 0.78125,
+                "fit_time": 0.4285402297973633
+            }
+        ]
+    },
+    {
+        "signature": "S19 (SBS20 - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.96875,
+        "best_model_metrics": {
+            "accuracy": 0.955,
+            "balanced_accuracy": 0.49739583333333337,
+            "mcc": -0.014469977004330817,
+            "roc_auc": 0.662109375,
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0
+        },
+        "best_model_fit_time": 0.14539813995361328,
+        "ensemble_models": [
+            "NeuralNetFastAI"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.96875,
+                "fit_time": 0.6298515796661377
+            }
+        ]
+    },
+    {
+        "signature": "S20 (SBS22 - 0.99)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.8375,
+        "best_model_metrics": {
+            "accuracy": 0.62,
+            "balanced_accuracy": 0.603448275862069,
+            "mcc": 0.2103799034233465,
+            "roc_auc": 0.681547619047619,
+            "f1": 0.525,
+            "precision": 0.5526315789473685,
+            "recall": 0.5
+        },
+        "best_model_fit_time": 0.08119535446166992,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.8375,
+                "fit_time": 0.7910404205322266
+            }
+        ]
+    },
+    {
+        "signature": "S21 (SBS23 - 0.94)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.86875,
+        "best_model_metrics": {
+            "accuracy": 0.81,
+            "balanced_accuracy": 0.583469115686565,
+            "mcc": 0.30082409399099236,
+            "roc_auc": 0.7601836764923715,
+            "f1": 0.2962962962962963,
+            "precision": 0.7272727272727273,
+            "recall": 0.18604651162790697
+        },
+        "best_model_fit_time": 0.12611126899719238,
+        "ensemble_models": [
+            "NeuralNetTorch",
+            "CatBoost"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.8625,
+                "fit_time": 0.9523046016693115
+            },
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.8625,
+                "fit_time": 3.986175775527954
+            }
+        ]
+    },
+    {
+        "signature": "S22 (SBS26 - 0.94)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.8875,
+        "best_model_metrics": {
+            "accuracy": 0.815,
+            "balanced_accuracy": 0.77278610721605,
+            "mcc": 0.5916191548009946,
+            "roc_auc": 0.8863121561859563,
+            "f1": 0.7086614173228346,
+            "precision": 0.8333333333333334,
+            "recall": 0.6164383561643836
+        },
+        "best_model_fit_time": 0.09003877639770508,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.8875,
+                "fit_time": 0.7992293834686279
+            }
+        ]
+    },
+    {
+        "signature": "S23 (SBS28 - 0.96)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.91875,
+        "best_model_metrics": {
+            "accuracy": 0.79,
+            "balanced_accuracy": 0.6273291925465838,
+            "mcc": 0.3186661686395081,
+            "roc_auc": 0.76171654432524,
+            "f1": 0.4166666666666667,
+            "precision": 0.5769230769230769,
+            "recall": 0.32608695652173914
+        },
+        "best_model_fit_time": 0.09567880630493164,
+        "ensemble_models": [
+            "LightGBMXT",
+            "NeuralNetFastAI"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBMXT",
+                "val_score": 0.9125,
+                "fit_time": 0.3671236038208008
+            },
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.8875,
+                "fit_time": 0.821547269821167
+            }
+        ]
+    },
+    {
+        "signature": "S24 (SBS31 - 0.98)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.88125,
+        "best_model_metrics": {
+            "accuracy": 0.84,
+            "balanced_accuracy": 0.5411055988660525,
+            "mcc": 0.22058015962692945,
+            "roc_auc": 0.799078667611623,
+            "f1": 0.15789473684210525,
+            "precision": 0.75,
+            "recall": 0.08823529411764706
+        },
+        "best_model_fit_time": 0.08692502975463867,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.88125,
+                "fit_time": 0.5469112396240234
+            }
+        ]
+    },
+    {
+        "signature": "S25 (SBS32 - 0.94)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.83125,
+        "best_model_metrics": {
+            "accuracy": 0.755,
+            "balanced_accuracy": 0.6929416970903861,
+            "mcc": 0.42951058421748217,
+            "roc_auc": 0.8300696979754398,
+            "f1": 0.5811965811965812,
+            "precision": 0.7083333333333334,
+            "recall": 0.4927536231884058
+        },
+        "best_model_fit_time": 0.08084273338317871,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.83125,
+                "fit_time": 0.675447940826416
+            }
+        ]
+    },
+    {
+        "signature": "S26 (SBS44 - 0.97)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.80625,
+        "best_model_metrics": {
+            "accuracy": 0.705,
+            "balanced_accuracy": 0.6183853459972863,
+            "mcc": 0.27577939839984733,
+            "roc_auc": 0.7009271822704658,
+            "f1": 0.4485981308411215,
+            "precision": 0.5853658536585366,
+            "recall": 0.36363636363636365
+        },
+        "best_model_fit_time": 0.09687376022338867,
+        "ensemble_models": [
+            "NeuralNetTorch",
+            "CatBoost",
+            "LightGBM",
+            "ExtraTreesGini"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "NeuralNetTorch",
+                "val_score": 0.78125,
+                "fit_time": 1.3966217041015625
+            },
+            {
+                "model_name": "CatBoost",
+                "val_score": 0.7375,
+                "fit_time": 3.8799684047698975
+            },
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.7375,
+                "fit_time": 0.7046663761138916
+            },
+            {
+                "model_name": "ExtraTreesGini",
+                "val_score": 0.725,
+                "fit_time": 0.44467830657958984
+            }
+        ]
+    },
+    {
+        "signature": "S27 (SBS88 - 0.92)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.825,
+        "best_model_metrics": {
+            "accuracy": 0.79,
+            "balanced_accuracy": 0.7253918495297805,
+            "mcc": 0.4618014865622106,
+            "roc_auc": 0.8171786833855801,
+            "f1": 0.8571428571428571,
+            "precision": 0.8456375838926175,
+            "recall": 0.8689655172413793
+        },
+        "best_model_fit_time": 0.09229135513305664,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.825,
+                "fit_time": 0.5438554286956787
+            }
+        ]
+    },
+    {
+        "signature": "S28 (SBS92 - 0.95)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.80625,
+        "best_model_metrics": {
+            "accuracy": 0.745,
+            "balanced_accuracy": 0.7050252291216147,
+            "mcc": 0.48009811672543135,
+            "roc_auc": 0.8673669035114818,
+            "f1": 0.8118081180811808,
+            "precision": 0.7142857142857143,
+            "recall": 0.9401709401709402
+        },
+        "best_model_fit_time": 0.11843371391296387,
+        "ensemble_models": [
+            "KNeighborsDist",
+            "NeuralNetFastAI"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "KNeighborsDist",
+                "val_score": 0.73125,
+                "fit_time": 0.015148162841796875
+            },
+            {
+                "model_name": "NeuralNetFastAI",
+                "val_score": 0.8,
+                "fit_time": 0.8028936386108398
+            }
+        ]
+    },
+    {
+        "signature": "S29 (SBS97 - 0.95)",
+        "best_model": "WeightedEnsemble_L2",
+        "best_model_val_score": 0.81875,
+        "best_model_metrics": {
+            "accuracy": 0.72,
+            "balanced_accuracy": 0.7080808080808081,
+            "mcc": 0.43132872904874514,
+            "roc_auc": 0.7915151515151516,
+            "f1": 0.654320987654321,
+            "precision": 0.7361111111111112,
+            "recall": 0.5888888888888889
+        },
+        "best_model_fit_time": 0.0685739517211914,
+        "ensemble_models": [
+            "LightGBM"
+        ],
+        "ensemble_info": [
+            {
+                "model_name": "LightGBM",
+                "val_score": 0.81875,
+                "fit_time": 0.7542486190795898
+            }
+        ]
+    }
+]
