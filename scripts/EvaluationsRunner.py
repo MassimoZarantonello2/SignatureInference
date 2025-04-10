@@ -87,12 +87,12 @@ class EvaluationsRunner:
             self.predictor = predictor
             lc.log(f'For sample {sample} the models are trained')
             evaluations = predictor.evaluate(test_df)
+            self.evaluations.append(evaluations)
             lc.log(f'For sample {sample} the models are evaluated')
             for evaluation in evaluations:
-                self.evaluations.append(evaluation)
                 target_class = predictor.get_predictor(evaluation)
                 evaluations[evaluation]['best_models'] = target_class.leaderboard(
-                    silent=True).iloc[0:5]['model']
+                    silent=True).iloc[0]['model']
             lc.log(f'For sample {sample} the best models are saved')
             return evaluations
         except Exception as e:
