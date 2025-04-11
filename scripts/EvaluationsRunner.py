@@ -26,11 +26,7 @@ class EvaluationsRunner:
         self.labels = None
         self.save_models = False
 
-        self.predictors = None
-        self.per_signature_evaluations, self.per_sample_evaluations = [],[]
-
-    def create_empty_json_file(self):
-        # Create the structure of the json file
+    def create_empty_json_file(self):         # Create the structure of the json file
         run_dict = {}
         for run in self.run_values:
             run_index = 'run_'+run
@@ -39,9 +35,7 @@ class EvaluationsRunner:
                 sample_index = 'sampling_'+sample
                 sample_dict[sample_index] = {}
                 run_dict[run_index] = sample_dict
-
-        # Save the json file
-        json.dump(run_dict, open(self.save_evaluation_path, 'w+'))
+        json.dump(run_dict, open(self.save_evaluation_path, 'w+'))          # Save the json file
 
     def compute_evaluations_metrics(self, evaluation_df,sample):
         '''
@@ -67,16 +61,11 @@ class EvaluationsRunner:
         try:
             predictor = MultilabelPredictor(labels=self.labels, problem_types=self.problem_type)
             predictor.fit(train_df, time_limit=self.time_limit)
-            self.predictor = predictor
             lc.log(f'For sample {sample} the models are trained')
-            evaluations = predictor.evaluate(test_df)
-            lc.log(f'For sample {sample} the models are evaluated')
-            for evaluation in evaluations:
-                self.per_signature_evaluations.append(evaluation)
-                target_class = predictor.get_predictor(evaluation)
-                evaluations[evaluation]['best_model'] = target_class.leaderboard(silent=True).iloc[0]['model']
+            signature_model_info = self.save_results(predictor, test_df)
             lc.log(f'For sample {sample} the best models are saved')
-            return evaluations
+            return signature_model_info
+        
         except Exception as e:
             lc.log(f'Error: {e}')
             print(f'Error: {e}')
@@ -91,8 +80,7 @@ class EvaluationsRunner:
         ### Output
         - None
         '''
-        # Create the evaluation dataframe
-        run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')
+        run_sample_df =  pd.read_csv(self.runs_path + run + self.data_path + sample + '.csv')           # Create the evaluation dataframe
         # 2
         if tissues == 'feature':
             tissues_df = pd.read_csv(self.tissues_path).drop(columns=['Cohort'])
@@ -100,22 +88,21 @@ class EvaluationsRunner:
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on='Unnamed: 0')
         evaluation_df.drop(columns=['Unnamed: 0'], inplace=True)
         
-        evaluation = self.compute_evaluations_metrics(evaluation_df, sample)
+        signature_model_info = self.compute_evaluations_metrics(evaluation_df, sample)
 
         lc = LogClass(sample)
         with lock:
             lc = LogClass(sample)
             lc.log(f'Run {run} and sample {sample} lock aquired')
-            lc.log(f'Evaluation: {evaluation}')
+            lc.log(f'signature_model_info: {signature_model_info}')
             lc.log('-----------------------------------')
-            output_dict[sample] = evaluation
+            output_dict[sample] = signature_model_info
 
     def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
             self.create_empty_json_file()
-
-        # Create the ground truth dataframe
-        self.ground_truth_df = pd.read_csv(self.ground_truth_path)
+        self.ground_truth_df = pd.read_csv(self.ground_truth_path)          # Create the ground truth dataframe
+        
         # 3
         if tissues == 'prediction':
             tissues_df = pd.read_csv(tissues_path).drop(columns=['Cohort'])
@@ -128,7 +115,7 @@ class EvaluationsRunner:
             all_evaluations_df = json.load(open(self.save_evaluation_path))
             lock = threading.Lock()
             output_dict = {}
-            # Creo la directory 
+
             for sample in self.sampling_values:
                 sample_index = 'sampling_' + sample
                 if all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None:
@@ -154,9 +141,47 @@ class EvaluationsRunner:
             if self.save_models and os.path.exists('./AutogluonModels'):
                 shutil.rmtree('./AutogluonModels')
 
-            # if num_run is not None:
-            #     if run >= num_run:
-            #         break
+            if num_run is not None:
+                if run >= num_run:
+                    break
+
+    def save_results(self, predictor, test_df):
+        evaluations = predictor.evaluate(test_df)
+        results = []
+        for signature in evaluations:
+            model_predictor = predictor.get_predictor(signature)
+            metrics = evaluations[signature]
+            info = model_predictor.info()
+            model_info = info['model_info']
+
+            best_model_name = info['best_model']
+            best_model_info = model_info[best_model_name]
+
+            ensemble_model_names = best_model_info.get('features', [])
+
+            ensemble_info = [
+                {
+                    'model_name': model,
+                    'val_score': model_info[model].get('val_score'),
+                    'fit_time': model_info[model].get('fit_time')
+                }
+                for model in ensemble_model_names
+            ]
+
+            result = {
+                'signature': signature,
+                'best_model': best_model_name,
+                'best_model_val_score': best_model_info.get('val_score'),
+                'best_model_metrics': metrics,
+                'best_model_fit_time': best_model_info.get('fit_time'),
+                'ensemble_models': ensemble_model_names,
+                'ensemble_info': ensemble_info
+            }
+
+            results.append(result)
+
+        return results
+
 
 if __name__ == "__main__":
 
@@ -167,7 +192,7 @@ if __name__ == "__main__":
     data_path = '/trinucleotides_counts_sampling_'
     save_evaluation_path = './results/locked_models_evaluations.json'
     tissues_path = './simulations/ground_truth/tumor_site.csv'
-    sampling_values = ['1']#,'0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
+    sampling_values = ['1','0.9','0.8','0.7','0.6','0.5','0.4','0.3','0.2','0.15','0.1','0.05','0.04','0.03','0.02','0.01']
     run_values = [str(i) for i in range(1, 101)]
     train_test_split_value = 0.8
     time_limit = None
