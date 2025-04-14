@@ -165,4 +165,3 @@ cython_debug/
 autogluon
 simulations
 AutogluonModels
-multithread_run.sh
