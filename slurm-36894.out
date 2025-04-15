@@ -35403,3 +35403,1247 @@ Fitting model: KNeighborsUnif ... Training model for up to 30.66s of the 30.55s 
 	6.27s	 = Training   runtime
 	5.42s	 = Validation runtime
 Fitting model: LightGBMXT ... Training model for up to 14.7s of the 14.57s of remaining time.
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	26.5s = Fit runtime
+	122 features in original data used to generate 122 features in processed data.
+	0.7814	 = Validation score   (accuracy)
+	5.71s	 = Training   runtime
+	4.86s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 21.16s of the 21.09s of remaining time.
+	0.7117	 = Validation score   (accuracy)
+	5.63s	 = Training   runtime
+	5.28s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 24.25s of the 24.16s of remaining time.
+	Train Data (Processed) Memory Usage: 10.98 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 28.73s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	0.7669	 = Validation score   (accuracy)
+	6.48s	 = Training   runtime
+	5.94s	 = Validation runtime
+	0.7166	 = Validation score   (accuracy)
+	4.89s	 = Training   runtime
+	6.07s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 19.84s of the 19.73s of remaining time.
+Fitting model: KNeighborsDist ... Training model for up to 16.09s of the 15.97s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.27s of the 31.03s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7338	 = Validation score   (accuracy)
+	5.99s	 = Training   runtime
+	4.98s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 20.71s of the 20.55s of remaining time.
+	0.76	 = Validation score   (accuracy)
+	6.22s	 = Training   runtime
+	4.48s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 18.92s of the 16.55s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	Not enough time to train KNN model on all training rows. Fit 10000/13045 rows. (Training KNN model on 13045 rows is expected to take 38.41s)
+	0.7166	 = Validation score   (accuracy)
+	5.94s	 = Training   runtime
+	8.68s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 0.67s of the 0.55s of remaining time.
+	0.7814	 = Validation score   (accuracy)
+	7.56s	 = Training   runtime
+	8.93s	 = Validation runtime
+	0.7131	 = Validation score   (accuracy)
+	6.67s	 = Training   runtime
+	9.01s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 7.79s of the 7.71s of remaining time.
+Fitting model: LightGBMXT ... Training model for up to 3.73s of the 3.66s of remaining time.
+	0.7683	 = Validation score   (accuracy)
+	6.44s	 = Training   runtime
+	8.99s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 3.39s of the 3.28s of remaining time.
+	Ran out of time, early stopping on iteration 9. Best iteration is:
+	[9]	valid_set's binary_error: 0.297931
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7021	 = Validation score   (accuracy)
+	33.19s	 = Training   runtime
+	0.57s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 39.27s of the -15.1s of remaining time.
+	0.7483	 = Validation score   (accuracy)
+	13.87s	 = Training   runtime
+	6.43s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 10.52s of the 10.34s of remaining time.
+	Ran out of time, early stopping on iteration 3. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	Ran out of time, early stopping on iteration 2. Best iteration is:
+	[1]	valid_set's binary_error: 0.342759
+	0.691	 = Validation score   (accuracy)
+	31.17s	 = Training   runtime
+	0.59s	 = Validation runtime
+	Ran out of time, early stopping on iteration 3. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	0.6572	 = Validation score   (accuracy)
+	29.66s	 = Training   runtime
+	0.63s	 = Validation runtime
+	Ran out of time, early stopping on iteration 3. Best iteration is:
+	[1]	valid_set's binary_error: 0.348276
+	Ran out of time, early stopping on iteration 2. Best iteration is:
+	[1]	valid_set's binary_error: 0.242069
+	0.691	 = Validation score   (accuracy)
+	36.72s	 = Training   runtime
+	0.5s	 = Validation runtime
+	0.6517	 = Validation score   (accuracy)
+	35.03s	 = Training   runtime
+	0.44s	 = Validation runtime
+	0.7579	 = Validation score   (accuracy)
+	32.13s	 = Training   runtime
+	1.8s	 = Validation runtime
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7352	 = Validation score   (accuracy)
+	13.87s	 = Training   runtime
+	8.53s	 = Validation runtime
+	0.7614	 = Validation score   (accuracy)
+	11.09s	 = Training   runtime
+	8.85s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 38.14s of the -18.75s of remaining time.
+	Not enough time to train KNN model on all training rows. Fit 10000/13045 rows. (Training KNN model on 13045 rows is expected to take 24.1s)
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 38.54s of the -21.27s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 40.31s of the -24.81s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 39.55s of the -22.01s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 37.59s of the -24.13s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 32.44s of the -6.47s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 30.7s of the -8.08s of remaining time.
+	0.7497	 = Validation score   (accuracy)
+	9.76s	 = Training   runtime
+	3.93s	 = Validation runtime
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.348276
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.342759
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	0.6572	 = Validation score   (accuracy)
+	21.29s	 = Training   runtime
+	0.22s	 = Validation runtime
+	0.691	 = Validation score   (accuracy)
+	21.61s	 = Training   runtime
+	0.27s	 = Validation runtime
+	0.6517	 = Validation score   (accuracy)
+	20.51s	 = Training   runtime
+	0.34s	 = Validation runtime
+	0.691	 = Validation score   (accuracy)
+	21.57s	 = Training   runtime
+	0.13s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 31.27s of the -5.46s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 32.99s of the -18.85s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 27.6s of the -22.55s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 35.77s of the -15.3s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 32.44s of the -19.35s of remaining time.
+	Ensemble Weights: {'LightGBMXT': 0.375, 'KNeighborsUnif': 0.312, 'KNeighborsDist': 0.312}
+	0.7552	 = Validation score   (accuracy)
+	17.41s	 = Training   runtime
+	0.09s	 = Validation runtime
+AutoGluon training complete, total runtime = 96.98s ... Best model: "WeightedEnsemble_L2"
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181836-004/Predictor_S27 (SBS88 - 0.92)")
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181836-004/Predictor_S28 (SBS92 - 0.95)"
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.32 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 123
+Label Column:       S28 (SBS92 - 0.95)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [True, False]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    202071.81 MB
+	Train Data (Original)  Memory Usage: 10.99 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Ensemble Weights: {'KNeighborsDist': 1.0}
+	0.7352	 = Validation score   (accuracy)
+	8.81s	 = Training   runtime
+	0.05s	 = Validation runtime
+	Ensemble Weights: {'KNeighborsDist': 1.0}
+	0.7614	 = Validation score   (accuracy)
+	8.69s	 = Training   runtime
+	0.07s	 = Validation runtime
+AutoGluon training complete, total runtime = 78.78s ... Best model: "WeightedEnsemble_L2"
+AutoGluon training complete, total runtime = 80.41s ... Best model: "WeightedEnsemble_L2"
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-002/Predictor_S25 (SBS32 - 0.94)")
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-006/Predictor_S27 (SBS88 - 0.92)")
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Ensemble Weights: {'KNeighborsDist': 0.5, 'LightGBMXT': 0.357, 'KNeighborsUnif': 0.143}
+	0.7703	 = Validation score   (accuracy)
+	12.07s	 = Training   runtime
+	0.11s	 = Validation runtime
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-002/Predictor_S26 (SBS44 - 0.97)"
+	Ensemble Weights: {'KNeighborsDist': 0.471, 'LightGBMXT': 0.412, 'KNeighborsUnif': 0.118}
+	0.7359	 = Validation score   (accuracy)
+	11.84s	 = Training   runtime
+	0.17s	 = Validation runtime
+	Ensemble Weights: {'KNeighborsDist': 0.588, 'LightGBMXT': 0.294, 'KNeighborsUnif': 0.118}
+	0.8	 = Validation score   (accuracy)
+	10.47s	 = Training   runtime
+	0.17s	 = Validation runtime
+	Ensemble Weights: {'KNeighborsDist': 0.611, 'LightGBMXT': 0.333, 'KNeighborsUnif': 0.056}
+	0.7441	 = Validation score   (accuracy)
+	11.0s	 = Training   runtime
+	0.15s	 = Validation runtime
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.31 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 121
+Label Column:       S26 (SBS44 - 0.97)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [False, True]
+AutoGluon training complete, total runtime = 94.29s ... Best model: "WeightedEnsemble_L2"
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+	Ensemble Weights: {'KNeighborsUnif': 0.45, 'LightGBMXT': 0.35, 'KNeighborsDist': 0.2}
+Beginning AutoGluon training ... Time limit = 60s
+Preprocessing data ...
+AutoGluon training complete, total runtime = 96.64s ... Best model: "WeightedEnsemble_L2"
+	0.7945	 = Validation score   (accuracy)
+AutoGluon training complete, total runtime = 95.96s ... Best model: "WeightedEnsemble_L2"
+AutoGluon training complete, total runtime = 97.85s ... Best model: "WeightedEnsemble_L2"
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-006/Predictor_S28 (SBS92 - 0.95)"
+	Ensemble Weights: {'KNeighborsDist': 1.0}
+	11.28s	 = Training   runtime
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+	0.7497	 = Validation score   (accuracy)
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.30 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+	0.13s	 = Validation runtime
+	6.78s	 = Training   runtime
+	0.06s	 = Validation runtime
+Train Data Rows:    14495
+Using Feature Generators to preprocess the data ...
+Train Data Columns: 123
+Fitting AutoMLPipelineFeatureGenerator...
+			Note: Converting 27 features to boolean dtype as they only contain 2 unique values.
+Label Column:       S28 (SBS92 - 0.95)
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181837-001/Predictor_S28 (SBS92 - 0.95)")
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [True, False]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+AutoGluon training complete, total runtime = 100.56s ... Best model: "WeightedEnsemble_L2"
+Preprocessing data ...
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181836-001/Predictor_S27 (SBS88 - 0.92)")
+AutoGluon training complete, total runtime = 74.86s ... Best model: "WeightedEnsemble_L2"
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-005/Predictor_S26 (SBS44 - 0.97)")
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181837-002/Predictor_S29 (SBS97 - 0.95)")
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181837-001/Predictor_S29 (SBS97 - 0.95)"
+	Available Memory:                    202038.54 MB
+	Train Data (Original)  Memory Usage: 10.96 MB (0.0% of available memory)
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+Beginning AutoGluon training ... Time limit = 60s
+Train Data Columns: 124
+AutoGluon will save models to "AutogluonModels/ag-20250415_181836-001/Predictor_S28 (SBS92 - 0.95)"
+Label Column:       S29 (SBS97 - 0.95)
+Beginning AutoGluon training ... Time limit = 60s
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-004/Predictor_S27 (SBS88 - 0.92)")
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-001/Predictor_S28 (SBS92 - 0.95)")
+	Stage 2 Generators:
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-005/Predictor_S27 (SBS88 - 0.92)"
+	Available Memory:                    202038.10 MB
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+		Fitting FillNaFeatureGenerator...
+	2 unique label values:  [False, True]
+	Train Data (Original)  Memory Usage: 10.99 MB (0.0% of available memory)
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+Train Data Rows:    14495
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Train Data Columns: 123
+Train Data Rows:    14495
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+Problem Type:       binary
+Label Column:       S28 (SBS92 - 0.95)
+Train Data Columns: 122
+Preprocessing data ...
+	Stage 3 Generators:
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+Label Column:       S27 (SBS88 - 0.92)
+		Fitting IdentityFeatureGenerator...
+	2 unique label values:  [True, False]
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+	2 unique label values:  [True, False]
+Preprocessing data ...
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-004/Predictor_S28 (SBS92 - 0.95)"
+Using Feature Generators to preprocess the data ...
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Fitting AutoMLPipelineFeatureGenerator...
+Preprocessing data ...
+Beginning AutoGluon training ... Time limit = 60s
+	Stage 4 Generators:
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-001/Predictor_S29 (SBS97 - 0.95)"
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+		Fitting DropUniqueFeatureGenerator...
+Train Data Rows:    14495
+Train Data Columns: 123
+Label Column:       S28 (SBS92 - 0.95)
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [True, False]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Fitting AutoMLPipelineFeatureGenerator...
+Train Data Rows:    14495
+Using Feature Generators to preprocess the data ...
+Train Data Columns: 124
+Label Column:       S29 (SBS97 - 0.95)
+Fitting AutoMLPipelineFeatureGenerator...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [False, True]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+	Ensemble Weights: {'KNeighborsUnif': 0.455, 'LightGBMXT': 0.364, 'KNeighborsDist': 0.182}
+	0.7952	 = Validation score   (accuracy)
+	8.59s	 = Training   runtime
+	0.18s	 = Validation runtime
+Fitting AutoMLPipelineFeatureGenerator...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+AutoGluon training complete, total runtime = 91.21s ... Best model: "WeightedEnsemble_L2"
+	Available Memory:                    202035.93 MB
+	Train Data (Original)  Memory Usage: 11.00 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181837/Predictor_S28 (SBS92 - 0.95)")
+	Available Memory:                    202036.12 MB
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+	Train Data (Original)  Memory Usage: 10.98 MB (0.0% of available memory)
+	Available Memory:                    202036.13 MB
+	Train Data (Original)  Memory Usage: 10.99 MB (0.0% of available memory)
+	Ensemble Weights: {'LightGBMXT': 0.429, 'KNeighborsUnif': 0.286, 'KNeighborsDist': 0.286}
+	0.7248	 = Validation score   (accuracy)
+	10.28s	 = Training   runtime
+	0.3s	 = Validation runtime
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Available Memory:                    202036.05 MB
+	Train Data (Original)  Memory Usage: 10.99 MB (0.0% of available memory)
+	Ensemble Weights: {'KNeighborsDist': 0.875, 'LightGBMXT': 0.125}
+	Available Memory:                    202036.10 MB
+	Train Data (Original)  Memory Usage: 11.00 MB (0.0% of available memory)
+	0.769	 = Validation score   (accuracy)
+	Ensemble Weights: {'LightGBMXT': 0.615, 'KNeighborsDist': 0.231, 'KNeighborsUnif': 0.154}
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	10.74s	 = Training   runtime
+	0.5s	 = Validation runtime
+Beginning AutoGluon training ... Time limit = 60s
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	0.7524	 = Validation score   (accuracy)
+AutoGluon training complete, total runtime = 89.1s ... Best model: "WeightedEnsemble_L2"
+AutoGluon will save models to "AutogluonModels/ag-20250415_181837/Predictor_S29 (SBS97 - 0.95)"
+	10.89s	 = Training   runtime
+	0.31s	 = Validation runtime
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 124
+Label Column:       S29 (SBS97 - 0.95)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [False, True]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+AutoGluon training complete, total runtime = 93.44s ... Best model: "WeightedEnsemble_L2"
+AutoGluon training complete, total runtime = 97.49s ... Best model: "WeightedEnsemble_L2"
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838/Predictor_S26 (SBS44 - 0.97)")
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181838-003/Predictor_S27 (SBS88 - 0.92)")
+	Available Memory:                    202039.27 MB
+	Train Data (Original)  Memory Usage: 11.00 MB (0.0% of available memory)
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20250415_181836-003/Predictor_S28 (SBS92 - 0.95)")
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838/Predictor_S27 (SBS88 - 0.92)"
+No presets specified! To achieve strong results with AutoGluon, it is recommended to use the available presets.
+	Recommended Presets (For more details refer to https://auto.gluon.ai/stable/tutorials/tabular/tabular-essentials.html#presets):
+	presets='best_quality'   : Maximize accuracy. Default time_limit=3600.
+	presets='high_quality'   : Strong accuracy with fast inference speed. Default time_limit=3600.
+	presets='good_quality'   : Good accuracy with very fast inference speed. Default time_limit=3600.
+	presets='medium_quality' : Fast training time, ideal for initial prototyping.
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 122
+Label Column:       S27 (SBS88 - 0.92)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [True, False]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+Beginning AutoGluon training ... Time limit = 60s
+AutoGluon will save models to "AutogluonModels/ag-20250415_181838-003/Predictor_S28 (SBS92 - 0.95)"
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 123
+Label Column:       S28 (SBS92 - 0.95)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [True, False]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Beginning AutoGluon training ... Time limit = 60s
+Using Feature Generators to preprocess the data ...
+AutoGluon will save models to "AutogluonModels/ag-20250415_181836-003/Predictor_S29 (SBS97 - 0.95)"
+Fitting AutoMLPipelineFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+=================== System Info ===================
+AutoGluon Version:  1.1.0
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       197.29 GB / 203.90 GB (96.8%)
+Disk Space Avail:   1370.41 GB / 5120.00 GB (26.8%)
+===================================================
+Train Data Rows:    14495
+Train Data Columns: 124
+Label Column:       S29 (SBS97 - 0.95)
+AutoGluon infers your prediction problem is: 'binary' (because only two unique label-values observed).
+	2 unique label values:  [False, True]
+	If 'binary' is not the correct problem_type, please manually specify the problem_type parameter during predictor init (You may specify problem_type as one of: ['binary', 'multiclass', 'regression'])
+Problem Type:       binary
+Preprocessing data ...
+	Available Memory:                    202037.53 MB
+	Train Data (Original)  Memory Usage: 10.98 MB (0.0% of available memory)
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    202037.85 MB
+	Train Data (Original)  Memory Usage: 10.99 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Available Memory:                    202040.55 MB
+	Train Data (Original)  Memory Usage: 11.00 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+			Note: Converting 25 features to boolean dtype as they only contain 2 unique values.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Note: Converting 28 features to boolean dtype as they only contain 2 unique values.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 27 features to boolean dtype as they only contain 2 unique values.
+			Note: Converting 27 features to boolean dtype as they only contain 2 unique values.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 26 features to boolean dtype as they only contain 2 unique values.
+			Note: Converting 27 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 28 features to boolean dtype as they only contain 2 unique values.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting IdentityFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+			Note: Converting 28 features to boolean dtype as they only contain 2 unique values.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+	Stage 4 Generators:
+	Stage 4 Generators:
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+			Note: Converting 28 features to boolean dtype as they only contain 2 unique values.
+		('int', ['bool']) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	23.7s = Fit runtime
+	123 features in original data used to generate 123 features in processed data.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Note: Converting 26 features to boolean dtype as they only contain 2 unique values.
+	Train Data (Processed) Memory Usage: 10.99 MB (0.0% of available memory)
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+Data preprocessing and feature engineering runtime = 25.36s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Note: Converting 27 features to boolean dtype as they only contain 2 unique values.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 5 Generators:
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+		Fitting DropDuplicatesFeatureGenerator...
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 34.61s of the 34.57s of remaining time.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 25 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Stage 5 Generators:
+		('int', ['bool']) : 25 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		Fitting DropDuplicatesFeatureGenerator...
+	25.2s = Fit runtime
+	121 features in original data used to generate 121 features in processed data.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Train Data (Processed) Memory Usage: 10.96 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 26.43s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	26.7s = Fit runtime
+	123 features in original data used to generate 123 features in processed data.
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Stage 5 Generators:
+		('int', ['bool']) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		Fitting DropDuplicatesFeatureGenerator...
+	25.0s = Fit runtime
+	123 features in original data used to generate 123 features in processed data.
+	Train Data (Processed) Memory Usage: 10.99 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 28.24s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+	Stage 5 Generators:
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		Fitting DropDuplicatesFeatureGenerator...
+	Train Data (Processed) Memory Usage: 10.99 MB (0.0% of available memory)
+		('int', ['bool']) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	25.8s = Fit runtime
+	122 features in original data used to generate 122 features in processed data.
+Data preprocessing and feature engineering runtime = 27.34s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+Fitting 13 L1 models ...
+	26.4s = Fit runtime
+Fitting model: KNeighborsUnif ... Training model for up to 33.56s of the 33.46s of remaining time.
+	123 features in original data used to generate 123 features in processed data.
+	Train Data (Processed) Memory Usage: 10.98 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 28.1s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	Train Data (Processed) Memory Usage: 10.99 MB (0.0% of available memory)
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in original data (raw dtype, special dtypes):
+Data preprocessing and feature engineering runtime = 28.22s ...
+	Types of features in processed data (raw dtype, special dtypes):
+		('bool', []) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+		('int', ['bool']) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+	Stage 5 Generators:
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	28.4s = Fit runtime
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		Fitting DropDuplicatesFeatureGenerator...
+		Fitting DropDuplicatesFeatureGenerator...
+	124 features in original data used to generate 124 features in processed data.
+		('int', ['bool']) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	27.0s = Fit runtime
+	124 features in original data used to generate 124 features in processed data.
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.76s of the 31.55s of remaining time.
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 32.66s of the 32.43s of remaining time.
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Train Data (Processed) Memory Usage: 11.00 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 31.12s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.9s of the 31.82s of remaining time.
+	Train Data (Processed) Memory Usage: 11.00 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 29.95s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.77s of the 31.67s of remaining time.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+	0.749	 = Validation score   (accuracy)
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', ['bool']) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	6.23s	 = Training   runtime
+	3.13s	 = Validation runtime
+	28.0s = Fit runtime
+	124 features in original data used to generate 124 features in processed data.
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 26 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	26.7s = Fit runtime
+	122 features in original data used to generate 122 features in processed data.
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 28.88s of the 28.58s of remaining time.
+Fitting model: KNeighborsDist ... Training model for up to 23.99s of the 23.95s of remaining time.
+	Train Data (Processed) Memory Usage: 10.98 MB (0.0% of available memory)
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+Data preprocessing and feature engineering runtime = 28.04s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 27 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	27.5s = Fit runtime
+	123 features in original data used to generate 123 features in processed data.
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 30.04s of the 29.98s of remaining time.
+	Train Data (Processed) Memory Usage: 11.00 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 30.31s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	Train Data (Processed) Memory Usage: 10.99 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 28.87s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.96s of the 31.8s of remaining time.
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 29.68s of the 29.41s of remaining time.
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 31.13s of the 30.94s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 28 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	34.0s = Fit runtime
+	124 features in original data used to generate 124 features in processed data.
+	0.729	 = Validation score   (accuracy)
+	7.46s	 = Training   runtime
+	5.77s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 20.07s of the 19.96s of remaining time.
+	Train Data (Processed) Memory Usage: 11.00 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 35.37s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': {},
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, 'GBMLarge'],
+	'CAT': {},
+	'XGB': {},
+	'FASTAI': {},
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+Fitting 13 L1 models ...
+Fitting model: KNeighborsUnif ... Training model for up to 24.63s of the 24.54s of remaining time.
+	0.7752	 = Validation score   (accuracy)
+	6.3s	 = Training   runtime
+	7.49s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 18.54s of the 18.36s of remaining time.
+	0.7869	 = Validation score   (accuracy)
+	6.97s	 = Training   runtime
+	8.14s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 16.34s of the 16.13s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7414	 = Validation score   (accuracy)
+	6.73s	 = Training   runtime
+	9.6s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 15.28s of the 15.2s of remaining time.
+	0.7641	 = Validation score   (accuracy)
+	4.57s	 = Training   runtime
+	10.34s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 13.67s of the 13.37s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7869	 = Validation score   (accuracy)
+	6.6s	 = Training   runtime
+	10.7s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 14.18s of the 14.07s of remaining time.
+	0.749	 = Validation score   (accuracy)
+	5.41s	 = Training   runtime
+	10.68s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 7.6s of the 7.56s of remaining time.
+	0.7828	 = Validation score   (accuracy)
+	4.95s	 = Training   runtime
+	10.5s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 14.18s of the 14.08s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.74	 = Validation score   (accuracy)
+	3.9s	 = Training   runtime
+	10.6s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 17.08s of the 16.94s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7793	 = Validation score   (accuracy)
+	3.49s	 = Training   runtime
+	10.69s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 15.02s of the 14.81s of remaining time.
+	0.791	 = Validation score   (accuracy)
+	3.41s	 = Training   runtime
+	10.83s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 16.48s of the 16.29s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	0.7297	 = Validation score   (accuracy)
+	2.31s	 = Training   runtime
+	10.37s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 7.1s of the 7.0s of remaining time.
+	Not enough time to train KNN model on all training rows. Fit 10000/13045 rows. (Training KNN model on 13045 rows is expected to take 15.65s)
+	0.7462	 = Validation score   (accuracy)
+	2.1s	 = Training   runtime
+	10.3s	 = Validation runtime
+Fitting model: KNeighborsDist ... Training model for up to 11.71s of the 11.65s of remaining time.
+	0.7752	 = Validation score   (accuracy)
+	2.18s	 = Training   runtime
+	9.79s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 6.19s of the 6.01s of remaining time.
+	0.7869	 = Validation score   (accuracy)
+	2.2s	 = Training   runtime
+	9.42s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 4.38s of the 4.17s of remaining time.
+	0.7428	 = Validation score   (accuracy)
+	2.06s	 = Training   runtime
+	8.79s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 3.85s of the 3.77s of remaining time.
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/knn/knn_model.py:216: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  idx = y_df.groupby("label", group_keys=False).apply(sample_func, frac=samples / num_rows_max).index
+	Ran out of time, early stopping on iteration 2. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	0.7641	 = Validation score   (accuracy)
+	2.23s	 = Training   runtime
+	11.08s	 = Validation runtime
+	0.691	 = Validation score   (accuracy)
+	13.32s	 = Training   runtime
+	0.19s	 = Validation runtime
+	0.7414	 = Validation score   (accuracy)
+	2.8s	 = Training   runtime
+	9.58s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 4.03s of the 3.91s of remaining time.
+	0.7869	 = Validation score   (accuracy)
+	2.92s	 = Training   runtime
+	11.33s	 = Validation runtime
+	0.7841	 = Validation score   (accuracy)
+	2.9s	 = Training   runtime
+	10.58s	 = Validation runtime
+	0.7828	 = Validation score   (accuracy)
+	4.15s	 = Training   runtime
+	8.01s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 34.6s of the -8.04s of remaining time.
+Fitting model: LightGBMXT ... Training model for up to 2.94s of the 2.75s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 28.88s of the -3.87s of remaining time.
+	0.78	 = Validation score   (accuracy)
+	4.24s	 = Training   runtime
+	9.79s	 = Validation runtime
+	0.7462	 = Validation score   (accuracy)
+	4.0s	 = Training   runtime
+	5.68s	 = Validation runtime
+Fitting model: LightGBMXT ... Training model for up to 0.99s of the 0.93s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 31.74s of the -4.26s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 30.04s of the -3.4s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 29.64s of the -2.88s of remaining time.
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	Ran out of time, early stopping on iteration 3. Best iteration is:
+	[1]	valid_set's binary_error: 0.342759
+	0.691	 = Validation score   (accuracy)
+	14.6s	 = Training   runtime
+	0.42s	 = Validation runtime
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.308966
+	0.6572	 = Validation score   (accuracy)
+	17.1s	 = Training   runtime
+	0.32s	 = Validation runtime
+	0.691	 = Validation score   (accuracy)
+	15.84s	 = Training   runtime
+	0.33s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 33.53s of the -12.41s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 32.66s of the -11.45s of remaining time.
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 31.76s of the -13.47s of remaining time.
+	Ran out of time, early stopping on iteration 1. Best iteration is:
+	[1]	valid_set's binary_error: 0.348276
+	0.6517	 = Validation score   (accuracy)
+	18.36s	 = Training   runtime
+	0.19s	 = Validation runtime
