@@ -1,8 +1,0 @@
-13:02:08: Starting run 1 and sample 0.01
-13:02:14: For sample 0.01 the train and test dataframes are created
-14:18:27: Starting run 1 and sample 0.01
-14:18:36: For sample 0.01 the train and test dataframes are created
-14:32:08: Error: Not enough time left to train models. Consider specifying a larger time_limit. Time remaining: -7.71s
-14:32:08: Run 1 and sample 0.01 lock aquired
-14:32:08: signature_model_info: None
-14:32:08: -----------------------------------
