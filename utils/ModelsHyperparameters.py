@@ -1,6 +1,5 @@
 class ModelsHyperparameters:
     hyperparameters = {
-                    'NN_TORCH': {},
                     'GBM': [
                         {'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}},
                         {},
@@ -8,7 +7,6 @@ class ModelsHyperparameters:
                     ],
                     'CAT': {},
                     'XGB': {},
-                    'FASTAI': {},
                     'RF': [
                         {'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}},
                         {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}},
