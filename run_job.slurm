@@ -2,7 +2,7 @@
 #SBATCH --job-name=multi_job
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
-#SBATCH --mem=64GB
+#SBATCH --mem=128GB
 #SBATCH --time=23:59:00
 
 source /home/baderlab/mzarant/SignatureInference/.venv/bin/activate
