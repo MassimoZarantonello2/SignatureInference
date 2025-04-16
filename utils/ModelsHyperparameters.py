@@ -1,4 +1,4 @@
-class ModelsHyperparameters:
+def get_hyperparameters():
     hyperparameters = {
                     'GBM': [
                         {'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}},
@@ -22,9 +22,4 @@ class ModelsHyperparameters:
                         {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}, 'n_jobs': 4},
                     ],
                 }
-    
-    def __init__(self):
-        pass
-
-    def get_hyperparameters(self):
-        return self.hyperparameters
+    return hyperparameters
