@@ -9,7 +9,7 @@ import sys
 
 sys.path.append("./")
 from utils.MultiLabelPredictor import MultilabelPredictor
-from utils.ModelsHyperparameters import ModelsHyperparameters as hp
+from utils.ModelsHyperparameters import get_hyperparameters
 from utils.Log import LogClass
 
 
@@ -36,6 +36,7 @@ class EvaluationsRunner:
         self.problem_type = (
             problem_type if problem_type is None else ["binary"] * len(labels)
         )
+        self.hyperparameters = get_hyperparameters()
         self.run_values = run_values
         self.num_run = num_run
         self.runs_path = runs_path
@@ -83,7 +84,7 @@ class EvaluationsRunner:
             predictor = MultilabelPredictor(
                 labels=self.labels, problem_types=self.problem_type
             )
-            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=hp.get_hyperparameters(), presets="good_quality")
+            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=self.hyperparameters, presets="good_quality")
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = self.save_results(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
