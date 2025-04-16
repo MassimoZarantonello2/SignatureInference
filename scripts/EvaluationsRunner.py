@@ -83,7 +83,7 @@ class EvaluationsRunner:
             predictor = MultilabelPredictor(
                 labels=self.labels, problem_types=self.problem_type
             )
-            predictor.fit(train_df, time_limit=self.time_limit)
+            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=hp.get_hyperparameters(), presets="good_quality")
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = self.save_results(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
@@ -276,17 +276,17 @@ if __name__ == "__main__":
     # +------------------------(1)Normal run of models-------------------------
     # |TRAIN                          |  TEST
     # |every sample mutation count    |  if a mutation is present in the sample
-    # Sample_run: Normal             |  GT: Normal
+    # |Sample_run: Normal             |  GT: Normal
     # +-------------------(2)Tissues as a train feature------------------------
     # |TRAIN                          | TEST
     # |every sample mutation count    |  if a mutation is present in the sample
     # |with the tissues               |  WITHOUT the tissues
-    # Sample_run: With tissues       |  GT: Normal
+    # |Sample_run: With tissues       |  GT: Normal
     # +-------------------(3)Tissues as a test feature--------------------------
     # |TRAIN                          |  TEST
     # |every sample mutation count    |  if a mutation is present in the sample
     # |WITHOUT the tissues            |  with the tissues
-    # Sample_run: Normal             |  GT: Add the tissues -> add tissues label
+    # |Sample_run: Normal             |  GT: Add the tissues -> add tissues label
     # +-------------------------------+---------------------------------------
 
     er = EvaluationsRunner(
