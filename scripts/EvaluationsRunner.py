@@ -22,6 +22,7 @@ class EvaluationsRunner:
         save_evaluation_path,
         sampling_values,
         run_values,
+        num_run,
         train_test_split_value,
         time_limit,
         problem_type,
@@ -36,6 +37,7 @@ class EvaluationsRunner:
             problem_type if problem_type is None else ["binary"] * len(labels)
         )
         self.run_values = run_values
+        self.num_run = num_run
         self.runs_path = runs_path
         self.sampling_values = sampling_values
         self.save_evaluation_path = save_evaluation_path
@@ -81,7 +83,7 @@ class EvaluationsRunner:
             predictor = MultilabelPredictor(
                 labels=self.labels, problem_types=self.problem_type
             )
-            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters = hp.hyperparameters,  presets="medium_quality")
+            predictor.fit(train_df, time_limit=self.time_limit)
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = self.save_results(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
@@ -135,7 +137,7 @@ class EvaluationsRunner:
                 self.ground_truth, tissues_df, on="Unnamed: 0"
             )
         self.labels = self.ground_truth_df.columns[1:]
-
+        run_done = 0
         for run in self.run_values:
             run_index = "run_" + run
             signature_inference_thread = []
@@ -173,8 +175,8 @@ class EvaluationsRunner:
             if self.save_models and os.path.exists("./AutogluonModels"):
                 shutil.rmtree("./AutogluonModels")
 
-            if num_run is not None:
-                if run >= num_run:
+            if self.num_run is not None:
+                if run_done >= num_run:
                     break
 
     def save_results(self, predictor, test_df):
@@ -258,7 +260,7 @@ if __name__ == "__main__":
         help="Tempo limite per il training dei modelli",
     )
     parser.add_argument(
-        "--num_run", type=str, default=None, help="Numero specifico di run da eseguire"
+        "--num_run", type=int, default=None, help="Numero specifico di run da eseguire"
     )
 
     args = parser.parse_args()
@@ -294,6 +296,7 @@ if __name__ == "__main__":
         save_evaluation_path,
         sampling_values,
         run_values,
+        num_run,
         train_test_split_value,
         time_limit,
         problem_type=None,
