@@ -1,4 +1,8 @@
 import pandas as pd
+import argparse
+import sys
+sys.path.append("./")
+
 def binarize_df(dataframe,treshold:float,save_csv_path=None):
     '''
     With this function you can binarize a dataframe based on a treshold given as input and have 
@@ -18,3 +22,34 @@ def binarize_df(dataframe,treshold:float,save_csv_path=None):
         df.to_csv(save_csv_path, index = False)
     
     return df
+
+if __name__ == "__main__":   
+    parser = argparse.ArgumentParser(
+    description="Esecuzione del modello di valutazione con parametri opzionali")
+    
+    parser.add_argument(
+        "--input_csv",
+        type=str,
+        help="Path to the input CSV file",
+        required=True,
+    )
+    parser.add_argument(
+        "--output_csv",
+        type=str,
+        help="Path to the output CSV file",
+        required=True,
+    )
+    parser.add_argument(
+        "--treshold",
+        type=float,
+        help="Treshold for binarization",
+        required=True,
+    )
+    args = parser.parse_args()
+    # Load the CSV file into a DataFrame
+    df = pd.read_csv(args.input_csv)
+    # Binarize the DataFrame
+    binarized_df = binarize_df(df, args.treshold, args.output_csv)
+    
+    
+    
