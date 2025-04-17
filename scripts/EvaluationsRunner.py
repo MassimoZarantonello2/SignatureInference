@@ -3,11 +3,10 @@ import os
 import shutil
 import threading
 import pandas as pd
-import tempfile
 import argparse
 import sys
-
 sys.path.append("./")
+
 from utils.MultiLabelPredictor import MultilabelPredictor
 from utils.ModelsHyperparameters import get_hyperparameters
 from utils.Log import LogClass
@@ -17,6 +16,7 @@ class EvaluationsRunner:
     def __init__(
         self,
         ground_truth_path,
+        gt_type,
         runs_path,
         data_path,
         save_evaluation_path,
@@ -31,6 +31,7 @@ class EvaluationsRunner:
     ):
         self.data_path = data_path
         self.ground_truth = None
+        self.gt_type = gt_type
         self.ground_truth_path = ground_truth_path
         self.labels = None
         self.problem_type = (
@@ -116,7 +117,7 @@ class EvaluationsRunner:
 
         signature_model_info = self.compute_evaluations_metrics(evaluation_df, sample)
 
-        lc = LogClass(sample)
+        lc = LogClass("logs/gt_type", sample)
         with lock:
             lc = LogClass(sample)
             lc.log(f"Run {run} and sample {sample} lock aquired")
@@ -247,6 +248,13 @@ if __name__ == "__main__":
     train_test_split_value = 0.8
     time_limit = None
     num_run = None
+    
+    parser.add_argument(
+        "--ground_truth_type",
+        type=str,
+        default='default',
+        help="Path del ground truth binarizzato",
+    )
 
     parser.add_argument(
         "--save_path",
@@ -266,10 +274,15 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    if args.ground_truth_type == "default":
+        bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
+    else:
+        bin_ground_truth_path = "./simulations/ground_truth_" + args.ground_truth_type + "/bin_exposures.csv"
     save_evaluation_path = "./results/" + args.save_path + ".json"
     time_limit = args.time_limit
     num_run = args.num_run
 
+    print(f"Ground truth path: {bin_ground_truth_path}")
     print(f"Save path: {save_evaluation_path}")
     print(f"Time limit: {time_limit}")
     print(f"Num run: {num_run}")
@@ -292,6 +305,7 @@ if __name__ == "__main__":
 
     er = EvaluationsRunner(
         bin_ground_truth_path,  # Give the binarized ground truth data
+        args.ground_truth_type,
         runs_path,
         data_path,
         save_evaluation_path,
