@@ -176,8 +176,8 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))
 
-            if self.save_models and os.path.exists("./AutogluonModels"):
-                shutil.rmtree("./AutogluonModels")
+            if self.save_models and os.path.exists("../AutogluonModels"):
+                shutil.rmtree("../AutogluonModels")
 
             if self.num_run is not None:
                 if run_done >= num_run:
