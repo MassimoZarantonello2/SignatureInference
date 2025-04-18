@@ -257,13 +257,6 @@ if __name__ == "__main__":
         default='default',
         help="Path del ground truth binarizzato",
     )
-
-    parser.add_argument(
-        "--save_path",
-        type=str,
-        default="models_evaluations",
-        help="Path per salvare i risultati dell'evaluation",
-    )
     parser.add_argument(
         "--time_limit",
         type=int,
@@ -280,7 +273,7 @@ if __name__ == "__main__":
         bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
     else:
         bin_ground_truth_path = "./simulations/ground_truth_" + args.ground_truth_type + "/bin_exposures.csv"
-    save_evaluation_path = "./results/" + args.save_path + ".json"
+    save_evaluation_path = "./results/" + args.ground_truth_type + "_evaluations.json"
     time_limit = args.time_limit
     num_run = args.num_run
 
