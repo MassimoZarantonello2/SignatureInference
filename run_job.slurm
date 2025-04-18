@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=multi_job
+#SBATCH --job-name=${1:-multi_job}  # Usa il primo argomento come nome del job, altrimenti "multi_job"
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=128GB
@@ -13,4 +13,3 @@ export OMP_NUM_THREADS=1
 
 # Passa tutti i parametri ricevuti a Python
 python /home/baderlab/mzarant/SignatureInference/scripts/EvaluationsRunner.py "$@"
-
