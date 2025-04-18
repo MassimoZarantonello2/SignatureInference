@@ -1,6 +1,3 @@
-from utils.Log import LogClass
-from utils.ModelsHyperparameters import ModelsHyperparameters
-from utils.MultiLabelPredictor import MultilabelPredictor
 import json
 import os
 import shutil
@@ -61,7 +58,7 @@ class EvaluationsRunner:
                 run_dict[run_index] = sample_dict
         json.dump(run_dict, open(self.save_evaluation_path, "w+"))  # Save the json file
 
-    def compute_evaluations_metrics(self, evaluation_df, sample):
+    def compute_evaluations_metrics(self, evaluation_df, sample, lc):
         """
         ### Input
         - evaluation_df: The dataset that will be used to train and test the model
@@ -85,13 +82,12 @@ class EvaluationsRunner:
             frac=self.train_test_split_value, random_state=42
         )
         test_df = evaluation_df.drop(train_df.index)
-        lc = LogClass(sample)
         lc.log(f"For sample {sample} the train and test dataframes are created")
         try:
             predictor = MultilabelPredictor(
                 labels=self.labels, problem_types=self.problem_type
             )
-            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=self.hyperparameters, presets="medium_quality")
+            predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=self.hyperparameters, presets="medium_quality", num_cpus=16 )
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = self.save_results(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
@@ -103,7 +99,7 @@ class EvaluationsRunner:
             return None
 
 
-    def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
+    def threaded_evaluation(self, run, sample, output_dict, tissues, lock, lc):
         """
         ### Input
         - run: The run number
@@ -122,13 +118,12 @@ class EvaluationsRunner:
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on="Unnamed: 0")
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
 
-        signature_model_info = self.compute_evaluations_metrics(evaluation_df, sample)
+        signature_model_info = self.compute_evaluations_metrics(evaluation_df, sample, lc)
 
-        lc = LogClass("logs/gt_type", sample)
         with lock:
-            lc = LogClass(sample)
             lc.log(f"Run {run} and sample {sample} lock aquired")
-            lc.log(f"signature_model_info: {signature_model_info}")
+            lc.log(f"Run {run} and sample {sample} evaluation done")
+            lc.log(f"Run {run} and sample {sample} lock released")
             lc.log("-----------------------------------")
             output_dict[sample] = signature_model_info
 
@@ -161,11 +156,11 @@ class EvaluationsRunner:
                     or all_evaluations_df[run_index][sample_index] == None
                 ):
                     print(f"Running run {run} and sample {sample}")
-                    lc = LogClass(sample)
+                    lc = LogClass(f"logs/{self.gt_type}", sample)
                     lc.log(f"Starting run {run} and sample {sample}")
                     t = threading.Thread(
                         target=self.threaded_evaluation,
-                        args=(run, sample, output_dict, tissues, lock),
+                        args=(run, sample, output_dict, tissues, lock, lc),
                     )
                     signature_inference_thread.append(t)
                     t.start()
