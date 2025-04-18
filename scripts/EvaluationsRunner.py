@@ -1,3 +1,6 @@
+from utils.Log import LogClass
+from utils.ModelsHyperparameters import ModelsHyperparameters
+from utils.MultiLabelPredictor import MultilabelPredictor
 import json
 import os
 import shutil
@@ -68,7 +71,10 @@ class EvaluationsRunner:
             "Signature Name": { \n
                     "accuracy":
                     "balanced_accuracy":
+                    "balanced_accuracy":
                     "mcc":
+                    "roc_auc":
+                    "f1":
                     "roc_auc":
                     "f1":
                     "precision":
@@ -95,6 +101,7 @@ class EvaluationsRunner:
             lc.log(f"Error: {e}")
             print(f"Error: {e}")
             return None
+
 
     def threaded_evaluation(self, run, sample, output_dict, tissues, lock):
         """
