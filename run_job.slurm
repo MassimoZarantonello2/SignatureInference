@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --job-name=${1:-multi_job}  # Usa il primo argomento come nome del job, altrimenti "multi_job"
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=128GB
