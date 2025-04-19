@@ -1,2 +1,9 @@
 13:17:36: Starting run 1 and sample 0.4
 13:17:43: For sample 0.4 the train and test dataframes are created
+23:53:29: Error: Not enough time left to train models. Consider specifying a larger time_limit. Time remaining: -0.41s
+23:53:29: Run 1 and sample 0.4 lock aquired
+23:53:29: Run 1 and sample 0.4 evaluation done
+23:53:29: Run 1 and sample 0.4 lock released
+23:53:29: -----------------------------------
+02:47:25: Starting run 2 and sample 0.4
+02:47:31: For sample 0.4 the train and test dataframes are created
