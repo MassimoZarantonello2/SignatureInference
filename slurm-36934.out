@@ -1,3 +1,0 @@
-usage: EvaluationsRunner.py [-h] [--ground_truth_type GROUND_TRUTH_TYPE]
-                            [--time_limit TIME_LIMIT] [--num_run NUM_RUN]
-EvaluationsRunner.py: error: unrecognized arguments: --job-name reference
