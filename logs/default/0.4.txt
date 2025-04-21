@@ -1,0 +1,11 @@
+15:55:27: Starting run 1 and sample 0.4
+15:55:33: For sample 0.4 the train and test dataframes are created
+16:01:01: Starting run 1 and sample 0.4
+16:01:07: For sample 0.4 the train and test dataframes are created
+16:02:08: Error: Ran out of input
+16:02:08: Run 1 and sample 0.4 lock aquired
+16:02:08: Run 1 and sample 0.4 evaluation done
+16:02:08: Run 1 and sample 0.4 lock released
+16:02:08: -----------------------------------
+16:25:57: Starting run 1 and sample 0.4
+16:26:03: For sample 0.4 the train and test dataframes are created

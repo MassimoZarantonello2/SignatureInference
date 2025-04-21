@@ -1,1 +1,3722 @@
-{"run_1": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_2": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_3": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_4": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_5": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_6": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_7": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_8": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_9": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_10": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_11": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_12": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_13": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_14": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_15": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_16": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_17": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_18": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_19": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_20": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_21": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_22": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_23": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_24": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_25": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_26": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_27": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_28": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_29": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_30": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_31": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_32": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_33": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_34": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_35": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_36": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_37": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_38": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_39": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_40": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_41": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_42": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_43": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_44": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_45": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_46": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_47": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_48": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_49": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_50": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_51": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_52": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_53": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_54": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_55": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_56": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_57": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_58": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_59": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_60": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_61": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_62": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_63": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_64": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_65": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_66": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_67": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_68": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_69": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_70": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_71": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_72": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_73": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_74": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_75": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_76": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_77": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_78": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_79": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_80": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_81": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_82": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_83": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_84": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_85": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_86": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_87": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_88": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_89": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_90": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_91": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_92": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_93": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_94": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_95": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_96": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_97": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_98": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_99": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}, "run_100": {"sampling_1": {}, "sampling_0.9": {}, "sampling_0.8": {}, "sampling_0.7": {}, "sampling_0.6": {}, "sampling_0.5": {}, "sampling_0.4": {}, "sampling_0.3": {}, "sampling_0.2": {}, "sampling_0.15": {}, "sampling_0.1": {}, "sampling_0.05": {}, "sampling_0.04": {}, "sampling_0.03": {}, "sampling_0.02": {}, "sampling_0.01": {}}}
+{
+    "run_1": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": [
+            {
+                "signature": "S1 (SBS1 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9786206896551725,
+                "best_model_metrics": {
+                    "accuracy": 0.9624724061810155,
+                    "balanced_accuracy": 0.8840182648401826,
+                    "mcc": 0.590831919518471,
+                    "roc_auc": 0.9591918759512938,
+                    "f1": 0.9803468208092485,
+                    "precision": 0.9929742388758782,
+                    "recall": 0.9680365296803652
+                },
+                "best_model_fit_time": 5.0818352699279785,
+                "ensemble_models": [
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.9779310344827586,
+                        "fit_time": 6.524524927139282
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9751724137931035,
+                        "fit_time": 21.38552212715149
+                    }
+                ]
+            },
+            {
+                "signature": "S2 (SBS2 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9,
+                "best_model_metrics": {
+                    "accuracy": 0.8885209713024282,
+                    "balanced_accuracy": 0.6826249574974499,
+                    "mcc": 0.46234403748170494,
+                    "roc_auc": 0.8316237863160678,
+                    "f1": 0.9372670807453416,
+                    "precision": 0.9073962717979555,
+                    "recall": 0.9691714836223507
+                },
+                "best_model_fit_time": 8.420610904693604,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8710344827586207,
+                        "fit_time": 27.31554889678955
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8979310344827586,
+                        "fit_time": 2.2974228858947754
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8972413793103449,
+                        "fit_time": 2.425426721572876
+                    }
+                ]
+            },
+            {
+                "signature": "S3 (SBS3 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7241379310344828,
+                "best_model_metrics": {
+                    "accuracy": 0.6666666666666666,
+                    "balanced_accuracy": 0.7002547420878726,
+                    "mcc": 0.4081745744622018,
+                    "roc_auc": 0.8088882273215634,
+                    "f1": 0.653272101033295,
+                    "precision": 0.8608169440242057,
+                    "recall": 0.5263644773358002
+                },
+                "best_model_fit_time": 9.505295276641846,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.6620689655172414,
+                        "fit_time": 24.989604473114014
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.6524137931034483,
+                        "fit_time": 1.809973955154419
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.6524137931034483,
+                        "fit_time": 1.6994621753692627
+                    }
+                ]
+            },
+            {
+                "signature": "S4 (SBS4 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7213793103448276,
+                "best_model_metrics": {
+                    "accuracy": 0.673289183222958,
+                    "balanced_accuracy": 0.662266369045793,
+                    "mcc": 0.3375569109559083,
+                    "roc_auc": 0.7461254781220434,
+                    "f1": 0.7245230339692881,
+                    "precision": 0.6676672384219554,
+                    "recall": 0.7919633774160733
+                },
+                "best_model_fit_time": 7.931427001953125,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.6531034482758621,
+                        "fit_time": 27.716171979904175
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.716551724137931,
+                        "fit_time": 3.892383098602295
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7158620689655173,
+                        "fit_time": 1.2564449310302734
+                    }
+                ]
+            },
+            {
+                "signature": "S5 (SBS5 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.88,
+                "best_model_metrics": {
+                    "accuracy": 0.8233995584988962,
+                    "balanced_accuracy": 0.8280094139524072,
+                    "mcc": 0.6189284311328526,
+                    "roc_auc": 0.9016376354708429,
+                    "f1": 0.8663324979114453,
+                    "precision": 0.9225978647686833,
+                    "recall": 0.8165354330708662
+                },
+                "best_model_fit_time": 6.854621410369873,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8124137931034483,
+                        "fit_time": 29.631528854370117
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8751724137931034,
+                        "fit_time": 1.6236143112182617
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8744827586206897,
+                        "fit_time": 1.603501796722412
+                    }
+                ]
+            },
+            {
+                "signature": "S6 (SBS7a - 1.00)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8448275862068966,
+                "best_model_metrics": {
+                    "accuracy": 0.8413355408388521,
+                    "balanced_accuracy": 0.6895422375314275,
+                    "mcc": 0.4793067768700278,
+                    "roc_auc": 0.8415202631608093,
+                    "f1": 0.9042464612822648,
+                    "precision": 0.8537735849056604,
+                    "recall": 0.9610619469026549
+                },
+                "best_model_fit_time": 5.862023591995239,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8227586206896552,
+                        "fit_time": 28.635184049606323
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8406896551724138,
+                        "fit_time": 3.3177390098571777
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8172413793103448,
+                        "fit_time": 1.2326877117156982
+                    }
+                ]
+            },
+            {
+                "signature": "S7 (SBS7b - 0.96)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7820689655172414,
+                "best_model_metrics": {
+                    "accuracy": 0.7262693156732892,
+                    "balanced_accuracy": 0.6896896418403571,
+                    "mcc": 0.37536050327006254,
+                    "roc_auc": 0.7722819936030368,
+                    "f1": 0.5775127768313458,
+                    "precision": 0.5659432387312187,
+                    "recall": 0.5895652173913043
+                },
+                "best_model_fit_time": 7.0452539920806885,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7255172413793104,
+                        "fit_time": 29.42377471923828
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.78,
+                        "fit_time": 1.739344596862793
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.78,
+                        "fit_time": 2.8174784183502197
+                    }
+                ]
+            },
+            {
+                "signature": "S8 (SBS8 - 0.92)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7358620689655172,
+                "best_model_metrics": {
+                    "accuracy": 0.6970198675496688,
+                    "balanced_accuracy": 0.6944827873519324,
+                    "mcc": 0.3879535805716723,
+                    "roc_auc": 0.7602998924547022,
+                    "f1": 0.6627764127764127,
+                    "precision": 0.6535433070866141,
+                    "recall": 0.6722741433021807
+                },
+                "best_model_fit_time": 7.950703859329224,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7144827586206897,
+                        "fit_time": 25.78839683532715
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7337931034482759,
+                        "fit_time": 2.424149990081787
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7337931034482759,
+                        "fit_time": 2.797384262084961
+                    }
+                ]
+            },
+            {
+                "signature": "S9 (SBS9 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8013793103448276,
+                "best_model_metrics": {
+                    "accuracy": 0.6719094922737306,
+                    "balanced_accuracy": 0.6549763115587264,
+                    "mcc": 0.31307500443497843,
+                    "roc_auc": 0.7118062811913618,
+                    "f1": 0.5826605826605826,
+                    "precision": 0.5997109826589595,
+                    "recall": 0.5665529010238908
+                },
+                "best_model_fit_time": 7.2286694049835205,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7696551724137931,
+                        "fit_time": 28.23836064338684
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7786206896551724,
+                        "fit_time": 1.0875930786132812
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7793103448275862,
+                        "fit_time": 2.0787129402160645
+                    }
+                ]
+            },
+            {
+                "signature": "S10 (SBS10a - 1.00)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8075862068965517,
+                "best_model_metrics": {
+                    "accuracy": 0.6917770419426048,
+                    "balanced_accuracy": 0.6738945225246595,
+                    "mcc": 0.34325467105063423,
+                    "roc_auc": 0.7280958640547682,
+                    "f1": 0.5888847994111152,
+                    "precision": 0.5702066999287242,
+                    "recall": 0.60882800608828
+                },
+                "best_model_fit_time": 4.512799501419067,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.776551724137931,
+                        "fit_time": 30.651925802230835
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.78,
+                        "fit_time": 1.1097526550292969
+                    }
+                ]
+            },
+            {
+                "signature": "S11 (SBS10d - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7731034482758621,
+                "best_model_metrics": {
+                    "accuracy": 0.6630794701986755,
+                    "balanced_accuracy": 0.6226169301059938,
+                    "mcc": 0.2645049086486486,
+                    "roc_auc": 0.7144764503015881,
+                    "f1": 0.5034566897112648,
+                    "precision": 0.5946205571565802,
+                    "recall": 0.43653032440056416
+                },
+                "best_model_fit_time": 4.36763596534729,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7482758620689656,
+                        "fit_time": 30.6104576587677
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7489655172413793,
+                        "fit_time": 2.748364210128784
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7317241379310345,
+                        "fit_time": 1.1676926612854004
+                    }
+                ]
+            },
+            {
+                "signature": "S12 (SBS11 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8068965517241379,
+                "best_model_metrics": {
+                    "accuracy": 0.7853200883002207,
+                    "balanced_accuracy": 0.5021215830273358,
+                    "mcc": 0.02622948011180137,
+                    "roc_auc": 0.6865624008341267,
+                    "f1": 0.015189873417721518,
+                    "precision": 0.375,
+                    "recall": 0.007751937984496124
+                },
+                "best_model_fit_time": 5.708220481872559,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8013793103448276,
+                        "fit_time": 29.052599668502808
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7779310344827586,
+                        "fit_time": 2.899602174758911
+                    }
+                ]
+            },
+            {
+                "signature": "S13 (SBS13 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.86,
+                "best_model_metrics": {
+                    "accuracy": 0.820364238410596,
+                    "balanced_accuracy": 0.6418395969377273,
+                    "mcc": 0.3845479169699328,
+                    "roc_auc": 0.8641547483987386,
+                    "f1": 0.8929804372842347,
+                    "precision": 0.8359495229301324,
+                    "recall": 0.958362738179252
+                },
+                "best_model_fit_time": 5.36192774772644,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8593103448275862,
+                        "fit_time": 31.370463848114014
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8324137931034483,
+                        "fit_time": 2.0532405376434326
+                    }
+                ]
+            },
+            {
+                "signature": "S14 (SBS14 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7813793103448275,
+                "best_model_metrics": {
+                    "accuracy": 0.7756622516556292,
+                    "balanced_accuracy": 0.5216651196933664,
+                    "mcc": 0.12690872315267998,
+                    "roc_auc": 0.6721329512230023,
+                    "f1": 0.09966777408637874,
+                    "precision": 0.5921052631578947,
+                    "recall": 0.05441354292623942
+                },
+                "best_model_fit_time": 4.749886751174927,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7813793103448275,
+                        "fit_time": 32.17157554626465
+                    }
+                ]
+            },
+            {
+                "signature": "S15 (SBS15 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7317241379310345,
+                "best_model_metrics": {
+                    "accuracy": 0.5689845474613686,
+                    "balanced_accuracy": 0.6137584120943131,
+                    "mcc": 0.23870976680444136,
+                    "roc_auc": 0.6720449978166169,
+                    "f1": 0.5990759753593429,
+                    "precision": 0.4715151515151515,
+                    "recall": 0.8212526389866291
+                },
+                "best_model_fit_time": 4.313197612762451,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7179310344827586,
+                        "fit_time": 31.132947206497192
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7,
+                        "fit_time": 2.0452990531921387
+                    }
+                ]
+            },
+            {
+                "signature": "S16 (SBS17 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8006896551724138,
+                "best_model_metrics": {
+                    "accuracy": 0.6412803532008831,
+                    "balanced_accuracy": 0.6616369531777386,
+                    "mcc": 0.349925993312053,
+                    "roc_auc": 0.7984493407454132,
+                    "f1": 0.687650168188371,
+                    "precision": 0.5669572107765452,
+                    "recall": 0.8736263736263736
+                },
+                "best_model_fit_time": 3.630669355392456,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7944827586206896,
+                        "fit_time": 30.24938440322876
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7420689655172413,
+                        "fit_time": 2.7528719902038574
+                    }
+                ]
+            },
+            {
+                "signature": "S17 (SBS18 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8096551724137931,
+                "best_model_metrics": {
+                    "accuracy": 0.6826710816777042,
+                    "balanced_accuracy": 0.6798588059062297,
+                    "mcc": 0.3556527888447754,
+                    "roc_auc": 0.7533835612518681,
+                    "f1": 0.7207382224380767,
+                    "precision": 0.7476070528967255,
+                    "recall": 0.6957337083919363
+                },
+                "best_model_fit_time": 2.4999561309814453,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7813793103448275,
+                        "fit_time": 30.619938611984253
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7731034482758621,
+                        "fit_time": 1.9347796440124512
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7731034482758621,
+                        "fit_time": 1.5034904479980469
+                    }
+                ]
+            },
+            {
+                "signature": "S18 (SBS19 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7524137931034482,
+                "best_model_metrics": {
+                    "accuracy": 0.7080573951434879,
+                    "balanced_accuracy": 0.6416701138590697,
+                    "mcc": 0.3114688977902461,
+                    "roc_auc": 0.752455700752053,
+                    "f1": 0.5028195488721805,
+                    "precision": 0.598434004474273,
+                    "recall": 0.43354943273906
+                },
+                "best_model_fit_time": 2.6938321590423584,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7317241379310345,
+                        "fit_time": 31.572433710098267
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7324137931034482,
+                        "fit_time": 1.3746285438537598
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7310344827586207,
+                        "fit_time": 1.3866920471191406
+                    }
+                ]
+            },
+            {
+                "signature": "S19 (SBS20 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9572413793103448,
+                "best_model_metrics": {
+                    "accuracy": 0.9497792494481236,
+                    "balanced_accuracy": 0.6391317016317016,
+                    "mcc": 0.37686480812672857,
+                    "roc_auc": 0.7548638427544678,
+                    "f1": 0.38095238095238093,
+                    "precision": 0.5490196078431373,
+                    "recall": 0.2916666666666667
+                },
+                "best_model_fit_time": 2.4515655040740967,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.9551724137931035,
+                        "fit_time": 30.595993757247925
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.9544827586206897,
+                        "fit_time": 2.6276071071624756
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9544827586206897,
+                        "fit_time": 1.5014894008636475
+                    }
+                ]
+            },
+            {
+                "signature": "S20 (SBS22 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7510344827586207,
+                "best_model_metrics": {
+                    "accuracy": 0.6095474613686535,
+                    "balanced_accuracy": 0.6323333333333334,
+                    "mcc": 0.2672059075617475,
+                    "roc_auc": 0.6898173258003767,
+                    "f1": 0.618495551361553,
+                    "precision": 0.5192394748755093,
+                    "recall": 0.7646666666666667
+                },
+                "best_model_fit_time": 2.2673959732055664,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7482758620689656,
+                        "fit_time": 34.123668909072876
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.6958620689655173,
+                        "fit_time": 1.3151497840881348
+                    }
+                ]
+            },
+            {
+                "signature": "S21 (SBS23 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8620689655172413,
+                "best_model_metrics": {
+                    "accuracy": 0.8355408388520972,
+                    "balanced_accuracy": 0.5174825633656805,
+                    "mcc": 0.12809556557755963,
+                    "roc_auc": 0.6817251059101934,
+                    "f1": 0.07453416149068323,
+                    "precision": 0.631578947368421,
+                    "recall": 0.039603960396039604
+                },
+                "best_model_fit_time": 2.5559494495391846,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8544827586206897,
+                        "fit_time": 33.81562829017639
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8455172413793104,
+                        "fit_time": 1.0430502891540527
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8462068965517241,
+                        "fit_time": 1.2723219394683838
+                    }
+                ]
+            },
+            {
+                "signature": "S22 (SBS26 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8655172413793103,
+                "best_model_metrics": {
+                    "accuracy": 0.7949779249448123,
+                    "balanced_accuracy": 0.6897095241051535,
+                    "mcc": 0.3799722321288928,
+                    "roc_auc": 0.7745202997422438,
+                    "f1": 0.5095709570957095,
+                    "precision": 0.5105820105820106,
+                    "recall": 0.5085638998682477
+                },
+                "best_model_fit_time": 2.5662262439727783,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8579310344827586,
+                        "fit_time": 33.7452027797699
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.84,
+                        "fit_time": 1.1304640769958496
+                    }
+                ]
+            },
+            {
+                "signature": "S23 (SBS28 - 0.96)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8468965517241379,
+                "best_model_metrics": {
+                    "accuracy": 0.7596578366445916,
+                    "balanced_accuracy": 0.5681671724231989,
+                    "mcc": 0.18787237890061925,
+                    "roc_auc": 0.6934633809540046,
+                    "f1": 0.2889795918367347,
+                    "precision": 0.4645669291338583,
+                    "recall": 0.20971563981042654
+                },
+                "best_model_fit_time": 2.485771417617798,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8468965517241379,
+                        "fit_time": 32.680678367614746
+                    }
+                ]
+            },
+            {
+                "signature": "S24 (SBS31 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9248275862068965,
+                "best_model_metrics": {
+                    "accuracy": 0.8846578366445916,
+                    "balanced_accuracy": 0.6188608321760496,
+                    "mcc": 0.27824040839328146,
+                    "roc_auc": 0.7720500113502831,
+                    "f1": 0.3343949044585987,
+                    "precision": 0.40384615384615385,
+                    "recall": 0.28532608695652173
+                },
+                "best_model_fit_time": 2.38435697555542,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.9227586206896552,
+                        "fit_time": 35.85887336730957
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9172413793103448,
+                        "fit_time": 1.3869438171386719
+                    }
+                ]
+            },
+            {
+                "signature": "S25 (SBS32 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.766896551724138,
+                "best_model_metrics": {
+                    "accuracy": 0.7199227373068433,
+                    "balanced_accuracy": 0.6006720140683319,
+                    "mcc": 0.23670539217583716,
+                    "roc_auc": 0.7153671254426259,
+                    "f1": 0.3969102792632204,
+                    "precision": 0.5130568356374808,
+                    "recall": 0.3236434108527132
+                },
+                "best_model_fit_time": 1.085254430770874,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7551724137931034,
+                        "fit_time": 38.48515796661377
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7193103448275862,
+                        "fit_time": 1.6268401145935059
+                    }
+                ]
+            },
+            {
+                "signature": "S26 (SBS44 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7510344827586207,
+                "best_model_metrics": {
+                    "accuracy": 0.6757726269315674,
+                    "balanced_accuracy": 0.6063221566975568,
+                    "mcc": 0.23563960114842336,
+                    "roc_auc": 0.694056950294861,
+                    "f1": 0.44861567339277336,
+                    "precision": 0.5425652667423383,
+                    "recall": 0.3824
+                },
+                "best_model_fit_time": 1.6664786338806152,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7379310344827587,
+                        "fit_time": 37.85215091705322
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7144827586206897,
+                        "fit_time": 1.8022129535675049
+                    }
+                ]
+            },
+            {
+                "signature": "S27 (SBS88 - 0.92)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7779310344827586,
+                "best_model_metrics": {
+                    "accuracy": 0.6945364238410596,
+                    "balanced_accuracy": 0.6326462236747045,
+                    "mcc": 0.28415750430432163,
+                    "roc_auc": 0.6918863871061665,
+                    "f1": 0.7811820517888911,
+                    "precision": 0.7425779782036829,
+                    "recall": 0.8240200166805671
+                },
+                "best_model_fit_time": 0.9398825168609619,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7779310344827586,
+                        "fit_time": 36.07148766517639
+                    }
+                ]
+            },
+            {
+                "signature": "S28 (SBS92 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8,
+                "best_model_metrics": {
+                    "accuracy": 0.7635209713024282,
+                    "balanced_accuracy": 0.6772007201507998,
+                    "mcc": 0.3938105793962333,
+                    "roc_auc": 0.7675004231031848,
+                    "f1": 0.8410313485438694,
+                    "precision": 0.797397115722828,
+                    "recall": 0.8897174254317112
+                },
+                "best_model_fit_time": 1.0581905841827393,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7979310344827586,
+                        "fit_time": 36.85364508628845
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7696551724137931,
+                        "fit_time": 1.4170453548431396
+                    }
+                ]
+            },
+            {
+                "signature": "S29 (SBS97 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8234482758620689,
+                "best_model_metrics": {
+                    "accuracy": 0.7058498896247241,
+                    "balanced_accuracy": 0.5568029956313709,
+                    "mcc": 0.1257771578500787,
+                    "roc_auc": 0.5762171832743915,
+                    "f1": 0.3059895833333333,
+                    "precision": 0.3549848942598187,
+                    "recall": 0.26887871853546913
+                },
+                "best_model_fit_time": 1.133270263671875,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8220689655172414,
+                        "fit_time": 39.22593545913696
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7724137931034483,
+                        "fit_time": 0.6031162738800049
+                    }
+                ]
+            }
+        ],
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": [
+            {
+                "signature": "S1 (SBS1 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9786206896551725,
+                "best_model_metrics": {
+                    "accuracy": 0.9787527593818984,
+                    "balanced_accuracy": 0.7395262557077625,
+                    "mcc": 0.6101252896512354,
+                    "roc_auc": 0.927595842846271,
+                    "f1": 0.9890857547838412,
+                    "precision": 0.9825401295409744,
+                    "recall": 0.9957191780821918
+                },
+                "best_model_fit_time": 5.0818352699279785,
+                "ensemble_models": [
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.9779310344827586,
+                        "fit_time": 6.524524927139282
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9751724137931035,
+                        "fit_time": 21.38552212715149
+                    }
+                ]
+            },
+            {
+                "signature": "S2 (SBS2 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9,
+                "best_model_metrics": {
+                    "accuracy": 0.8625827814569537,
+                    "balanced_accuracy": 0.7159016207639125,
+                    "mcc": 0.431803241527825,
+                    "roc_auc": 0.8745384537887088,
+                    "f1": 0.9200385356454721,
+                    "precision": 0.9200385356454721,
+                    "recall": 0.9200385356454721
+                },
+                "best_model_fit_time": 8.420610904693604,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8710344827586207,
+                        "fit_time": 27.31554889678955
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8979310344827586,
+                        "fit_time": 2.2974228858947754
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8972413793103449,
+                        "fit_time": 2.425426721572876
+                    }
+                ]
+            },
+            {
+                "signature": "S3 (SBS3 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7241379310344828,
+                "best_model_metrics": {
+                    "accuracy": 0.7549668874172185,
+                    "balanced_accuracy": 0.7506748197633291,
+                    "mcc": 0.4968921944714539,
+                    "roc_auc": 0.8279480100884449,
+                    "f1": 0.7900709219858156,
+                    "precision": 0.808027079303675,
+                    "recall": 0.772895467160037
+                },
+                "best_model_fit_time": 9.505295276641846,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.6620689655172414,
+                        "fit_time": 24.989604473114014
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.6524137931034483,
+                        "fit_time": 1.809973955154419
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.6524137931034483,
+                        "fit_time": 1.6994621753692627
+                    }
+                ]
+            },
+            {
+                "signature": "S4 (SBS4 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7213793103448276,
+                "best_model_metrics": {
+                    "accuracy": 0.673289183222958,
+                    "balanced_accuracy": 0.6679357276351781,
+                    "mcc": 0.3387247205144357,
+                    "roc_auc": 0.7420066032074826,
+                    "f1": 0.7082306554953179,
+                    "precision": 0.6869024856596558,
+                    "recall": 0.7309257375381485
+                },
+                "best_model_fit_time": 7.931427001953125,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.6531034482758621,
+                        "fit_time": 27.716171979904175
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.716551724137931,
+                        "fit_time": 3.892383098602295
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7158620689655173,
+                        "fit_time": 1.2564449310302734
+                    }
+                ]
+            },
+            {
+                "signature": "S5 (SBS5 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.88,
+                "best_model_metrics": {
+                    "accuracy": 0.8363686534216336,
+                    "balanced_accuracy": 0.7582045210215882,
+                    "mcc": 0.5892402865366472,
+                    "roc_auc": 0.8703240767643897,
+                    "f1": 0.890852199521443,
+                    "precision": 0.8365019011406845,
+                    "recall": 0.952755905511811
+                },
+                "best_model_fit_time": 6.854621410369873,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8124137931034483,
+                        "fit_time": 29.631528854370117
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8751724137931034,
+                        "fit_time": 1.6236143112182617
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8744827586206897,
+                        "fit_time": 1.603501796722412
+                    }
+                ]
+            },
+            {
+                "signature": "S6 (SBS7a - 1.00)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8448275862068966,
+                "best_model_metrics": {
+                    "accuracy": 0.7072295805739515,
+                    "balanced_accuracy": 0.5833289399359819,
+                    "mcc": 0.16373224245689258,
+                    "roc_auc": 0.6406359719560956,
+                    "f1": 0.8108397218755572,
+                    "precision": 0.8168103448275862,
+                    "recall": 0.8049557522123894
+                },
+                "best_model_fit_time": 5.862023591995239,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8227586206896552,
+                        "fit_time": 28.635184049606323
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8406896551724138,
+                        "fit_time": 3.3177390098571777
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8172413793103448,
+                        "fit_time": 1.2326877117156982
+                    }
+                ]
+            },
+            {
+                "signature": "S7 (SBS7b - 0.96)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7820689655172414,
+                "best_model_metrics": {
+                    "accuracy": 0.733167770419426,
+                    "balanced_accuracy": 0.638200766229658,
+                    "mcc": 0.32821533813558135,
+                    "roc_auc": 0.7489009173667005,
+                    "f1": 0.47359825802939576,
+                    "precision": 0.6331877729257642,
+                    "recall": 0.3782608695652174
+                },
+                "best_model_fit_time": 7.0452539920806885,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7255172413793104,
+                        "fit_time": 29.42377471923828
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.78,
+                        "fit_time": 1.739344596862793
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.78,
+                        "fit_time": 2.8174784183502197
+                    }
+                ]
+            },
+            {
+                "signature": "S8 (SBS8 - 0.92)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7358620689655172,
+                "best_model_metrics": {
+                    "accuracy": 0.6843267108167771,
+                    "balanced_accuracy": 0.66865432595946,
+                    "mcc": 0.35281842915133516,
+                    "roc_auc": 0.7542623889251487,
+                    "f1": 0.5985964912280701,
+                    "precision": 0.685140562248996,
+                    "recall": 0.5314641744548286
+                },
+                "best_model_fit_time": 7.950703859329224,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7144827586206897,
+                        "fit_time": 25.78839683532715
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7337931034482759,
+                        "fit_time": 2.424149990081787
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7337931034482759,
+                        "fit_time": 2.797384262084961
+                    }
+                ]
+            },
+            {
+                "signature": "S9 (SBS9 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8013793103448276,
+                "best_model_metrics": {
+                    "accuracy": 0.7384105960264901,
+                    "balanced_accuracy": 0.6930164546536681,
+                    "mcc": 0.452961280437288,
+                    "roc_auc": 0.7929611262956716,
+                    "f1": 0.5849387040280211,
+                    "precision": 0.8156288156288156,
+                    "recall": 0.4559726962457338
+                },
+                "best_model_fit_time": 7.2286694049835205,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7696551724137931,
+                        "fit_time": 28.23836064338684
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7786206896551724,
+                        "fit_time": 1.0875930786132812
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7793103448275862,
+                        "fit_time": 2.0787129402160645
+                    }
+                ]
+            },
+            {
+                "signature": "S10 (SBS10a - 1.00)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8075862068965517,
+                "best_model_metrics": {
+                    "accuracy": 0.7502759381898455,
+                    "balanced_accuracy": 0.6849997034928541,
+                    "mcc": 0.43546363991764897,
+                    "roc_auc": 0.7900250054359643,
+                    "f1": 0.565112926477655,
+                    "precision": 0.7666232073011734,
+                    "recall": 0.4474885844748858
+                },
+                "best_model_fit_time": 4.512799501419067,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.776551724137931,
+                        "fit_time": 30.651925802230835
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.78,
+                        "fit_time": 1.1097526550292969
+                    }
+                ]
+            },
+            {
+                "signature": "S11 (SBS10d - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7731034482758621,
+                "best_model_metrics": {
+                    "accuracy": 0.7052980132450332,
+                    "balanced_accuracy": 0.6617034961708483,
+                    "mcc": 0.35791297932721733,
+                    "roc_auc": 0.7377851084425473,
+                    "f1": 0.5505050505050505,
+                    "precision": 0.6826722338204593,
+                    "recall": 0.461212976022567
+                },
+                "best_model_fit_time": 4.36763596534729,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7482758620689656,
+                        "fit_time": 30.6104576587677
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7489655172413793,
+                        "fit_time": 2.748364210128784
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7317241379310345,
+                        "fit_time": 1.1676926612854004
+                    }
+                ]
+            },
+            {
+                "signature": "S12 (SBS11 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8068965517241379,
+                "best_model_metrics": {
+                    "accuracy": 0.7880794701986755,
+                    "balanced_accuracy": 0.5179926560587516,
+                    "mcc": 0.11029180507041197,
+                    "roc_auc": 0.7223403146108165,
+                    "f1": 0.08571428571428572,
+                    "precision": 0.5454545454545454,
+                    "recall": 0.046511627906976744
+                },
+                "best_model_fit_time": 5.708220481872559,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8013793103448276,
+                        "fit_time": 29.052599668502808
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7779310344827586,
+                        "fit_time": 2.899602174758911
+                    }
+                ]
+            },
+            {
+                "signature": "S13 (SBS13 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.86,
+                "best_model_metrics": {
+                    "accuracy": 0.8217439293598234,
+                    "balanced_accuracy": 0.7189542892364864,
+                    "mcc": 0.4570031212723399,
+                    "roc_auc": 0.8656474723743334,
+                    "f1": 0.8877302745915885,
+                    "precision": 0.8746575342465753,
+                    "recall": 0.9011997177134792
+                },
+                "best_model_fit_time": 5.36192774772644,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8593103448275862,
+                        "fit_time": 31.370463848114014
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8324137931034483,
+                        "fit_time": 2.0532405376434326
+                    }
+                ]
+            },
+            {
+                "signature": "S14 (SBS14 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7813793103448275,
+                "best_model_metrics": {
+                    "accuracy": 0.7809050772626932,
+                    "balanced_accuracy": 0.5335782551611049,
+                    "mcc": 0.1746218205210921,
+                    "roc_auc": 0.7098737678433319,
+                    "f1": 0.1406926406926407,
+                    "precision": 0.6701030927835051,
+                    "recall": 0.07859733978234583
+                },
+                "best_model_fit_time": 4.749886751174927,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7813793103448275,
+                        "fit_time": 32.17157554626465
+                    }
+                ]
+            },
+            {
+                "signature": "S15 (SBS15 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7317241379310345,
+                "best_model_metrics": {
+                    "accuracy": 0.6766004415011038,
+                    "balanced_accuracy": 0.613718801340249,
+                    "mcc": 0.286535197326002,
+                    "roc_auc": 0.7189113878681843,
+                    "f1": 0.4386973180076628,
+                    "precision": 0.6866566716641679,
+                    "recall": 0.3223082336382829
+                },
+                "best_model_fit_time": 4.313197612762451,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7179310344827586,
+                        "fit_time": 31.132947206497192
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7,
+                        "fit_time": 2.0452990531921387
+                    }
+                ]
+            },
+            {
+                "signature": "S16 (SBS17 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8006896551724138,
+                "best_model_metrics": {
+                    "accuracy": 0.7339955849889624,
+                    "balanced_accuracy": 0.7152060762332666,
+                    "mcc": 0.47520630512598927,
+                    "roc_auc": 0.8152447166797621,
+                    "f1": 0.6384096024006002,
+                    "precision": 0.8278210116731517,
+                    "recall": 0.5195360195360196
+                },
+                "best_model_fit_time": 3.630669355392456,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7944827586206896,
+                        "fit_time": 30.24938440322876
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7420689655172413,
+                        "fit_time": 2.7528719902038574
+                    }
+                ]
+            },
+            {
+                "signature": "S17 (SBS18 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8096551724137931,
+                "best_model_metrics": {
+                    "accuracy": 0.7083333333333334,
+                    "balanced_accuracy": 0.7208365052009196,
+                    "mcc": 0.4355501086965251,
+                    "roc_auc": 0.8044681591659663,
+                    "f1": 0.724092926128948,
+                    "precision": 0.8168433451118964,
+                    "recall": 0.6502578527894983
+                },
+                "best_model_fit_time": 2.4999561309814453,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7813793103448275,
+                        "fit_time": 30.619938611984253
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7731034482758621,
+                        "fit_time": 1.9347796440124512
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7731034482758621,
+                        "fit_time": 1.5034904479980469
+                    }
+                ]
+            },
+            {
+                "signature": "S18 (SBS19 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7524137931034482,
+                "best_model_metrics": {
+                    "accuracy": 0.717439293598234,
+                    "balanced_accuracy": 0.6805320656707106,
+                    "mcc": 0.3648128380230837,
+                    "roc_auc": 0.7835328184019044,
+                    "f1": 0.576509511993383,
+                    "precision": 0.5886824324324325,
+                    "recall": 0.5648298217179902
+                },
+                "best_model_fit_time": 2.6938321590423584,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7317241379310345,
+                        "fit_time": 31.572433710098267
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7324137931034482,
+                        "fit_time": 1.3746285438537598
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.7310344827586207,
+                        "fit_time": 1.3866920471191406
+                    }
+                ]
+            },
+            {
+                "signature": "S19 (SBS20 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9572413793103448,
+                "best_model_metrics": {
+                    "accuracy": 0.9541942604856513,
+                    "balanced_accuracy": 0.5873761655011654,
+                    "mcc": 0.3657293342676734,
+                    "roc_auc": 0.8009155557983683,
+                    "f1": 0.2905982905982906,
+                    "precision": 0.8095238095238095,
+                    "recall": 0.17708333333333334
+                },
+                "best_model_fit_time": 2.4515655040740967,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.9551724137931035,
+                        "fit_time": 30.595993757247925
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.9544827586206897,
+                        "fit_time": 2.6276071071624756
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9544827586206897,
+                        "fit_time": 1.5014894008636475
+                    }
+                ]
+            },
+            {
+                "signature": "S20 (SBS22 - 0.99)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7510344827586207,
+                "best_model_metrics": {
+                    "accuracy": 0.7036423841059603,
+                    "balanced_accuracy": 0.6593333333333333,
+                    "mcc": 0.381898036876548,
+                    "roc_auc": 0.7450491211550535,
+                    "f1": 0.5289473684210526,
+                    "precision": 0.7730769230769231,
+                    "recall": 0.402
+                },
+                "best_model_fit_time": 2.2673959732055664,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7482758620689656,
+                        "fit_time": 34.123668909072876
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.6958620689655173,
+                        "fit_time": 1.3151497840881348
+                    }
+                ]
+            },
+            {
+                "signature": "S21 (SBS23 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8620689655172413,
+                "best_model_metrics": {
+                    "accuracy": 0.8443708609271523,
+                    "balanced_accuracy": 0.5979568135740015,
+                    "mcc": 0.2974765918758134,
+                    "roc_auc": 0.7724685987485428,
+                    "f1": 0.32857142857142857,
+                    "precision": 0.5897435897435898,
+                    "recall": 0.22772277227722773
+                },
+                "best_model_fit_time": 2.5559494495391846,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8544827586206897,
+                        "fit_time": 33.81562829017639
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.8455172413793104,
+                        "fit_time": 1.0430502891540527
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.8462068965517241,
+                        "fit_time": 1.2723219394683838
+                    }
+                ]
+            },
+            {
+                "signature": "S22 (SBS26 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8655172413793103,
+                "best_model_metrics": {
+                    "accuracy": 0.8311258278145696,
+                    "balanced_accuracy": 0.6423566417647911,
+                    "mcc": 0.3999784479174894,
+                    "roc_auc": 0.8046899682000979,
+                    "f1": 0.4405850091407678,
+                    "precision": 0.7194029850746269,
+                    "recall": 0.31752305665349145
+                },
+                "best_model_fit_time": 2.5662262439727783,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8579310344827586,
+                        "fit_time": 33.7452027797699
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.84,
+                        "fit_time": 1.1304640769958496
+                    }
+                ]
+            },
+            {
+                "signature": "S23 (SBS28 - 0.96)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8468965517241379,
+                "best_model_metrics": {
+                    "accuracy": 0.8123620309050773,
+                    "balanced_accuracy": 0.6186095673224454,
+                    "mcc": 0.38314659069599294,
+                    "roc_auc": 0.7332748729926012,
+                    "f1": 0.38848920863309355,
+                    "precision": 0.8059701492537313,
+                    "recall": 0.2559241706161137
+                },
+                "best_model_fit_time": 2.485771417617798,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8468965517241379,
+                        "fit_time": 32.680678367614746
+                    }
+                ]
+            },
+            {
+                "signature": "S24 (SBS31 - 0.98)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.9248275862068965,
+                "best_model_metrics": {
+                    "accuracy": 0.9061810154525386,
+                    "balanced_accuracy": 0.5537102072428159,
+                    "mcc": 0.26780701156210057,
+                    "roc_auc": 0.7795795888526866,
+                    "f1": 0.1943127962085308,
+                    "precision": 0.7592592592592593,
+                    "recall": 0.11141304347826086
+                },
+                "best_model_fit_time": 2.38435697555542,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsUnif"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.9227586206896552,
+                        "fit_time": 35.85887336730957
+                    },
+                    {
+                        "model_name": "KNeighborsUnif",
+                        "val_score": 0.9172413793103448,
+                        "fit_time": 1.3869438171386719
+                    }
+                ]
+            },
+            {
+                "signature": "S25 (SBS32 - 0.94)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.766896551724138,
+                "best_model_metrics": {
+                    "accuracy": 0.734271523178808,
+                    "balanced_accuracy": 0.6112860680447889,
+                    "mcc": 0.26970818248793993,
+                    "roc_auc": 0.7386427528950138,
+                    "f1": 0.41100917431192663,
+                    "precision": 0.5572139303482587,
+                    "recall": 0.32558139534883723
+                },
+                "best_model_fit_time": 1.085254430770874,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7551724137931034,
+                        "fit_time": 38.48515796661377
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7193103448275862,
+                        "fit_time": 1.6268401145935059
+                    }
+                ]
+            },
+            {
+                "signature": "S26 (SBS44 - 0.97)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7510344827586207,
+                "best_model_metrics": {
+                    "accuracy": 0.7177152317880795,
+                    "balanced_accuracy": 0.6175032855939343,
+                    "mcc": 0.32150479405857574,
+                    "roc_auc": 0.7398970513900589,
+                    "f1": 0.4184195565662308,
+                    "precision": 0.7229862475442044,
+                    "recall": 0.2944
+                },
+                "best_model_fit_time": 1.6664786338806152,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7379310344827587,
+                        "fit_time": 37.85215091705322
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7144827586206897,
+                        "fit_time": 1.8022129535675049
+                    }
+                ]
+            },
+            {
+                "signature": "S27 (SBS88 - 0.92)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.7779310344827586,
+                "best_model_metrics": {
+                    "accuracy": 0.7207505518763797,
+                    "balanced_accuracy": 0.6123904232319756,
+                    "mcc": 0.3177094301503718,
+                    "roc_auc": 0.7318360732910922,
+                    "f1": 0.8178545716342692,
+                    "precision": 0.7194426852438252,
+                    "recall": 0.9474562135112594
+                },
+                "best_model_fit_time": 0.9398825168609619,
+                "ensemble_models": [
+                    "LightGBMXT"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7779310344827586,
+                        "fit_time": 36.07148766517639
+                    }
+                ]
+            },
+            {
+                "signature": "S28 (SBS92 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8,
+                "best_model_metrics": {
+                    "accuracy": 0.7665562913907285,
+                    "balanced_accuracy": 0.6535879150058651,
+                    "mcc": 0.38332224166136614,
+                    "roc_auc": 0.7729358400494885,
+                    "f1": 0.8487665355738291,
+                    "precision": 0.7793827971109653,
+                    "recall": 0.9317111459968603
+                },
+                "best_model_fit_time": 1.0581905841827393,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.7979310344827586,
+                        "fit_time": 36.85364508628845
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7696551724137931,
+                        "fit_time": 1.4170453548431396
+                    }
+                ]
+            },
+            {
+                "signature": "S29 (SBS97 - 0.95)",
+                "best_model": "WeightedEnsemble_L2",
+                "best_model_val_score": 0.8234482758620689,
+                "best_model_metrics": {
+                    "accuracy": 0.7596578366445916,
+                    "balanced_accuracy": 0.5688416892032453,
+                    "mcc": 0.20017075124767963,
+                    "roc_auc": 0.6654919908466819,
+                    "f1": 0.28665028665028663,
+                    "precision": 0.5043227665706052,
+                    "recall": 0.20022883295194507
+                },
+                "best_model_fit_time": 1.133270263671875,
+                "ensemble_models": [
+                    "LightGBMXT",
+                    "KNeighborsDist"
+                ],
+                "ensemble_info": [
+                    {
+                        "model_name": "LightGBMXT",
+                        "val_score": 0.8220689655172414,
+                        "fit_time": 39.22593545913696
+                    },
+                    {
+                        "model_name": "KNeighborsDist",
+                        "val_score": 0.7724137931034483,
+                        "fit_time": 0.6031162738800049
+                    }
+                ]
+            }
+        ],
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_2": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_3": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_4": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_5": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_6": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_7": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_8": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_9": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_10": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_11": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_12": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_13": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_14": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_15": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_16": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_17": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_18": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_19": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_20": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_21": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_22": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_23": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_24": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_25": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_26": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_27": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_28": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_29": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_30": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_31": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_32": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_33": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_34": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_35": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_36": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_37": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_38": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_39": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_40": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_41": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_42": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_43": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_44": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_45": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_46": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_47": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_48": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_49": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_50": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_51": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_52": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_53": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_54": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_55": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_56": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_57": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_58": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_59": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_60": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_61": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_62": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_63": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_64": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_65": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_66": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_67": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_68": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_69": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_70": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_71": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_72": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_73": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_74": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_75": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_76": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_77": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_78": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_79": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_80": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_81": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_82": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_83": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_84": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_85": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_86": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_87": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_88": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_89": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_90": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_91": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_92": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_93": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_94": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_95": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_96": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_97": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_98": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_99": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    },
+    "run_100": {
+        "sampling_1": {},
+        "sampling_0.9": {},
+        "sampling_0.8": {},
+        "sampling_0.7": {},
+        "sampling_0.6": {},
+        "sampling_0.5": {},
+        "sampling_0.4": {},
+        "sampling_0.3": {},
+        "sampling_0.2": {},
+        "sampling_0.15": {},
+        "sampling_0.1": {},
+        "sampling_0.05": {},
+        "sampling_0.04": {},
+        "sampling_0.03": {},
+        "sampling_0.02": {},
+        "sampling_0.01": {}
+    }
+}
