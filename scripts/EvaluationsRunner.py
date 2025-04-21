@@ -85,8 +85,7 @@ class EvaluationsRunner:
                 time_limit=self.time_limit, 
                 hyperparameters=self.hyperparameters, 
                 presets=self.fit_quality, 
-                fit_strategy="parallel" )
-            
+            )            
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = format_model_result(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
