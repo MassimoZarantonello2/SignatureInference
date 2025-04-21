@@ -19,6 +19,8 @@ class EvaluationsRunner:
         gt_type,
         runs_path,
         data_path,
+        fit_quality,
+        hyperparameters_type,
         save_evaluation_path,
         sampling_values,
         run_values,
@@ -33,7 +35,8 @@ class EvaluationsRunner:
         self.ground_truth_path = ground_truth_path
         self.labels = None
         self.problem_type = None
-        self.hyperparameters = get_hyperparameters()
+        self.fit_quality = fit_quality
+        self.hyperparameters = get_hyperparameters(hyperparameters_type)
         self.run_values = run_values
         self.num_run = num_run
         self.runs_path = runs_path
@@ -81,11 +84,11 @@ class EvaluationsRunner:
                 train_df, 
                 time_limit=self.time_limit, 
                 hyperparameters=self.hyperparameters, 
-                presets="medium_quality", 
+                presets=self.fit_quality, 
                 fit_strategy="parallel" )
             
             lc.log(f"For sample {sample} the models are trained")
-            signature_model_info = self.format_model_result(predictor, test_df)
+            signature_model_info = format_model_result(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
             return signature_model_info
 
@@ -125,10 +128,10 @@ class EvaluationsRunner:
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
         if not os.path.exists(self.save_evaluation_path):
-            self.create_empty_json_file(
+            create_empty_json_file(
                 self.run_values, 
                 self.sampling_values, 
-                self.save_evaluations_path)
+                self.save_evaluation_path)
             
         self.ground_truth_df = pd.read_csv(
             self.ground_truth_path
