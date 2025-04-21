@@ -95,7 +95,7 @@ if __name__ == "__main__":
     print(f"Saving the models in: {save_model_path}")
     print(f"Using quality of: {args.quality}")
     print(f"Taking the hyperparameters from: {args.hyp_type}")
-    print(f"Time limit: {time_limit}")
+    print(f"Time limit: {args.time_limit}")
     print(f"Num run: {num_run}")
 
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
