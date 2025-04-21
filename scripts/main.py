@@ -34,10 +34,33 @@ if __name__ == "__main__":
     num_run = None
     
     parser.add_argument(
-        "--ground_truth_type",
+        "--gt_type",
         type=str,
-        default='default',
+        default="default",
         help="Path del ground truth binarizzato",
+    )
+    parser.add_argument(
+        "--save_evaluations",
+        type=str,
+        default=None,
+        help="Path per salvare le valutazioni",
+    )
+    parser.add_argument(        # Folder in which to save the models
+        "--save_models",
+        type=str,
+        default=None,
+        help="Path per salvare i modelli",
+    )
+    parser.add_argument(
+        "--quality",
+        type=str,
+        default="medium_quality",
+    )
+    parser.add_argument(
+        "--hyp_type",
+        type=str,
+        default="default",
+        help="Tipo di hyperparametri da utilizzare",
     )
     parser.add_argument(
         "--time_limit",
@@ -46,48 +69,46 @@ if __name__ == "__main__":
         help="Tempo limite per il training dei modelli",
     )
     parser.add_argument(
-        "--num_run", type=int, default=None, help="Numero specifico di run da eseguire"
+        "--runs", type=int, default=None, help="Numero specifico di run da eseguire"
     )
 
     args = parser.parse_args()
 
-    if args.ground_truth_type == "default":
+    if args.gt_type == "default":
         bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
     else:
-        bin_ground_truth_path = "./simulations/ground_truth_" + args.ground_truth_type + "/bin_exposures.csv"
-    save_evaluation_path = "./results/" + args.ground_truth_type + "_evaluations.json"
-    save_model_path = "./models/" + args.ground_truth_type
+        bin_ground_truth_path = "./simulations/ground_truth_" + args.gt_type + "/bin_exposures.csv"
+        
+    if args.save_evaluations is None:
+        save_evaluation_path = "./results/" + args.gt_type + "_evaluations.json"
+    else:
+        save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
+   
+    if args.save_models is None:
+        save_model_path = "./models/" + args.gt_type
+    else:
+        save_model_path = "./models/" + args.save_models + "/"
+        
 
-    print(f"Ground truth path: {bin_ground_truth_path}")
-    print(f"Save path: {save_evaluation_path}")
+    print(f"Taking the ground truth from: {bin_ground_truth_path}")
+    print(f"Saving the evaluation in: {save_evaluation_path}")
+    print(f"Saving the models in: {save_model_path}")
+    print(f"Using quality of: {args.quality}")
+    print(f"Taking the hyperparameters from: {args.hyp_type}")
     print(f"Time limit: {time_limit}")
     print(f"Num run: {num_run}")
 
-    # +------------------------(1)Normal run of models-------------------------
-    # |TRAIN                          |  TEST
-    # |every sample mutation count    |  if a mutation is present in the sample
-    # |Sample_run: Normal             |  GT: Normal
-    # +-------------------(2)Tissues as a train feature------------------------
-    # |TRAIN                          | TEST
-    # |every sample mutation count    |  if a mutation is present in the sample
-    # |with the tissues               |  WITHOUT the tissues
-    # |Sample_run: With tissues       |  GT: Normal
-    # +-------------------(3)Tissues as a test feature--------------------------
-    # |TRAIN                          |  TEST
-    # |every sample mutation count    |  if a mutation is present in the sample
-    # |WITHOUT the tissues            |  with the tissues
-    # |Sample_run: Normal             |  GT: Add the tissues -> add tissues label
-    # +-------------------------------+---------------------------------------
-
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
         ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
-        gt_type=args.ground_truth_type,
+        gt_type=args.gt_type,
         runs_path=runs_path,
         data_path=data_path,
+        fit_quality=args.quality,
+        hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
         sampling_values=sampling_values,
         run_values=run_values,
-        num_run=args.num_run,
+        num_run=args.runs,
         train_test_split_value=train_test_split_value,
         time_limit=args.time_limit,
         save_models_path=save_model_path,
