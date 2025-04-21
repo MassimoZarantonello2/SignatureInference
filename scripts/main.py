@@ -56,8 +56,7 @@ if __name__ == "__main__":
     else:
         bin_ground_truth_path = "./simulations/ground_truth_" + args.ground_truth_type + "/bin_exposures.csv"
     save_evaluation_path = "./results/" + args.ground_truth_type + "_evaluations.json"
-    time_limit = args.time_limit
-    num_run = args.num_run
+    save_model_path = "./models/" + args.ground_truth_type
 
     print(f"Ground truth path: {bin_ground_truth_path}")
     print(f"Save path: {save_evaluation_path}")
@@ -80,19 +79,18 @@ if __name__ == "__main__":
     # |Sample_run: Normal             |  GT: Add the tissues -> add tissues label
     # +-------------------------------+---------------------------------------
 
-    er = EvaluationsRunner(
-        bin_ground_truth_path,  # Give the binarized ground truth data
-        args.ground_truth_type,
-        runs_path,
-        data_path,
-        save_evaluation_path,
-        sampling_values,
-        run_values,
-        num_run,
-        train_test_split_value,
-        time_limit,
-        problem_type=None,
-        labels=None,
-    )  # The labels are the names of the columns of the binarized ground truth df
+    er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
+        ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
+        gt_type=args.ground_truth_type,
+        runs_path=runs_path,
+        data_path=data_path,
+        save_evaluation_path=save_evaluation_path,
+        sampling_values=sampling_values,
+        run_values=run_values,
+        num_run=args.num_run,
+        train_test_split_value=train_test_split_value,
+        time_limit=args.time_limit,
+        save_models_path=save_model_path,
+    ) 
 
-    er.run_evaluations(tissues=None)
+    er.run_evaluations()
