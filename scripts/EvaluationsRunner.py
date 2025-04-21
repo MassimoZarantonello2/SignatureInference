@@ -117,13 +117,13 @@ class EvaluationsRunner:
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
 
         signature_model_info = self.train_and_evaluate_framework(evaluation_df, sample, lc)     # Eva
+        lc.log(f"Run {run} and sample {sample} evaluation done")
 
         with lock:
             lc.log(f"Run {run} and sample {sample} lock aquired")
-            lc.log(f"Run {run} and sample {sample} evaluation done")
             if signature_model_info is not None:
                 update_json_file(self.save_evaluation_path, run, sample, signature_model_info)  # Update the json file with the evaluations
-            lc.log(f"Run {run} and sample {sample} lock released")
+        lc.log(f"Run {run} and sample {sample} lock released")
         lc.log("-----------------------------------")
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
