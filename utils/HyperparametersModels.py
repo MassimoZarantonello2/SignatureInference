@@ -48,6 +48,12 @@ def get_hyperparameters(type):
                 },
             ],
         }
+    elif type.lower() == "lightgbmxt":
+        hyperparameters = {
+            "GBM": [
+            {"extra_trees": True, "ag_args": {"name_suffix": "XT"}}
+    ]
+}
     else:
         print("Using common Hyperparameters ")
         hyperparameters = {
