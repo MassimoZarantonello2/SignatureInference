@@ -1,4 +1,0 @@
-17:07:04: Starting run 1 and sample 0.01
-17:07:10: For sample 0.01 the train and test dataframes are created
-17:17:29: Error: Ran out of input
-17:17:29: Run 1 and sample 0.01 evaluation done
