@@ -1,0 +1,5 @@
+17:07:04: Starting run 1 and sample 0.8
+17:07:10: For sample 0.8 the train and test dataframes are created
+17:32:58: For sample 0.8 the models are trained
+17:35:59: For sample 0.8 the best models are saved
+17:35:59: Run 1 and sample 0.8 evaluation done
