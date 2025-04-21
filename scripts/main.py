@@ -96,7 +96,7 @@ if __name__ == "__main__":
     print(f"Using quality of: {args.quality}")
     print(f"Taking the hyperparameters from: {args.hyp_type}")
     print(f"Time limit: {args.time_limit}")
-    print(f"Num run: {num_run}")
+    print(f"Num run: {args.runs}")
 
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
         ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
