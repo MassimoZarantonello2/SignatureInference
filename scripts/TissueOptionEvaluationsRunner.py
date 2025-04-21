@@ -27,7 +27,7 @@ class EvaluationsRunner:
         time_limit,
         problem_type,
         labels,
-        save_models_path,
+        save_models=False,
     ):
         self.data_path = data_path
         self.ground_truth = None
@@ -47,9 +47,9 @@ class EvaluationsRunner:
         self.time_limit = time_limit
         self.train_test_split_value = train_test_split_value
 
-    def create_empty_json_file(self):  
+    def create_empty_json_file(self):  # Create the structure of the json file
         run_dict = {}
-        for run in self.run_values:     # Create the structure of the json file
+        for run in self.run_values:
             run_index = "run_" + run
             sample_dict = {}
             for sample in self.sampling_values:
@@ -89,7 +89,7 @@ class EvaluationsRunner:
             )
             predictor.fit(train_df, time_limit=self.time_limit, hyperparameters=self.hyperparameters, presets="medium_quality", num_cpus=16 )
             lc.log(f"For sample {sample} the models are trained")
-            signature_model_info = self.format_model_result(predictor, test_df)
+            signature_model_info = self.save_results(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
             return signature_model_info
 
@@ -111,6 +111,10 @@ class EvaluationsRunner:
         run_sample_df = pd.read_csv(
             self.runs_path + run + self.data_path + sample + ".csv"
         )  # Create the evaluation dataframe
+        # 2
+        if tissues == "feature":
+            tissues_df = pd.read_csv(self.tissues_path).drop(columns=["Cohort"])
+            run_sample_df = pd.merge(run_sample_df, tissues_df, on="Unnamed: 0")
         evaluation_df = pd.merge(run_sample_df, self.ground_truth_df, on="Unnamed: 0")
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
 
@@ -123,13 +127,19 @@ class EvaluationsRunner:
             lc.log("-----------------------------------")
             output_dict[sample] = signature_model_info
 
-    def run_evaluations(self):
+    def run_evaluations(self, tissues):
         if not os.path.exists(self.save_evaluation_path):
             self.create_empty_json_file()
         self.ground_truth_df = pd.read_csv(
             self.ground_truth_path
-        )
+        )  # Create the ground truth dataframe
 
+        # 3
+        if tissues == "prediction":
+            tissues_df = pd.read_csv(tissues_path).drop(columns=["Cohort"])
+            self.ground_truth_df = pd.merge(
+                self.ground_truth, tissues_df, on="Unnamed: 0"
+            )
         self.labels = self.ground_truth_df.columns[1:]
         run_done = 0
         for run in self.run_values:
@@ -150,7 +160,7 @@ class EvaluationsRunner:
                     lc.log(f"Starting run {run} and sample {sample}")
                     t = threading.Thread(
                         target=self.threaded_evaluation,
-                        args=(run, sample, output_dict, lock, lc),
+                        args=(run, sample, output_dict, tissues, lock, lc),
                     )
                     signature_inference_thread.append(t)
                     t.start()
@@ -166,15 +176,15 @@ class EvaluationsRunner:
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))
 
-            if self.save_models_path and os.path.exists(self.save_models_path):
-                shutil.rmtree(self.save_models_path)
+            if self.save_models and os.path.exists("../AutogluonModels"):
+                shutil.rmtree("../AutogluonModels")
 
             if self.num_run is not None:
                 run_done += 1
                 if run_done >= self.num_run:
                     break
 
-    def format_model_result(self, predictor, test_df):
+    def save_results(self, predictor, test_df):
         evaluations = predictor.evaluate(test_df)
         results = []
         for signature in evaluations:
