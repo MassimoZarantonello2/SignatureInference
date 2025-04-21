@@ -1,7 +1,0 @@
-15:55:27: Starting run 1 and sample 0.7
-15:55:33: For sample 0.7 the train and test dataframes are created
-16:01:01: Starting run 1 and sample 0.7
-16:01:07: For sample 0.7 the train and test dataframes are created
-16:25:57: Starting run 1 and sample 0.7
-16:26:03: For sample 0.7 the train and test dataframes are created
-16:28:43: For sample 0.7 the models are trained

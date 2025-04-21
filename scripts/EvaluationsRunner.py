@@ -127,6 +127,7 @@ class EvaluationsRunner:
         lc.log("-----------------------------------")
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
+        os.environ["RAY_DISABLE_DASHBOARD"] = "1"
         if not os.path.exists(self.save_evaluation_path):
             create_empty_json_file(
                 self.run_values, 
