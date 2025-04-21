@@ -78,7 +78,7 @@ class EvaluationsRunner:
                 path=self.save_models_path,
                 labels=self.labels,
                 problem_types=self.problem_type,
-                verbosity=1,
+                verbosity=2,
             )
             predictor.fit(
                 train_df, 
