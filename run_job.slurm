@@ -11,4 +11,4 @@ export GOTO_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 
 # Passa tutti i parametri ricevuti a Python
-python /home/baderlab/mzarant/SignatureInference/scripts/EvaluationsRunner.py "$@"
+python /home/baderlab/mzarant/SignatureInference/scripts/main.py "$@"
