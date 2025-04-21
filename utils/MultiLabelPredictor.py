@@ -2,6 +2,7 @@ from autogluon.tabular import TabularDataset, TabularPredictor
 from autogluon.common.utils.utils import setup_outputdir
 from autogluon.core.utils.loaders import load_pkl
 from autogluon.core.utils.savers import save_pkl
+from tqdm import tqdm
 import os.path
 
 class MultilabelPredictor:
@@ -80,7 +81,7 @@ class MultilabelPredictor:
         else:
             tuning_data_og = None
         save_metrics = len(self.eval_metrics) == 0
-        for i in range(len(self.labels)):
+        for i in tqdm(range(len(self.labels)), desc="Fitting TabularPredictors"):
             label = self.labels[i]
             predictor = self.get_predictor(label)
             if not self.consider_labels_correlation:
@@ -90,7 +91,7 @@ class MultilabelPredictor:
             train_data = train_data_og.drop(labels_to_drop, axis=1)
             if tuning_data is not None:
                 tuning_data = tuning_data_og.drop(labels_to_drop, axis=1)
-            print(f"Fitting TabularPredictor for label: {label} ...")
+            #print(f"Fitting TabularPredictor for label: {label} ...")
             predictor.fit(train_data=train_data, tuning_data=tuning_data, **kwargs)
             self.predictors[label] = predictor.path
             if save_metrics:
