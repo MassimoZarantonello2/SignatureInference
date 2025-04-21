@@ -8,7 +8,7 @@ sys.path.append("./")
 
 from utils.MultiLabelPredictor import MultilabelPredictor
 from utils.HyperparametersModels import get_hyperparameters
-from utils.EvaluationsHelper import format_model_result, create_empty_json_file
+from utils.EvaluationsHelper import format_model_result, create_empty_json_file, update_json_file
 from utils.Log import LogClass
 
 
@@ -98,7 +98,7 @@ class EvaluationsRunner:
             return None
 
 
-    def multhithread_framework(self, run, sample, output_dict, lock, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
+    def multhithread_framework(self, run, sample, lock, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
         """
         ### Input
         - run: The run number
@@ -122,8 +122,9 @@ class EvaluationsRunner:
         with lock:
             lc.log(f"Run {run} and sample {sample} lock aquired")
             lc.log(f"Run {run} and sample {sample} evaluation done")
-            output_dict[sample] = signature_model_info
-        lc.log(f"Run {run} and sample {sample} lock released")
+            if signature_model_info is not None:
+                update_json_file(self.save_evaluation_path, run, sample, signature_model_info)  # Update the json file with the evaluations
+            lc.log(f"Run {run} and sample {sample} lock released")
         lc.log("-----------------------------------")
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
@@ -146,7 +147,6 @@ class EvaluationsRunner:
             signature_inference_thread = []
             all_evaluations_df = json.load(open(self.save_evaluation_path))     # Load the whole dataset into a dataframe
             lock = threading.Lock()
-            output_dict = {}
 
             for sample in self.sampling_values:
                 sample_index = "sampling_" + sample
@@ -156,7 +156,7 @@ class EvaluationsRunner:
                     lc.log(f"Starting run {run} and sample {sample}")
                     t = threading.Thread(
                         target=self.multhithread_framework,
-                        args=(run, sample, output_dict, lock, lc),
+                        args=(run, sample, lock, lc),
                     )
                     signature_inference_thread.append(t)
                     t.start()
@@ -168,12 +168,6 @@ class EvaluationsRunner:
 
             for t in signature_inference_thread:        # Wait for all the threads relative to each sample in a run to finish
                 t.join()
-
-            for key in output_dict:         # Update the evaluation dictionary with the new results
-                all_evaluations_df[run_index]["sampling_" + key] = output_dict[key]
-
-            if signature_inference_thread.__len__() != 0:
-                json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))     # Rewrite the whole dataset into a json file TODO: try and save it in a more efficient way
 
             if self.save_models_path and os.path.exists(self.save_models_path):         # Delete the models folder
                 shutil.rmtree(self.save_models_path)

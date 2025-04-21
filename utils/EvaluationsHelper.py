@@ -9,6 +9,34 @@ def create_empty_json_file(run_values, sampling_values, save_evaluations_path): 
             sample_dict[sample_index] = {}
             run_dict[run_index] = sample_dict
     json.dump(run_dict, open(save_evaluations_path, "w+"))  # Save the json file
+    
+def update_json_file(save_evaluations_path, run, sample, evaluation_result):  # Update the json file with the evaluations
+    """
+    Aggiorna solo il risultato specifico del run e del sample nel file JSON.
+    
+    ### Input
+    - save_evaluations_path: Percorso del file JSON da aggiornare
+    - run: Identificatore del run (es. "run_1")
+    - sample: Identificatore del campione (es. "sampling_1")
+    - evaluation_result: Risultato dell'evaluazione da salvare nel JSON
+    """
+    try:
+        # Carica il file JSON esistente
+        with open(save_evaluations_path, "r") as f:
+            all_evaluations_df = json.load(f)
+
+        # Aggiungi o aggiorna il risultato specifico
+        run_index = "run_" + run
+        sample_index = "sampling_" + sample
+        all_evaluations_df[run_index][sample_index] = evaluation_result
+
+        # Salva il file JSON aggiornato
+        with open(save_evaluations_path, "w") as f:
+            json.dump(all_evaluations_df, f, indent=4)
+            
+    except Exception as e:
+        print(f"Error updating JSON file: {e}")
+
         
 def format_model_result(predictor, test_df):
     evaluations = predictor.evaluate(test_df)
