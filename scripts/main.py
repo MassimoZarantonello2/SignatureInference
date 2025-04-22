@@ -86,6 +86,8 @@ if __name__ == "__main__":
    
     if args.save_models is not None:
         save_model_path = "./models/" + args.save_models + "/"
+    else:
+        save_model_path = None
         
 
     print(f"Taking the ground truth from: {bin_ground_truth_path}")
