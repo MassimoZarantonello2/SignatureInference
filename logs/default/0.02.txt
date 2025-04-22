@@ -6,3 +6,4 @@
 21:07:52: Run 1 and sample 0.02 lock aquired
 21:07:52: Run 1 and sample 0.02 lock released
 21:07:52: -----------------------------------
+21:47:18: Run 1 and sample 0.02 already evaluated, skipping
