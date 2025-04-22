@@ -1,8 +1,0 @@
-19:42:31: Starting run 1 and sample 0.7
-19:42:36: For sample 0.7 the train and test dataframes are created
-21:36:19: For sample 0.7 the models are trained
-21:40:04: For sample 0.7 the best models are saved
-21:40:04: Run 1 and sample 0.7 evaluation done
-21:40:04: Run 1 and sample 0.7 lock aquired
-21:40:04: Run 1 and sample 0.7 lock released
-21:40:04: -----------------------------------
