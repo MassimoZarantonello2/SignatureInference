@@ -84,9 +84,7 @@ if __name__ == "__main__":
     else:
         save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
    
-    if args.save_models is None:
-        save_model_path = "./models/" + args.gt_type
-    else:
+    if args.save_models is not None:
         save_model_path = "./models/" + args.save_models + "/"
         
 
