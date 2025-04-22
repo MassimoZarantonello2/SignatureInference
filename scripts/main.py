@@ -6,8 +6,6 @@ if __name__ == "__main__":
         description="Esecuzione del modello di valutazione con parametri opzionali"
     )
     bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
-    runs_path = "./simulations/data/run_"
-    data_path = "/trinucleotides_counts_sampling_"
     save_evaluation_path = "./results/locked_models_evaluations.json"
     tissues_path = "./simulations/ground_truth/tumor_site.csv"
     sampling_values = [
@@ -101,7 +99,6 @@ if __name__ == "__main__":
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
         ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
         gt_type=args.gt_type,
-        runs_path=runs_path,
         data_path=data_path,
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,

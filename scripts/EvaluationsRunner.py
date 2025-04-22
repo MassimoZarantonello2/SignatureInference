@@ -17,8 +17,6 @@ class EvaluationsRunner:
         self,
         ground_truth_path,
         gt_type,
-        runs_path,
-        data_path,
         fit_quality,
         hyperparameters_type,
         save_evaluation_path,
@@ -29,7 +27,7 @@ class EvaluationsRunner:
         time_limit,
         save_models_path,
     ):
-        self.data_path = data_path
+        self.data_path = "/trinucleotides_counts_sampling_"
         self.ground_truth = None
         self.gt_type = gt_type
         self.ground_truth_path = ground_truth_path
@@ -39,7 +37,7 @@ class EvaluationsRunner:
         self.hyperparameters = get_hyperparameters(hyperparameters_type)
         self.run_values = run_values
         self.num_run = num_run
-        self.runs_path = runs_path
+        self.runs_path = "./simulations/data/run_"
         self.sampling_values = sampling_values
         self.save_evaluation_path = save_evaluation_path
         self.save_models = False
@@ -125,7 +123,6 @@ class EvaluationsRunner:
         lc.log("-----------------------------------")
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
-        os.environ["RAY_DISABLE_DASHBOARD"] = "1"
         if not os.path.exists(self.save_evaluation_path):
             create_empty_json_file(
                 self.run_values, 
