@@ -73,6 +73,7 @@ class MultiLabelEvaluator:
                 time_limit=self.settings.get_time_limit(), 
                 hyperparameters=self.settings.get_hyperparameters(), 
                 presets=self.settings.get_fit_quality(), 
+                fit_strategy = "parallel"
             )            
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = format_model_result(predictor, test_df)
