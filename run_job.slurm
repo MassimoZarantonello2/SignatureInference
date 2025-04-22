@@ -6,9 +6,9 @@
 
 source /home/baderlab/mzarant/SignatureInference/.venv/bin/activate
 
-export OPENBLAS_NUM_THREADS=1
-export GOTO_NUM_THREADS=1
-export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=10
+export GOTO_NUM_THREADS=10
+export OMP_NUM_THREADS=10
 
 # Passa tutti i parametri ricevuti a Python
 python /home/baderlab/mzarant/SignatureInference/scripts/main.py "$@"
