@@ -1,0 +1,8 @@
+19:42:32: Starting run 1 and sample 0.03
+19:42:36: For sample 0.03 the train and test dataframes are created
+21:17:49: For sample 0.03 the models are trained
+21:20:35: Error: Predictor is not fit. Call `.fit` before calling `.evaluate`.
+21:20:35: Run 1 and sample 0.03 evaluation done
+21:20:35: Run 1 and sample 0.03 lock aquired
+21:20:35: Run 1 and sample 0.03 lock released
+21:20:36: -----------------------------------
