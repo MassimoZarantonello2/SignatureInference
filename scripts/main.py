@@ -6,7 +6,6 @@ if __name__ == "__main__":
         description="Esecuzione del modello di valutazione con parametri opzionali"
     )
     bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
-    save_evaluation_path = "./results/locked_models_evaluations.json"
     tissues_path = "./simulations/ground_truth/tumor_site.csv"
     sampling_values = [
         "1",
@@ -67,6 +66,12 @@ if __name__ == "__main__":
         help="Tempo limite per il training dei modelli",
     )
     parser.add_argument(
+        "--label_correlation",
+        type=bool,
+        default=True,
+        help="Correlation between target labels"
+    )
+    parser.add_argument(
         "--runs", type=int, default=None, help="Numero specifico di run da eseguire"
     )
 
@@ -99,7 +104,6 @@ if __name__ == "__main__":
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
         ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
         gt_type=args.gt_type,
-        data_path=data_path,
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
@@ -108,6 +112,7 @@ if __name__ == "__main__":
         num_run=args.runs,
         train_test_split_value=train_test_split_value,
         time_limit=args.time_limit,
+        label_correlation = args.label_correlation,
         save_models_path=save_model_path,
     ) 
 

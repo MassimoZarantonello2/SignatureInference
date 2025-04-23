@@ -25,6 +25,7 @@ class EvaluationsRunner:
         num_run,
         train_test_split_value,
         time_limit,
+        label_correlation,
         save_models_path,
     ):
         self.data_path = "/trinucleotides_counts_sampling_"
@@ -42,6 +43,7 @@ class EvaluationsRunner:
         self.save_evaluation_path = save_evaluation_path
         self.save_models = False
         self.time_limit = time_limit
+        self.label_correlation = label_correlation
         self.train_test_split_value = train_test_split_value
         self.save_models_path = save_models_path
 
@@ -76,7 +78,7 @@ class EvaluationsRunner:
                 path=self.save_models_path,
                 labels=self.labels,
                 problem_types=self.problem_type,
-                verbosity=2,
+                consider_labels_correlation=self.label_correlation,
             )
             predictor.fit(
                 train_df, 
