@@ -154,7 +154,7 @@ class EvaluationsRunner:
             
             for sample in self.sampling_values:
                 sample_index = "sampling_" + sample
-                lc = LogClass(f"logs/{self.evaluation_name}", sample)
+                lc = LogClass(f"logs/{self.save_evaluation_name}", sample)
                 if (all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None):
                     print(f"Running run {run} and sample {sample}")
                     lc.log(f"Starting run {run} and sample {sample}")
