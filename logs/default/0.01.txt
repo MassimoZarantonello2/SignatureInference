@@ -1,0 +1,30 @@
+12:13:08: Starting run 1 and sample 0.01
+12:13:12: For sample 0.01 the train and test dataframes are created
+12:16:21: Starting run 1 and sample 0.01
+12:16:26: For sample 0.01 the train and test dataframes are created
+12:17:34: Starting run 1 and sample 0.01
+12:17:39: For sample 0.01 the train and test dataframes are created
+13:48:17: For sample 0.01 the models are trained
+13:49:01: Error: Predictor is not fit. Call `.fit` before calling `.info`.
+13:49:01: Run 1 and sample 0.01 evaluation done
+13:49:01: Run 1 and sample 0.01 lock aquired
+13:49:01: Run 1 and sample 0.01 lock released
+13:49:01: -----------------------------------
+13:58:24: For sample 0.01 the models are trained
+13:59:41: For sample 0.01 the best models are saved
+13:59:41: Run 1 and sample 0.01 evaluation done
+13:59:41: Run 1 and sample 0.01 lock aquired
+13:59:41: Run 1 and sample 0.01 lock released
+13:59:41: -----------------------------------
+14:14:16: For sample 0.01 the models are trained
+14:15:13: For sample 0.01 the best models are saved
+14:15:13: Run 1 and sample 0.01 evaluation done
+14:15:13: Run 1 and sample 0.01 lock aquired
+14:15:13: Run 1 and sample 0.01 lock released
+14:15:13: -----------------------------------
+14:17:20: Starting run 2 and sample 0.01
+14:17:25: For sample 0.01 the train and test dataframes are created
+14:20:44: Starting run 2 and sample 0.01
+14:20:48: For sample 0.01 the train and test dataframes are created
+14:21:21: Starting run 2 and sample 0.01
+14:21:25: For sample 0.01 the train and test dataframes are created

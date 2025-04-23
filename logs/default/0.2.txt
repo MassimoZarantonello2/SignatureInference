@@ -1,0 +1,39 @@
+12:13:07: Starting run 1 and sample 0.2
+12:13:12: For sample 0.2 the train and test dataframes are created
+12:16:21: Starting run 1 and sample 0.2
+12:16:26: For sample 0.2 the train and test dataframes are created
+12:17:34: Starting run 1 and sample 0.2
+12:17:39: For sample 0.2 the train and test dataframes are created
+12:21:49: Error: Ran out of input
+12:21:49: Run 1 and sample 0.2 evaluation done
+12:21:49: Run 1 and sample 0.2 lock aquired
+12:21:49: Run 1 and sample 0.2 lock released
+12:21:49: -----------------------------------
+14:15:18: For sample 0.2 the models are trained
+14:15:48: For sample 0.2 the models are trained
+14:17:20: Starting run 2 and sample 0.2
+14:17:24: For sample 0.2 the train and test dataframes are created
+14:18:05: For sample 0.2 the best models are saved
+14:18:05: Run 1 and sample 0.2 evaluation done
+14:18:05: Run 1 and sample 0.2 lock aquired
+14:18:05: Run 1 and sample 0.2 lock released
+14:18:05: -----------------------------------
+14:20:33: For sample 0.2 the best models are saved
+14:20:34: Run 1 and sample 0.2 evaluation done
+14:20:34: Run 1 and sample 0.2 lock aquired
+14:20:34: Run 1 and sample 0.2 lock released
+14:20:35: -----------------------------------
+14:20:44: Starting run 2 and sample 0.2
+14:20:49: For sample 0.2 the train and test dataframes are created
+14:21:20: Starting run 2 and sample 0.2
+14:21:25: For sample 0.2 the train and test dataframes are created
+14:34:10: Error: Ran out of input
+14:34:10: Run 2 and sample 0.2 evaluation done
+14:34:10: Run 2 and sample 0.2 lock aquired
+14:34:10: Run 2 and sample 0.2 lock released
+14:34:10: -----------------------------------
+14:38:23: Error: Ran out of input
+14:38:23: Run 2 and sample 0.2 evaluation done
+14:38:23: Run 2 and sample 0.2 lock aquired
+14:38:23: Run 2 and sample 0.2 lock released
+14:38:23: -----------------------------------
