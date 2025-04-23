@@ -1,0 +1,14 @@
+15:15:37: Starting run 1 and sample 0.2
+15:15:51: Starting run 1 and sample 0.2
+15:15:52: For sample 0.2 the train and test dataframes are created
+20:53:20: For sample 0.2 the models are trained
+20:55:26: For sample 0.2 the best models are saved
+20:55:26: Run 1 and sample 0.2 evaluation done
+20:55:26: -----------------------------------
+21:22:33: Starting run 2 and sample 0.2
+21:22:50: Starting run 2 and sample 0.2
+21:22:51: For sample 0.2 the train and test dataframes are created
+02:36:11: For sample 0.2 the models are trained
+02:36:47: Error: 'A[C>A]A'
+02:36:47: Run 2 and sample 0.2 evaluation done
+02:36:47: -----------------------------------
