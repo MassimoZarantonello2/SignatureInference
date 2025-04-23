@@ -3,7 +3,7 @@ import os
 import shutil
 import threading
 import pandas as pd
-import np
+import numpy as np
 import sys
 sys.path.append("./")
 
