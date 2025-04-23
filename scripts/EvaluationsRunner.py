@@ -3,6 +3,7 @@ import os
 import shutil
 import threading
 import pandas as pd
+import np
 import sys
 sys.path.append("./")
 
@@ -20,6 +21,7 @@ class EvaluationsRunner:
         fit_quality,
         hyperparameters_type,
         save_evaluation_path,
+        save_evaluation_name,
         sampling_values,
         run_values,
         num_run,
@@ -41,6 +43,7 @@ class EvaluationsRunner:
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = sampling_values
         self.save_evaluation_path = save_evaluation_path
+        self.save_evaluation_name = save_evaluation_name
         self.save_models = False
         self.time_limit = time_limit
         self.label_correlation = label_correlation
@@ -73,9 +76,10 @@ class EvaluationsRunner:
         )
         test_df = evaluation_df.drop(train_df.index)
         lc.log(f"For sample {sample} the train and test dataframes are created")
+        random_suffix = np.random.randint(0, 1e9)
         try:
             predictor = MultilabelPredictor(         #Creates the MultiLabel predictor
-                path=self.save_models_path,
+                path=os.path.join(self.save_models_path, f"{sample}-{random_suffix}"),                
                 labels=self.labels,
                 problem_types=self.problem_type,
                 consider_labels_correlation=self.label_correlation,
@@ -93,7 +97,6 @@ class EvaluationsRunner:
 
         except Exception as e:
             lc.log(f"Error: {e}")
-            print(f"Error: {e}")
             return None
 
 
@@ -115,12 +118,15 @@ class EvaluationsRunner:
             on="Unnamed: 0")
         
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
+        evaluation_df = evaluation_df.iloc[:100,:]
         signature_model_info = self.train_and_evaluate_framework(evaluation_df, sample, lc)     # Eva
+        lc.log(f"Run {run} and sample {sample} evaluation done")
+        lc.log(f"Sample {signature_model_info}")
 
         with lock:
-            lc.log(f"Run {run} and sample {sample} evaluation done")
             lc.log(f"Run {run} and sample {sample} lock aquired")
             output_dict[sample] = signature_model_info
+            lc.log
             lc.log(f"Run {run} and sample {sample} lock released")
         lc.log("-----------------------------------")
         
@@ -148,7 +154,7 @@ class EvaluationsRunner:
             
             for sample in self.sampling_values:
                 sample_index = "sampling_" + sample
-                lc = LogClass(f"logs/{self.gt_type}", sample)
+                lc = LogClass(f"logs/{self.evaluatoin_name}", sample)
                 if (all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None):
                     print(f"Running run {run} and sample {sample}")
                     lc.log(f"Starting run {run} and sample {sample}")

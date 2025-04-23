@@ -1,5 +1,6 @@
 from EvaluationsRunner import EvaluationsRunner
 import argparse
+from utils.Log import LogClass
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -88,10 +89,7 @@ if __name__ == "__main__":
         save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
    
     if args.save_models is not None:
-        save_model_path = "./models/" + args.save_models + "/"
-    else:
-        save_model_path = None
-        
+        save_model_path = "./models/" + args.save_models + "/"        
 
     print(f"Taking the ground truth from: {bin_ground_truth_path}")
     print(f"Saving the evaluation in: {save_evaluation_path}")
@@ -108,6 +106,7 @@ if __name__ == "__main__":
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
+        save_evaluation_name=args.save_evaluations,
         sampling_values=sampling_values,
         run_values=run_values,
         num_run=args.runs,
