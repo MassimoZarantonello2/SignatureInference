@@ -1,0 +1,4 @@
+15:56:55: Run 1 and sample 0.03 already evaluated, skipping
+16:13:31: Run 1 and sample 0.03 already evaluated, skipping
+18:15:14: Starting run 2 and sample 0.03
+18:15:19: For sample 0.03 the train and test dataframes are created
