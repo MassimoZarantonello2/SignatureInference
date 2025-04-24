@@ -120,8 +120,6 @@ class EvaluationsRunner:
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
         signature_model_info = self.train_and_evaluate_framework(evaluation_df, sample, lc)     # Eva
         lc.log(f"Run {run} and sample {sample} evaluation done")
-        lc.log(f"Sample {signature_model_info}")
-
         with lock:
             lc.log(f"Run {run} and sample {sample} lock aquired")
             output_dict[sample] = signature_model_info
