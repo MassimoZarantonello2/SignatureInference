@@ -88,7 +88,7 @@ class EvaluationsRunner:
                 train_df, 
                 time_limit=self.time_limit, 
                 hyperparameters=self.hyperparameters, 
-                presets=self.fit_quality, 
+                presets=self.fit_quality,
             )            
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = format_model_result(predictor, test_df)

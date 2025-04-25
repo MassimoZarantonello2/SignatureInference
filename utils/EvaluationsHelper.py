@@ -67,6 +67,7 @@ def format_model_result(predictor, test_df):
             "best_model_val_score": best_model_info.get("val_score"),
             "best_model_metrics": metrics,
             "best_model_fit_time": best_model_info.get("fit_time"),
+            "best_model_hyperparameters": best_model_info.get("hyperparameters"),
             "ensemble_models": ensemble_model_names,
             "ensemble_info": ensemble_info,
         }
