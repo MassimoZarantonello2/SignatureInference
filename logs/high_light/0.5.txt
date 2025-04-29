@@ -1,0 +1,14 @@
+11:40:38: Starting run 1 and sample 0.5
+11:40:43: For sample 0.5 the train and test dataframes are created
+12:09:59: Error: Not enough time left to train models for the full fit. Consider specifying a larger time_limit or setting `dynamic_stacking=False`. Time remaining: -623.80s
+12:09:59: Run 1 and sample 0.5 evaluation done
+12:09:59: Run 1 and sample 0.5 lock aquired
+12:09:59: Run 1 and sample 0.5 lock released
+12:09:59: -----------------------------------
+12:15:32: Starting run 2 and sample 0.5
+12:15:39: For sample 0.5 the train and test dataframes are created
+12:15:41: Error: System error: Broken pipe
+12:15:41: Run 2 and sample 0.5 evaluation done
+12:15:41: Run 2 and sample 0.5 lock aquired
+12:15:41: Run 2 and sample 0.5 lock released
+12:15:41: -----------------------------------
