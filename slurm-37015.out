@@ -1,0 +1,2678 @@
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.65 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.64 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.57 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.52 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.52 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.51 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.51 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.51 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.50 GB / 203.90 GB (97.4%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Verbosity: 2 (Standard Logging)
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Verbosity: 2 (Standard Logging)
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Verbosity: 2 (Standard Logging)
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.43 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.43 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.42 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.41 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.40 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.37 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       198.37 GB / 203.90 GB (97.3%)
+Disk Space Avail:   1381.72 GB / 5120.00 GB (27.0%)
+===================================================
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,508	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,514	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,519	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,522	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,529	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,533	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,537	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+2025-04-25 11:40:49,540	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,544	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,546	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,549	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,552	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,557	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,560	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,563	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-25 11:40:49,566	WARNING worker.py:1422 -- SIGTERM handler is not set because current thread is not the main thread.
+2025-04-25 11:41:59,351	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:41:59,463	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:41:59,588	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:41:59,617	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:42:25,814	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Warning: Not enough time to fit DyStack! Skipping...
+2025-04-25 11:42:26,103	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Warning: Not enough time to fit DyStack! Skipping...
+/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/predictor/predictor.py:1380: UserWarning: Failed to use ray for memory safe fits. Falling back to normal fit. Error: AssertionError('Perhaps you called ray.init twice by accident?')
+  stacked_overfitting = self._sub_fit_memory_save_wrapper(
+Warning: Not enough time to fit DyStack! Skipping...
+2025-04-25 11:42:26,318	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+Warning: Not enough time to fit DyStack! Skipping...
+Warning: Not enough time to fit DyStack! Skipping...
+Warning: Not enough time to fit DyStack! Skipping...
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	102s	 = DyStack   runtime |	218s	 = Remaining runtime
+	102s	 = DyStack   runtime |	218s	 = Remaining runtime
+2025-04-25 11:42:27,048	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:42:27,069	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Warning: Not enough time to fit DyStack! Skipping...
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	102s	 = DyStack   runtime |	218s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	103s	 = DyStack   runtime |	217s	 = Remaining runtime
+	103s	 = DyStack   runtime |	217s	 = Remaining runtime
+	103s	 = DyStack   runtime |	217s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Warning: Not enough time to fit DyStack! Skipping...
+Warning: Not enough time to fit DyStack! Skipping...
+2025-04-25 11:42:27,820	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+	103s	 = DyStack   runtime |	217s	 = Remaining runtime
+2025-04-25 11:42:27,856	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Warning: Not enough time to fit DyStack! Skipping...
+	104s	 = DyStack   runtime |	216s	 = Remaining runtime
+	104s	 = DyStack   runtime |	216s	 = Remaining runtime
+Warning: Not enough time to fit DyStack! Skipping...
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	104s	 = DyStack   runtime |	216s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	104s	 = DyStack   runtime |	216s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+2025-04-25 11:42:28,477	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+2025-04-25 11:42:28,512	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Warning: Not enough time to fit DyStack! Skipping...
+Warning: Not enough time to fit DyStack! Skipping...
+2025-04-25 11:42:28,765	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	105s	 = DyStack   runtime |	215s	 = Remaining runtime
+2025-04-25 11:42:28,797	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+	105s	 = DyStack   runtime |	215s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Warning: Not enough time to fit DyStack! Skipping...
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Warning: Not enough time to fit DyStack! Skipping...
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	105s	 = DyStack   runtime |	215s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	106s	 = DyStack   runtime |	214s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+2025-04-25 11:42:30,561	INFO worker.py:1743 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8278 [39m[22m
+Warning: Not enough time to fit DyStack! Skipping...
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	106s	 = DyStack   runtime |	214s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Beginning AutoGluon training ... Time limit = 217s
+Beginning AutoGluon training ... Time limit = 216s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.15-3114576/Predictor_S1 (SBS1 - 0.99)"
+Beginning AutoGluon training ... Time limit = 217s
+Beginning AutoGluon training ... Time limit = 218s
+Beginning AutoGluon training ... Time limit = 216s
+Beginning AutoGluon training ... Time limit = 218s
+Beginning AutoGluon training ... Time limit = 218s
+Beginning AutoGluon training ... Time limit = 217s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.8-5836570/Predictor_S1 (SBS1 - 0.99)"
+Beginning AutoGluon training ... Time limit = 217s
+Train Data Rows:    14495
+Beginning AutoGluon training ... Time limit = 215s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.05-9197362/Predictor_S1 (SBS1 - 0.99)"
+Beginning AutoGluon training ... Time limit = 216s
+Beginning AutoGluon training ... Time limit = 214s
+Beginning AutoGluon training ... Time limit = 215s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.04-1265623/Predictor_S1 (SBS1 - 0.99)"
+Beginning AutoGluon training ... Time limit = 216s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-1-2509049/Predictor_S1 (SBS1 - 0.99)"
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.1-3888762/Predictor_S1 (SBS1 - 0.99)"
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.9-4631715/Predictor_S1 (SBS1 - 0.99)"
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.03-1750556/Predictor_S1 (SBS1 - 0.99)"
+Beginning AutoGluon training ... Time limit = 214s
+Train Data Rows:    14495
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.3-9712042/Predictor_S1 (SBS1 - 0.99)"
+Train Data Columns: 96
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.02-6324584/Predictor_S1 (SBS1 - 0.99)"
+Train Data Rows:    14495
+Beginning AutoGluon training ... Time limit = 215s
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.2-3201636/Predictor_S1 (SBS1 - 0.99)"
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-8581157/Predictor_S1 (SBS1 - 0.99)"
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.4-4803976/Predictor_S1 (SBS1 - 0.99)"
+Train Data Rows:    14495
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.01-2655243/Predictor_S1 (SBS1 - 0.99)"
+Train Data Rows:    14495
+Train Data Rows:    14495
+Train Data Rows:    14495
+Train Data Rows:    14495
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.6-3897979/Predictor_S1 (SBS1 - 0.99)"
+Train Data Columns: 96
+Train Data Rows:    14495
+Label Column:       S1 (SBS1 - 0.99)
+Train Data Rows:    14495
+Train Data Columns: 96
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.7-5203715/Predictor_S1 (SBS1 - 0.99)"
+Train Data Rows:    14495
+Train Data Rows:    14495
+Train Data Rows:    14495
+Train Data Columns: 96
+Train Data Rows:    14495
+Train Data Columns: 96
+Train Data Columns: 96
+Train Data Columns: 96
+Train Data Columns: 96
+Train Data Rows:    14495
+Label Column:       S1 (SBS1 - 0.99)
+Train Data Columns: 96
+Problem Type:       binary
+Train Data Columns: 96
+Label Column:       S1 (SBS1 - 0.99)
+Train Data Rows:    14495
+Train Data Columns: 96
+Train Data Columns: 96
+Train Data Columns: 96
+Label Column:       S1 (SBS1 - 0.99)
+Train Data Columns: 96
+Label Column:       S1 (SBS1 - 0.99)
+Label Column:       S1 (SBS1 - 0.99)
+Label Column:       S1 (SBS1 - 0.99)
+Label Column:       S1 (SBS1 - 0.99)
+Train Data Columns: 96
+Problem Type:       binary
+Label Column:       S1 (SBS1 - 0.99)
+Preprocessing data ...
+Label Column:       S1 (SBS1 - 0.99)
+Problem Type:       binary
+Train Data Columns: 96
+Label Column:       S1 (SBS1 - 0.99)
+Label Column:       S1 (SBS1 - 0.99)
+Label Column:       S1 (SBS1 - 0.99)
+Problem Type:       binary
+Label Column:       S1 (SBS1 - 0.99)
+Problem Type:       binary
+Problem Type:       binary
+Problem Type:       binary
+Problem Type:       binary
+Label Column:       S1 (SBS1 - 0.99)
+Preprocessing data ...
+Problem Type:       binary
+Problem Type:       binary
+Preprocessing data ...
+Label Column:       S1 (SBS1 - 0.99)
+Problem Type:       binary
+Problem Type:       binary
+Problem Type:       binary
+Preprocessing data ...
+Problem Type:       binary
+Preprocessing data ...
+Preprocessing data ...
+Preprocessing data ...
+Preprocessing data ...
+Problem Type:       binary
+Preprocessing data ...
+Preprocessing data ...
+Problem Type:       binary
+Preprocessing data ...
+Preprocessing data ...
+Preprocessing data ...
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Preprocessing data ...
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+Fitting AutoMLPipelineFeatureGenerator...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Fitting AutoMLPipelineFeatureGenerator...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+	Available Memory:                    156815.25 MB
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+Using Feature Generators to preprocess the data ...
+	Available Memory:                    156807.98 MB
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+Fitting AutoMLPipelineFeatureGenerator...
+Fitting AutoMLPipelineFeatureGenerator...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    156792.97 MB
+Fitting AutoMLPipelineFeatureGenerator...
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+Fitting AutoMLPipelineFeatureGenerator...
+Fitting AutoMLPipelineFeatureGenerator...
+Fitting AutoMLPipelineFeatureGenerator...
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    156766.65 MB
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    156762.25 MB
+Fitting AutoMLPipelineFeatureGenerator...
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Available Memory:                    156704.42 MB
+	Available Memory:                    156703.71 MB
+	Available Memory:                    156697.22 MB
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Available Memory:                    156696.62 MB
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Available Memory:                    156682.07 MB
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Available Memory:                    156651.65 MB
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Available Memory:                    156650.68 MB
+	Available Memory:                    156629.71 MB
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Available Memory:                    156613.41 MB
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Available Memory:                    156597.85 MB
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Available Memory:                    156597.19 MB
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Train Data (Original)  Memory Usage: 10.62 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+	Stage 2 Generators:
+	Stage 2 Generators:
+	Stage 4 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting FillNaFeatureGenerator...
+		Fitting FillNaFeatureGenerator...
+	Stage 1 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+	Stage 1 Generators:
+	Stage 2 Generators:
+	Stage 1 Generators:
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+	Stage 3 Generators:
+	Stage 3 Generators:
+		Fitting AsTypeFeatureGenerator...
+		Fitting AsTypeFeatureGenerator...
+	Stage 4 Generators:
+	Stage 1 Generators:
+		Fitting FillNaFeatureGenerator...
+		Fitting AsTypeFeatureGenerator...
+		Fitting AsTypeFeatureGenerator...
+	Stage 1 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting IdentityFeatureGenerator...
+		Fitting IdentityFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+		Fitting AsTypeFeatureGenerator...
+		Fitting AsTypeFeatureGenerator...
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+	Stage 4 Generators:
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+	Stage 4 Generators:
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 2 Generators:
+	Stage 3 Generators:
+	Stage 3 Generators:
+		Fitting FillNaFeatureGenerator...
+		Fitting IdentityFeatureGenerator...
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+	Stage 2 Generators:
+	Stage 3 Generators:
+		Fitting DropUniqueFeatureGenerator...
+		Fitting FillNaFeatureGenerator...
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+	Stage 2 Generators:
+	Stage 3 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+	Stage 3 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 4 Generators:
+	Stage 4 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		Fitting IdentityFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+		Fitting DropUniqueFeatureGenerator...
+	Types of features in processed data (raw dtype, special dtypes):
+	Stage 3 Generators:
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		Fitting IdentityFeatureGenerator...
+	18.9s = Fit runtime
+	Stage 4 Generators:
+	96 features in original data used to generate 96 features in processed data.
+		Fitting DropUniqueFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 21.17s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 130.89s of the 196.30s of remaining time.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	24.1s = Fit runtime
+	96 features in original data used to generate 96 features in processed data.
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 26.76s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	26.9s = Fit runtime
+	96 features in original data used to generate 96 features in processed data.
+	Types of features in original data (raw dtype, special dtypes):
+	Stage 5 Generators:
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in processed data (raw dtype, special dtypes):
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+		Fitting DropDuplicatesFeatureGenerator...
+	25.9s = Fit runtime
+Fitting 1 L1 models, fit_strategy="sequential" ...
+	96 features in original data used to generate 96 features in processed data.
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 127.01s of the 190.08s of remaining time.
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 29.67s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Stage 5 Generators:
+	Types of features in original data (raw dtype, special dtypes):
+		Fitting DropDuplicatesFeatureGenerator...
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	29.1s = Fit runtime
+	96 features in original data used to generate 96 features in processed data.
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 31.48s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+	31.5s = Fit runtime
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+Fitting 1 L1 models, fit_strategy="sequential" ...
+	96 features in original data used to generate 96 features in processed data.
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+	30.7s = Fit runtime
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 124.97s of the 187.22s of remaining time.
+	Types of features in original data (raw dtype, special dtypes):
+	96 features in original data used to generate 96 features in processed data.
+Data preprocessing and feature engineering runtime = 33.62s ...
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in processed data (raw dtype, special dtypes):
+	Types of features in original data (raw dtype, special dtypes):
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	31.8s = Fit runtime
+Fitting 1 L1 models, fit_strategy="sequential" ...
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	32.3s = Fit runtime
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+	Types of features in processed data (raw dtype, special dtypes):
+	96 features in original data used to generate 96 features in processed data.
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 123.02s of the 184.26s of remaining time.
+Data preprocessing and feature engineering runtime = 34.98s ...
+	Types of features in processed data (raw dtype, special dtypes):
+	96 features in original data used to generate 96 features in processed data.
+Data preprocessing and feature engineering runtime = 35.21s ...
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in original data (raw dtype, special dtypes):
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	32.7s = Fit runtime
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	To change this, specify the eval_metric parameter of Predictor()
+	33.5s = Fit runtime
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in processed data (raw dtype, special dtypes):
+	Types of features in original data (raw dtype, special dtypes):
+	96 features in original data used to generate 96 features in processed data.
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+	Types of features in processed data (raw dtype, special dtypes):
+	96 features in original data used to generate 96 features in processed data.
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+Fitting 1 L1 models, fit_strategy="sequential" ...
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+Data preprocessing and feature engineering runtime = 36.47s ...
+	33.7s = Fit runtime
+	Types of features in processed data (raw dtype, special dtypes):
+Data preprocessing and feature engineering runtime = 36.69s ...
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 119.80s of the 179.29s of remaining time.
+	34.1s = Fit runtime
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	96 features in original data used to generate 96 features in processed data.
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	96 features in original data used to generate 96 features in processed data.
+	To change this, specify the eval_metric parameter of Predictor()
+Data preprocessing and feature engineering runtime = 37.08s ...
+	35.6s = Fit runtime
+	To change this, specify the eval_metric parameter of Predictor()
+Data preprocessing and feature engineering runtime = 37.2s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	96 features in original data used to generate 96 features in processed data.
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+	To change this, specify the eval_metric parameter of Predictor()
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Data preprocessing and feature engineering runtime = 37.94s ...
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 120.49s of the 175.15s of remaining time.
+Data preprocessing and feature engineering runtime = 43.58s ...
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 116.27s of the 174.25s of remaining time.
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Data preprocessing and feature engineering runtime = 43.8s ...
+	To change this, specify the eval_metric parameter of Predictor()
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	42.9s = Fit runtime
+	96 features in original data used to generate 96 features in processed data.
+	Types of features in original data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', []) : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	43.2s = Fit runtime
+	96 features in original data used to generate 96 features in processed data.
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 44.98s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+	Train Data (Processed) Memory Usage: 10.62 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 45.64s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 120.83s of the 181.29s of remaining time.
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 119.30s of the 178.99s of remaining time.
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 120.04s of the 180.09s of remaining time.
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 120.01s of the 180.06s of remaining time.
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 113.94s of the 170.95s of remaining time.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 115.08s of the 172.65s of remaining time.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 115.81s of the 173.72s of remaining time.
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 113.11s of the 169.68s of remaining time.
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 117.24s of the 175.87s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.06%)
+[36m(_ray_fit pid=2246267)[0m 	Ran out of time, early stopping on iteration 18. Best iteration is:
+[36m(_ray_fit pid=2246267)[0m 	[15]	valid_set's binary_error: 0.0286976
+[36m(_ray_fit pid=2281403)[0m 	Ran out of time, early stopping on iteration 150. Best iteration is:[32m [repeated 8x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[36m(_ray_fit pid=2281403)[0m 	[72]	valid_set's binary_error: 0.0160044[32m [repeated 8x across cluster][0m
+	0.9705	 = Validation score   (accuracy)
+	64.09s	 = Training   runtime
+	0.37s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 180.23s of the -35.62s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9705	 = Validation score   (accuracy)
+	0.08s	 = Training   runtime
+	0.03s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 180.23s of the -36.14s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9705	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 254.24s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4796.8 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	3.35s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.08s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 4.0s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9705
+	Best Threshold: 0.612	| val: 0.9723
+Updating predictor.decision_threshold from 0.5 -> 0.612
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.612 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.7-5203715/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       167.05 GB / 203.90 GB (81.9%)
+Disk Space Avail:   1381.18 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.7-5203715/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2282966)[0m 	Ran out of time, early stopping on iteration 227. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2282966)[0m 	[65]	valid_set's binary_error: 0.0198675[32m [repeated 8x across cluster][0m
+	0.9739	 = Validation score   (accuracy)
+	62.94s	 = Training   runtime
+	0.43s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 196.51s of the -121.27s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9739	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 196.51s of the -121.53s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9739	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 340.25s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4217.4 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	5.47s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 6.61s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9739
+	Best Threshold: 0.500	| val: 0.9739
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.04-1265623/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.55 GB / 203.90 GB (81.7%)
+Disk Space Avail:   1381.18 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.04-1265623/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2284593)[0m 	Ran out of time, early stopping on iteration 76. Best iteration is:[32m [repeated 7x across cluster][0m
+[36m(_ray_fit pid=2284593)[0m 	[76]	valid_set's binary_error: 0.0165563[32m [repeated 7x across cluster][0m
+	0.9742	 = Validation score   (accuracy)
+	69.6s	 = Training   runtime
+	0.45s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 180.11s of the -204.99s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9742	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 180.11s of the -206.35s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9742	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 433.38s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 3965.0 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	4.03s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 5.71s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9742
+	Best Threshold: 0.500	| val: 0.9742
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.3-9712042/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.96 GB / 203.90 GB (81.9%)
+Disk Space Avail:   1381.17 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.3-9712042/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2286220)[0m 	Ran out of time, early stopping on iteration 33. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2286220)[0m 	[20]	valid_set's binary_error: 0.0259382[32m [repeated 8x across cluster][0m
+	0.9729	 = Validation score   (accuracy)
+	411.7s	 = Training   runtime
+	0.45s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 191.23s of the -297.00s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9729	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 191.24s of the -297.19s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9729	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 516.85s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 3963.6 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	5.31s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 6.46s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9729
+	Best Threshold: 0.642	| val: 0.9734
+Updating predictor.decision_threshold from 0.5 -> 0.642
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.642 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.1-3888762/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.63 GB / 203.90 GB (81.7%)
+Disk Space Avail:   1380.75 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.1-3888762/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2287854)[0m 	Ran out of time, early stopping on iteration 379. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2287854)[0m 	[192]	valid_set's binary_error: 0.01766[32m [repeated 8x across cluster][0m
+	0.9727	 = Validation score   (accuracy)
+	493.85s	 = Training   runtime
+	0.66s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 180.04s of the -382.63s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9727	 = Validation score   (accuracy)
+	0.06s	 = Training   runtime
+	0.03s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 180.04s of the -382.89s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9727	 = Validation score   (accuracy)
+	0.06s	 = Training   runtime
+	0.03s	 = Validation runtime
+AutoGluon training complete, total runtime = 599.14s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 2718.3 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+[36m(_ray_fit pid=2287859)[0m 	Ran out of time, early stopping on iteration 264. Best iteration is:[32m [repeated 6x across cluster][0m
+[36m(_ray_fit pid=2287859)[0m 	[140]	valid_set's binary_error: 0.0204194[32m [repeated 6x across cluster][0m
+	8.54s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.06s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.06s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 9.51s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9727
+	Best Threshold: 0.627	| val: 0.9735
+Updating predictor.decision_threshold from 0.5 -> 0.627
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.627 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.6-3897979/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.42 GB / 203.90 GB (81.6%)
+Disk Space Avail:   1380.75 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.6-3897979/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2289495)[0m 	Ran out of time, early stopping on iteration 361. Best iteration is:[32m [repeated 2x across cluster][0m
+[36m(_ray_fit pid=2289495)[0m 	[181]	valid_set's binary_error: 0.0193157[32m [repeated 2x across cluster][0m
+	0.9754	 = Validation score   (accuracy)
+	152.02s	 = Training   runtime
+	0.43s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 175.94s of the -465.97s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9754	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 175.94s of the -466.19s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9754	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.01s	 = Validation runtime
+AutoGluon training complete, total runtime = 689.67s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4220.7 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	8.73s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 9.63s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9754
+	Best Threshold: 0.500	| val: 0.9754
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-8581157/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.29 GB / 203.90 GB (81.6%)
+Disk Space Avail:   1380.75 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-8581157/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2291133)[0m 	Ran out of time, early stopping on iteration 40. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2291133)[0m 	[33]	valid_set's binary_error: 0.01766[32m [repeated 8x across cluster][0m
+	0.9753	 = Validation score   (accuracy)
+	670.42s	 = Training   runtime
+	0.65s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 172.68s of the -555.80s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9753	 = Validation score   (accuracy)
+	0.06s	 = Training   runtime
+	0.03s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 172.68s of the -556.36s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9753	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 776.65s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 2779.8 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	6.94s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.06s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 8.53s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9753
+	Best Threshold: 0.566	| val: 0.9762
+Updating predictor.decision_threshold from 0.5 -> 0.5660000000000001
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.5660000000000001 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.8-5836570/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.26 GB / 203.90 GB (81.5%)
+Disk Space Avail:   1380.75 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.8-5836570/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2292758)[0m 	Ran out of time, early stopping on iteration 93. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2292758)[0m 	[74]	valid_set's binary_error: 0.0165563[32m [repeated 8x across cluster][0m
+	0.9733	 = Validation score   (accuracy)
+	157.25s	 = Training   runtime
+	0.35s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 179.00s of the -642.37s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9733	 = Validation score   (accuracy)
+	0.06s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 179.00s of the -642.60s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9733	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 867.55s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 5070.2 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	4.69s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.06s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 5.35s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9733
+	Best Threshold: 0.500	| val: 0.9733
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.4-4803976/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.25 GB / 203.90 GB (81.5%)
+Disk Space Avail:   1380.38 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.4-4803976/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2294425)[0m 	Ran out of time, early stopping on iteration 4. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2294425)[0m 	[1]	valid_set's binary_error: 0.0375276[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2294399)[0m 	Ran out of time, early stopping on iteration 184. Best iteration is:[32m [repeated 2x across cluster][0m
+[36m(_ray_fit pid=2294399)[0m 	[44]	valid_set's binary_error: 0.0154525[32m [repeated 2x across cluster][0m
+	0.9763	 = Validation score   (accuracy)
+	155.87s	 = Training   runtime
+	0.31s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 181.30s of the -727.27s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9763	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 181.30s of the -727.46s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9763	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 954.68s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 5845.6 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	6.4s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 7.3s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9763
+	Best Threshold: 0.607	| val: 0.9769
+Updating predictor.decision_threshold from 0.5 -> 0.607
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.607 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.9-4631715/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.03 GB / 203.90 GB (81.4%)
+Disk Space Avail:   1380.38 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.9-4631715/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2296045)[0m 	Ran out of time, early stopping on iteration 278. Best iteration is:[32m [repeated 6x across cluster][0m
+[36m(_ray_fit pid=2296045)[0m 	[72]	valid_set's binary_error: 0.0182119[32m [repeated 6x across cluster][0m
+	0.9755	 = Validation score   (accuracy)
+	930.35s	 = Training   runtime
+	0.73s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 184.95s of the -816.05s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9755	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 184.95s of the -816.29s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9755	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 1035.71s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 2458.1 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+[36m(_ray_fit pid=2296048)[0m 	Ran out of time, early stopping on iteration 8. Best iteration is:[32m [repeated 3x across cluster][0m
+[36m(_ray_fit pid=2296048)[0m 	[1]	valid_set's binary_error: 0.0375276[32m [repeated 3x across cluster][0m
+	9.74s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 10.64s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9755
+	Best Threshold: 0.503	| val: 0.9756
+Updating predictor.decision_threshold from 0.5 -> 0.503
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.503 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.01-2655243/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.06 GB / 203.90 GB (81.4%)
+Disk Space Avail:   1380.38 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.01-2655243/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2297833)[0m 	Ran out of time, early stopping on iteration 44. Best iteration is:[32m [repeated 5x across cluster][0m
+[36m(_ray_fit pid=2297833)[0m 	[44]	valid_set's binary_error: 0.0220751[32m [repeated 5x across cluster][0m
+	0.9776	 = Validation score   (accuracy)
+	150.27s	 = Training   runtime
+	0.41s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 181.05s of the -903.77s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9776	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 181.05s of the -903.99s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9776	 = Validation score   (accuracy)
+	0.03s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 1122.87s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4393.1 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	10.25s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.03s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 11.21s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9776
+	Best Threshold: 0.500	| val: 0.9776
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-1-2509049/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       165.89 GB / 203.90 GB (81.4%)
+Disk Space Avail:   1380.36 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-1-2509049/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2299464)[0m 	Ran out of time, early stopping on iteration 77. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2299464)[0m 	[34]	valid_set's binary_error: 0.0204194[32m [repeated 8x across cluster][0m
+	0.973	 = Validation score   (accuracy)
+	1099.72s	 = Training   runtime
+	0.65s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 187.73s of the -984.27s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.973	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 187.73s of the -984.51s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.973	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.03s	 = Validation runtime
+AutoGluon training complete, total runtime = 1205.24s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 2757.1 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	4.43s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 5.29s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9730
+	Best Threshold: 0.500	| val: 0.9730
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.15-3114576/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.43 GB / 203.90 GB (81.6%)
+Disk Space Avail:   1380.02 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.15-3114576/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2301088)[0m 	Ran out of time, early stopping on iteration 193. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2301088)[0m 	[190]	valid_set's binary_error: 0.0165654[32m [repeated 8x across cluster][0m
+	0.9763	 = Validation score   (accuracy)
+	149.47s	 = Training   runtime
+	0.48s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 170.95s of the -1072.58s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9763	 = Validation score   (accuracy)
+	0.06s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 170.95s of the -1072.81s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9763	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 1291.32s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 3766.7 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	0.968	 = Validation score   (accuracy)
+	1188.27s	 = Training   runtime
+	0.42s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 173.77s of the -1072.14s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.968	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 173.78s of the -1072.30s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.968	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.01s	 = Validation runtime
+AutoGluon training complete, total runtime = 1293.62s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4343.2 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	4.75s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 6.04s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	8.42s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.06s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 9.32s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+	Base Threshold: 0.500	| val: 0.9680
+	Best Threshold: 0.919	| val: 0.9723
+Updating predictor.decision_threshold from 0.5 -> 0.9189999999999999
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.9189999999999999 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.03-1750556/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.25 GB / 203.90 GB (81.5%)
+Disk Space Avail:   1380.01 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.03-1750556/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9763
+	Best Threshold: 0.687	| val: 0.9787
+Updating predictor.decision_threshold from 0.5 -> 0.6869999999999999
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.6869999999999999 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.2-3201636/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.19 GB / 203.90 GB (81.5%)
+Disk Space Avail:   1380.01 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.2-3201636/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2302743)[0m 	Ran out of time, early stopping on iteration 106. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2302743)[0m 	[26]	valid_set's binary_error: 0.0215232[32m [repeated 8x across cluster][0m
+	0.9742	 = Validation score   (accuracy)
+	63.99s	 = Training   runtime
+	0.48s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 169.74s of the -1160.08s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9742	 = Validation score   (accuracy)
+	0.05s	 = Training   runtime
+	0.03s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 169.74s of the -1160.35s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9742	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 1377.86s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 3714.9 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	6.26s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.05s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 6.86s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9742
+	Best Threshold: 0.662	| val: 0.9756
+Updating predictor.decision_threshold from 0.5 -> 0.662
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.662 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.02-6324584/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.35 GB / 203.90 GB (81.6%)
+Disk Space Avail:   1380.01 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.02-6324584/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_ray_fit pid=2304441)[0m 	Ran out of time, early stopping on iteration 269. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2304441)[0m 	[205]	valid_set's binary_error: 0.0220751[32m [repeated 8x across cluster][0m
+	0.9712	 = Validation score   (accuracy)
+	68.71s	 = Training   runtime
+	0.79s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 180.07s of the -1239.52s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9712	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+Fitting 1 L2 models, fit_strategy="sequential" ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 180.07s of the -1239.69s of remaining time.
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.9712	 = Validation score   (accuracy)
+	0.04s	 = Training   runtime
+	0.02s	 = Validation runtime
+AutoGluon training complete, total runtime = 1466.62s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 2290.8 rows/s (1812 batch size)
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting 1 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	7.95s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+	0.04s	 = Training   runtime
+Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+Refit complete, total runtime = 8.59s ... Best model: "LightGBMXT_BAG_L1_FULL"
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	Base Threshold: 0.500	| val: 0.9712
+	Best Threshold: 0.924	| val: 0.9730
+Updating predictor.decision_threshold from 0.5 -> 0.9239999999999999
+	This will impact how prediction probabilities are converted to predictions in binary classification.
+	Prediction probabilities of the positive class >0.9239999999999999 will be predicted as the positive class (True). This can significantly impact metric scores.
+	You can update this value via `predictor.set_decision_threshold`.
+	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.05-9197362/Predictor_S1 (SBS1 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       166.90 GB / 203.90 GB (81.9%)
+Disk Space Avail:   1379.96 GB / 5120.00 GB (27.0%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.05-9197362/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_dystack pid=2306084)[0m Running DyStack sub-fit ...
+[36m(_ray_fit pid=2304443)[0m 	Ran out of time, early stopping on iteration 7. Best iteration is:[32m [repeated 7x across cluster][0m
+[36m(_ray_fit pid=2304443)[0m 	[1]	valid_set's binary_error: 0.0375276[32m [repeated 7x across cluster][0m
+[36m(_dystack pid=2306084)[0m Beginning AutoGluon training ... Time limit = 80s
+[36m(_dystack pid=2306084)[0m AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-8581157/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_dystack pid=2306084)[0m Train Data Rows:    12884
+[36m(_dystack pid=2306084)[0m Train Data Columns: 97
+[36m(_dystack pid=2306084)[0m Label Column:       S2 (SBS2 - 0.99)
+[36m(_dystack pid=2306084)[0m Problem Type:       binary
+[36m(_dystack pid=2306084)[0m Preprocessing data ...
+[36m(_dystack pid=2306084)[0m Selected class <--> label mapping:  class 1 = True, class 0 = False
+[36m(_dystack pid=2306084)[0m Using Feature Generators to preprocess the data ...
+[36m(_dystack pid=2306084)[0m Fitting AutoMLPipelineFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 	Available Memory:                    170912.05 MB
+[36m(_dystack pid=2306084)[0m 	Train Data (Original)  Memory Usage: 9.45 MB (0.0% of available memory)
+[36m(_dystack pid=2306084)[0m 	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+[36m(_dystack pid=2306084)[0m 	Stage 1 Generators:
+[36m(_dystack pid=2306084)[0m 		Fitting AsTypeFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 			Note: Converting 1 features to boolean dtype as they only contain 2 unique values.
+[36m(_dystack pid=2306084)[0m 	Stage 2 Generators:
+[36m(_dystack pid=2306084)[0m 		Fitting FillNaFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 	Stage 3 Generators:
+[36m(_dystack pid=2306084)[0m 		Fitting IdentityFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 	Stage 4 Generators:
+[36m(_dystack pid=2306084)[0m 		Fitting DropUniqueFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 	Stage 5 Generators:
+[36m(_dystack pid=2306084)[0m 		Fitting DropDuplicatesFeatureGenerator...
+[36m(_dystack pid=2306084)[0m 	Types of features in original data (raw dtype, special dtypes):
+[36m(_dystack pid=2306084)[0m 		('bool', []) :  1 | ['S1 (SBS1 - 0.99)']
+[36m(_dystack pid=2306084)[0m 		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+[36m(_dystack pid=2306084)[0m 	Types of features in processed data (raw dtype, special dtypes):
+[36m(_dystack pid=2306084)[0m 		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+[36m(_dystack pid=2306084)[0m 		('int', ['bool']) :  1 | ['S1 (SBS1 - 0.99)']
+[36m(_dystack pid=2306084)[0m 	1.5s = Fit runtime
+[36m(_dystack pid=2306084)[0m 	97 features in original data used to generate 97 features in processed data.
+[36m(_dystack pid=2306084)[0m 	Train Data (Processed) Memory Usage: 9.45 MB (0.0% of available memory)
+[36m(_dystack pid=2306084)[0m Data preprocessing and feature engineering runtime = 1.61s ...
+[36m(_dystack pid=2306084)[0m AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+[36m(_dystack pid=2306084)[0m 	To change this, specify the eval_metric parameter of Predictor()
+[36m(_dystack pid=2306084)[0m User-specified model hyperparameters to be fit:
+[36m(_dystack pid=2306084)[0m {
+[36m(_dystack pid=2306084)[0m 	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+[36m(_dystack pid=2306084)[0m }
+[36m(_dystack pid=2306084)[0m AutoGluon will fit 2 stack levels (L1 to L2) ...
+[36m(_dystack pid=2306084)[0m Fitting 1 L1 models, fit_strategy="sequential" ...
+[36m(_dystack pid=2306084)[0m Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 52.25s of the 78.38s of remaining time.
+[36m(_dystack pid=2306084)[0m 	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.05%)
+[36m(_dystack pid=2306330)[0m Running DyStack sub-fit ...
+[36m(_dystack pid=2306330)[0m Beginning AutoGluon training ... Time limit = 80s
+[36m(_dystack pid=2306330)[0m AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.15-3114576/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho"
+[36m(_dystack pid=2306330)[0m Train Data Rows:    12884
+[36m(_dystack pid=2306330)[0m Train Data Columns: 97
+[36m(_dystack pid=2306330)[0m Label Column:       S2 (SBS2 - 0.99)
+[36m(_dystack pid=2306330)[0m Problem Type:       binary
+[36m(_dystack pid=2306330)[0m Preprocessing data ...
+[36m(_dystack pid=2306330)[0m Selected class <--> label mapping:  class 1 = True, class 0 = False
+[36m(_dystack pid=2306330)[0m Using Feature Generators to preprocess the data ...
+[36m(_dystack pid=2306330)[0m Fitting AutoMLPipelineFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 	Available Memory:                    170553.63 MB
+[36m(_dystack pid=2306330)[0m 	Train Data (Original)  Memory Usage: 9.45 MB (0.0% of available memory)
+[36m(_dystack pid=2306330)[0m 	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+[36m(_dystack pid=2306330)[0m 	Stage 1 Generators:
+[36m(_dystack pid=2306330)[0m 		Fitting AsTypeFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 			Note: Converting 1 features to boolean dtype as they only contain 2 unique values.
+[36m(_dystack pid=2306330)[0m 	Stage 2 Generators:
+[36m(_dystack pid=2306330)[0m 		Fitting FillNaFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 	Stage 3 Generators:
+[36m(_dystack pid=2306330)[0m 		Fitting IdentityFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 	Stage 4 Generators:
+[36m(_dystack pid=2306330)[0m 		Fitting DropUniqueFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 	Stage 5 Generators:
+[36m(_dystack pid=2306330)[0m 		Fitting DropDuplicatesFeatureGenerator...
+[36m(_dystack pid=2306330)[0m 	Types of features in original data (raw dtype, special dtypes):
+[36m(_dystack pid=2306330)[0m 		('bool', []) :  1 | ['S1 (SBS1 - 0.99)']
+[36m(_dystack pid=2306330)[0m 		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+[36m(_dystack pid=2306330)[0m 	Types of features in processed data (raw dtype, special dtypes):
+[36m(_dystack pid=2306330)[0m 		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+[36m(_dystack pid=2306330)[0m 		('int', ['bool']) :  1 | ['S1 (SBS1 - 0.99)']
+[36m(_dystack pid=2306330)[0m 	1.5s = Fit runtime
+[36m(_dystack pid=2306330)[0m 	97 features in original data used to generate 97 features in processed data.
+[36m(_dystack pid=2306330)[0m 	Train Data (Processed) Memory Usage: 9.45 MB (0.0% of available memory)
+[36m(_dystack pid=2306330)[0m Data preprocessing and feature engineering runtime = 1.62s ...
+[36m(_dystack pid=2306330)[0m AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+[36m(_dystack pid=2306330)[0m 	To change this, specify the eval_metric parameter of Predictor()
+[36m(_dystack pid=2306330)[0m User-specified model hyperparameters to be fit:
+[36m(_dystack pid=2306330)[0m {
+[36m(_dystack pid=2306330)[0m 	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}],
+[36m(_dystack pid=2306330)[0m }
+[36m(_dystack pid=2306330)[0m AutoGluon will fit 2 stack levels (L1 to L2) ...
+[36m(_dystack pid=2306330)[0m Fitting 1 L1 models, fit_strategy="sequential" ...
+[36m(_dystack pid=2306330)[0m Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 52.23s of the 78.37s of remaining time.
+[36m(_dystack pid=2306330)[0m 	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.05%)
+[36m(_ray_fit pid=2306502)[0m 	Ran out of time, early stopping on iteration 6. Best iteration is:
+[36m(_ray_fit pid=2306502)[0m 	[1]	valid_set's binary_error: 0.149597
+[36m(_dystack pid=2306330)[0m 	0.8607	 = Validation score   (accuracy)
+[36m(_dystack pid=2306330)[0m 	29.35s	 = Training   runtime
+[36m(_dystack pid=2306330)[0m 	0.51s	 = Validation runtime
+[36m(_dystack pid=2306330)[0m Fitting model: WeightedEnsemble_L2 ... Training model for up to 78.37s of the 12.15s of remaining time.
+[36m(_dystack pid=2306330)[0m 	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+[36m(_dystack pid=2306330)[0m 	0.8607	 = Validation score   (accuracy)
+[36m(_dystack pid=2306330)[0m 	0.04s	 = Training   runtime
+[36m(_dystack pid=2306330)[0m 	0.02s	 = Validation runtime
+[36m(_dystack pid=2306330)[0m Fitting 1 L2 models, fit_strategy="sequential" ...
+[36m(_dystack pid=2306330)[0m Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 12.02s of the 12.00s of remaining time.
+[36m(_dystack pid=2306330)[0m 	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (8 workers, per: cpus=34, gpus=0, memory=0.05%)
+[36m(_ray_fit pid=2308048)[0m 	Ran out of time, early stopping on iteration 66. Best iteration is:[32m [repeated 8x across cluster][0m
+[36m(_ray_fit pid=2308048)[0m 	[56]	valid_set's binary_error: 0.0900062[32m [repeated 8x across cluster][0m
+[36m(_dystack pid=2306084)[0m 	0.8655	 = Validation score   (accuracy)
+[36m(_dystack pid=2306084)[0m 	27.62s	 = Training   runtime
+[36m(_dystack pid=2306084)[0m 	0.42s	 = Validation runtime
+[36m(_dystack pid=2306084)[0m Fitting model: WeightedEnsemble_L2 ... Training model for up to 78.39s of the -71.15s of remaining time.
+[36m(_dystack pid=2306084)[0m 	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+[36m(_dystack pid=2306084)[0m 	0.8655	 = Validation score   (accuracy)
+[36m(_dystack pid=2306084)[0m 	0.04s	 = Training   runtime
+[36m(_dystack pid=2306084)[0m 	0.01s	 = Validation runtime
+[36m(_dystack pid=2306084)[0m Fitting 1 L2 models, fit_strategy="sequential" ...
+[36m(_dystack pid=2306084)[0m Fitting model: WeightedEnsemble_L3 ... Training model for up to 78.39s of the -71.32s of remaining time.
+[36m(_dystack pid=2306084)[0m 	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+[36m(_dystack pid=2306084)[0m 	0.8655	 = Validation score   (accuracy)
+[36m(_dystack pid=2306084)[0m 	0.04s	 = Training   runtime
+[36m(_dystack pid=2306084)[0m 	0.02s	 = Validation runtime
+[36m(_dystack pid=2306084)[0m AutoGluon training complete, total runtime = 151.67s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 3815.5 rows/s (1611 batch size)
+[36m(_dystack pid=2306084)[0m Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+[36m(_dystack pid=2306084)[0m Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+[36m(_dystack pid=2306084)[0m 	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+[36m(_dystack pid=2306084)[0m 	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+[36m(_dystack pid=2306084)[0m 	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+[36m(_dystack pid=2306084)[0m Fitting 1 L1 models, fit_strategy="sequential" ...
+[36m(_dystack pid=2306084)[0m Fitting model: LightGBMXT_BAG_L1_FULL ...
+[36m(_dystack pid=2306084)[0m 	3.79s	 = Training   runtime
+[36m(_dystack pid=2306084)[0m Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+[36m(_dystack pid=2306084)[0m 	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+[36m(_dystack pid=2306084)[0m 	0.04s	 = Training   runtime
+[36m(_dystack pid=2306084)[0m Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+[36m(_dystack pid=2306084)[0m 	Ensemble Weights: {'LightGBMXT_BAG_L1': 1.0}
+[36m(_dystack pid=2306084)[0m 	0.04s	 = Training   runtime
+[36m(_ray_fit pid=2308053)[0m 	Ran out of time, early stopping on iteration 3. Best iteration is:[32m [repeated 7x across cluster][0m
+[36m(_ray_fit pid=2308053)[0m 	[1]	valid_set's binary_error: 0.149068[32m [repeated 7x across cluster][0m
+[36m(_dystack pid=2306084)[0m Updated best model to "LightGBMXT_BAG_L1_FULL" (Previously "WeightedEnsemble_L2"). AutoGluon will default to using "LightGBMXT_BAG_L1_FULL" for predict() and predict_proba().
+[36m(_dystack pid=2306084)[0m Refit complete, total runtime = 4.5s ... Best model: "LightGBMXT_BAG_L1_FULL"
+[36m(_dystack pid=2306084)[0m Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+[36m(_dystack pid=2306084)[0m Calibrating decision threshold to optimize metric accuracy | Checking 51 thresholds...
+[36m(_dystack pid=2306084)[0m Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+[36m(_dystack pid=2306084)[0m 	Base Threshold: 0.500	| val: 0.8655
+[36m(_dystack pid=2306084)[0m 	Best Threshold: 0.686	| val: 0.8709
+[36m(_dystack pid=2306084)[0m Updating predictor.decision_threshold from 0.5 -> 0.6859999999999999
+[36m(_dystack pid=2306084)[0m 	This will impact how prediction probabilities are converted to predictions in binary classification.
+[36m(_dystack pid=2306084)[0m 	Prediction probabilities of the positive class >0.6859999999999999 will be predicted as the positive class (True). This can significantly impact metric scores.
+[36m(_dystack pid=2306084)[0m 	You can update this value via `predictor.set_decision_threshold`.
+[36m(_dystack pid=2306084)[0m 	You can calculate an optimal decision threshold on the validation data via `predictor.calibrate_decision_threshold()`.
+[36m(_dystack pid=2306084)[0m TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-8581157/Predictor_S2 (SBS2 - 0.99)/ds_sub_fit/sub_fit_ho")
+Leaderboard on holdout data (DyStack):
+[36m(_dystack pid=2306084)[0m Deleting DyStack predictor artifacts (clean_up_fits=True) ...
+                      model  score_holdout  score_val eval_metric  pred_time_test pred_time_val  fit_time  pred_time_test_marginal pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0    LightGBMXT_BAG_L1_FULL       0.896958   0.865492    accuracy        0.032954          None  3.794533                 0.032954                   None           3.794533            1       True          1
+1  WeightedEnsemble_L3_FULL       0.896958   0.865492    accuracy        0.047628          None  3.837792                 0.014674                   None           0.043259            3       True          3
+2  WeightedEnsemble_L2_FULL       0.896958   0.865492    accuracy        0.053082          None  3.830401                 0.020128                   None           0.035868            2       True          2
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	944s	 = DyStack   runtime |	-624s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Leaderboard on holdout data (DyStack):
+                      model  score_holdout  score_val eval_metric  pred_time_test pred_time_val  fit_time  pred_time_test_marginal pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0    LightGBMXT_BAG_L2_FULL       0.870267   0.861223    accuracy        0.058508          None  3.836705                 0.030101                   None           1.196240            2       True          3
+1  WeightedEnsemble_L3_FULL       0.870267   0.861223    accuracy        0.075743          None  4.567099                 0.017235                   None           0.730394            3       True          4
+2    LightGBMXT_BAG_L1_FULL       0.868405   0.860680    accuracy        0.028407          None  2.640464                 0.028407                   None           2.640464            1       True          1
+3  WeightedEnsemble_L2_FULL       0.868405   0.860680    accuracy        0.048342          None  2.680771                 0.019935                   None           0.040307            2       True          2
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	463s	 = DyStack   runtime |	-143s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Leaderboard on holdout data (DyStack):
+                      model  score_holdout  score_val eval_metric  pred_time_test pred_time_val   fit_time  pred_time_test_marginal pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0    LightGBMXT_BAG_L1_FULL       0.868405   0.860758    accuracy        0.031411          None  12.923229                 0.031411                   None          12.923229            1       True          1
+1  WeightedEnsemble_L3_FULL       0.868405   0.860758    accuracy        0.046261          None  12.978200                 0.014850                   None           0.054971            3       True          3
+2  WeightedEnsemble_L2_FULL       0.868405   0.860758    accuracy        0.051592          None  12.966473                 0.020181                   None           0.043244            2       True          2
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	1624s	 = DyStack   runtime |	-1304s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       194.01 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.05-8325804/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       194.01 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+Verbosity: 2 (Standard Logging)
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       194.00 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.98 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.95 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Verbosity: 2 (Standard Logging)
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Verbosity: 2 (Standard Logging)
+Presets specified: ['high_quality']
+Presets specified: ['high_quality']
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.92 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Verbosity: 2 (Standard Logging)
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.91 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Verbosity: 2 (Standard Logging)
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.91 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Presets specified: ['high_quality']
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Verbosity: 2 (Standard Logging)
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Presets specified: ['high_quality']
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.91 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-1-2215104/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.90 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Verbosity: 2 (Standard Logging)
+Verbosity: 2 (Standard Logging)
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.89 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.88 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.88 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.1-8222403/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Presets specified: ['high_quality']
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Verbosity: 2 (Standard Logging)
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.87 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.15-5157699/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Verbosity: 2 (Standard Logging)
+Presets specified: ['high_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.87 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Presets specified: ['high_quality']
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.5-1484405/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       193.87 GB / 203.90 GB (95.1%)
+Disk Space Avail:   1379.48 GB / 5120.00 GB (26.9%)
+===================================================
+Presets specified: ['high_quality']
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.3-7644169/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.03-6739698/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.6-374564/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.8-5853461/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.04-4930630/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Note: `save_bag_folds=False`! This will greatly reduce peak disk usage during fit (by ~8x), but runs the risk of an out-of-memory error during model refit if memory is small relative to the data size.
+	You can avoid this risk by setting `save_bag_folds=True`.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.2-2701626/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.01-2832983/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.9-6662231/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.4-4735681/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.7-8699352/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 80s of the 320s of remaining time (25%).
+		Context path: "/home/baderlab/mzarant/SignatureInference/models/hight_light/Predictior-0.02-7036504/Predictor_S1 (SBS1 - 0.99)/ds_sub_fit/sub_fit_ho"
+Taking the ground truth from: ./simulations/ground_truth/bin_exposures.csv
+Saving the evaluation in: ./results/high_light_evaluations.json
+Saving the models in: ./models/hight_light/
+Using quality of: high_quality
+Taking the hyperparameters from: lightgbmxt
+Time limit: 320
+Using label correlation: True
+Num run: 2
+Running run 1 and sample 1
+Running run 1 and sample 0.9
+Running run 1 and sample 0.8
+Running run 1 and sample 0.7
+Running run 1 and sample 0.6
+Running run 1 and sample 0.5
+Running run 1 and sample 0.4
+Running run 1 and sample 0.3
+Running run 1 and sample 0.2
+Running run 1 and sample 0.15
+Running run 1 and sample 0.1
+Running run 1 and sample 0.05
+Running run 1 and sample 0.04
+Running run 1 and sample 0.03
+Running run 1 and sample 0.02
+Running run 1 and sample 0.01
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Fitting TabularPredictor for label: S2 (SBS2 - 0.99) ...
+Running run 2 and sample 1
+Running run 2 and sample 0.9
+Running run 2 and sample 0.8
+Running run 2 and sample 0.7
+Running run 2 and sample 0.6
+Running run 2 and sample 0.5
+Running run 2 and sample 0.4
+Running run 2 and sample 0.3
+Running run 2 and sample 0.2
+Running run 2 and sample 0.15
+Running run 2 and sample 0.1
+Running run 2 and sample 0.05
+Running run 2 and sample 0.04
+Running run 2 and sample 0.03
+Running run 2 and sample 0.02
+Running run 2 and sample 0.01
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...
+Fitting TabularPredictor for label: S1 (SBS1 - 0.99) ...

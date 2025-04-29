@@ -1,0 +1,14 @@
+11:40:38: Starting run 1 and sample 0.05
+11:40:43: For sample 0.05 the train and test dataframes are created
+12:15:27: Error: The task's local raylet died. Check raylet.out for more information.
+12:15:27: Run 1 and sample 0.05 evaluation done
+12:15:27: Run 1 and sample 0.05 lock aquired
+12:15:27: Run 1 and sample 0.05 lock released
+12:15:27: -----------------------------------
+12:15:32: Starting run 2 and sample 0.05
+12:15:37: For sample 0.05 the train and test dataframes are created
+12:15:39: Error: System error: Broken pipe
+12:15:39: Run 2 and sample 0.05 evaluation done
+12:15:39: Run 2 and sample 0.05 lock aquired
+12:15:39: Run 2 and sample 0.05 lock released
+12:15:39: -----------------------------------
