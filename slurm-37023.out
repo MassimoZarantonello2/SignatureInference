@@ -46074,3 +46074,886 @@ Fitting model: CatBoost ...
 	13.74s	 = Training   runtime
 	4.83s	 = Validation runtime
 Fitting model: CatBoost ...
+	0.8766	 = Validation score   (accuracy)
+	180.41s	 = Training   runtime
+	0.15s	 = Validation runtime
+Fitting model: ExtraTreesGini ...
+	0.8538	 = Validation score   (accuracy)
+	18.16s	 = Training   runtime
+	8.34s	 = Validation runtime
+Fitting model: ExtraTreesEntr ...
+	0.8745	 = Validation score   (accuracy)
+	202.01s	 = Training   runtime
+	0.07s	 = Validation runtime
+Fitting model: ExtraTreesGini ...
+	0.8552	 = Validation score   (accuracy)
+	17.22s	 = Training   runtime
+	11.33s	 = Validation runtime
+Fitting model: NeuralNetFastAI ...
+	0.8559	 = Validation score   (accuracy)
+	18.1s	 = Training   runtime
+	5.99s	 = Validation runtime
+Fitting model: ExtraTreesEntr ...
+	0.8545	 = Validation score   (accuracy)
+	12.59s	 = Training   runtime
+	4.94s	 = Validation runtime
+Fitting model: NeuralNetFastAI ...
+	0.8241	 = Validation score   (accuracy)
+	3122.06s	 = Training   runtime
+	1.5s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8193	 = Validation score   (accuracy)
+	58.03s	 = Training   runtime
+	0.3s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+No improvement since epoch 7: early stopping
+	0.96	 = Validation score   (accuracy)
+	2865.27s	 = Training   runtime
+	1.41s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.9628	 = Validation score   (accuracy)
+	64.58s	 = Training   runtime
+	0.43s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+No improvement since epoch 5: early stopping
+	0.8421	 = Validation score   (accuracy)
+	2619.77s	 = Training   runtime
+	1.8s	 = Validation runtime
+Fitting model: XGBoost ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8552	 = Validation score   (accuracy)
+	48.87s	 = Training   runtime
+	0.27s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	0.8048	 = Validation score   (accuracy)
+	3025.5s	 = Training   runtime
+	1.65s	 = Validation runtime
+Fitting model: XGBoost ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8034	 = Validation score   (accuracy)
+	48.79s	 = Training   runtime
+	0.2s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8766	 = Validation score   (accuracy)
+	2903.66s	 = Training   runtime
+	1.83s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8517	 = Validation score   (accuracy)
+	275.85s	 = Training   runtime
+	0.09s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+	Ensemble Weights: {'LightGBM': 1.0}
+	0.8559	 = Validation score   (accuracy)
+	17.48s	 = Training   runtime
+	0.06s	 = Validation runtime
+AutoGluon training complete, total runtime = 3562.87s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 8591.6 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.03-8013253/Predictor_S21 (SBS23 - 0.94)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       180.72 GB / 203.90 GB (88.6%)
+Disk Space Avail:   1167.17 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.03-8013253/Predictor_S22 (SBS26 - 0.94)"
+Train Data Rows:    14495
+Train Data Columns: 117
+Label Column:       S22 (SBS26 - 0.94)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185062.80 MB
+	Train Data (Original)  Memory Usage: 10.91 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 21 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 21 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 21 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	10.2s = Fit runtime
+	117 features in original data used to generate 117 features in processed data.
+	Train Data (Processed) Memory Usage: 10.91 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 10.83s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+	0.9628	 = Validation score   (accuracy)
+	386.06s	 = Training   runtime
+	0.09s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+	0.831	 = Validation score   (accuracy)
+	1.98s	 = Training   runtime
+	0.56s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.831	 = Validation score   (accuracy)
+	1.59s	 = Training   runtime
+	0.57s	 = Validation runtime
+Fitting model: LightGBMXT ...
+	0.8807	 = Validation score   (accuracy)
+	64.17s	 = Training   runtime
+	0.31s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Ensemble Weights: {'LightGBM': 1.0}
+	0.9655	 = Validation score   (accuracy)
+	16.66s	 = Training   runtime
+	0.1s	 = Validation runtime
+AutoGluon training complete, total runtime = 3975.01s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 9921.4 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.8-9135695/Predictor_S19 (SBS20 - 0.98)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       180.80 GB / 203.90 GB (88.7%)
+Disk Space Avail:   1167.14 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.8-9135695/Predictor_S20 (SBS22 - 0.99)"
+Train Data Rows:    14495
+Train Data Columns: 115
+Label Column:       S20 (SBS22 - 0.99)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185142.51 MB
+	Train Data (Original)  Memory Usage: 10.88 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 19 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 19 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 19 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	11.8s = Fit runtime
+	115 features in original data used to generate 115 features in processed data.
+	Train Data (Processed) Memory Usage: 10.88 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 12.41s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+	0.72	 = Validation score   (accuracy)
+	1.98s	 = Training   runtime
+	0.51s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.7214	 = Validation score   (accuracy)
+	2.29s	 = Training   runtime
+	0.54s	 = Validation runtime
+Fitting model: LightGBMXT ...
+No improvement since epoch 8: early stopping
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.9586	 = Validation score   (accuracy)
+	2738.65s	 = Training   runtime
+	1.59s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8083	 = Validation score   (accuracy)
+	356.18s	 = Training   runtime
+	0.08s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+	0.9648	 = Validation score   (accuracy)
+	45.32s	 = Training   runtime
+	0.28s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Ensemble Weights: {'LightGBMXT': 0.938, 'ExtraTreesGini': 0.062}
+	0.8193	 = Validation score   (accuracy)
+	15.08s	 = Training   runtime
+	0.06s	 = Validation runtime
+AutoGluon training complete, total runtime = 4443.31s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 91.1 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.3-9706755/Predictor_S20 (SBS22 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       181.02 GB / 203.90 GB (88.8%)
+Disk Space Avail:   1167.11 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.3-9706755/Predictor_S21 (SBS23 - 0.94)"
+Train Data Rows:    14495
+Train Data Columns: 116
+Label Column:       S21 (SBS23 - 0.94)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185382.94 MB
+	Train Data (Original)  Memory Usage: 10.89 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 20 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	0.8552	 = Validation score   (accuracy)
+	2799.89s	 = Training   runtime
+	1.91s	 = Validation runtime
+Fitting model: XGBoost ...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 20 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 20 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	9.8s = Fit runtime
+	116 features in original data used to generate 116 features in processed data.
+	Train Data (Processed) Memory Usage: 10.89 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 10.31s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+No improvement since epoch 9: early stopping
+	0.8503	 = Validation score   (accuracy)
+	1.99s	 = Training   runtime
+	0.49s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.8497	 = Validation score   (accuracy)
+	1.82s	 = Training   runtime
+	0.56s	 = Validation runtime
+Fitting model: LightGBMXT ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8503	 = Validation score   (accuracy)
+	2806.11s	 = Training   runtime
+	1.61s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8745	 = Validation score   (accuracy)
+	170.02s	 = Training   runtime
+	0.08s	 = Validation runtime
+Fitting model: LightGBM ...
+	0.8848	 = Validation score   (accuracy)
+	53.33s	 = Training   runtime
+	0.28s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8931	 = Validation score   (accuracy)
+	65.43s	 = Training   runtime
+	0.21s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8269	 = Validation score   (accuracy)
+	861.26s	 = Training   runtime
+	0.11s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+	Ensemble Weights: {'CatBoost': 0.333, 'NeuralNetFastAI': 0.333, 'LightGBMLarge': 0.25, 'LightGBMXT': 0.083}
+	0.84	 = Validation score   (accuracy)
+	15.24s	 = Training   runtime
+	0.13s	 = Validation runtime
+AutoGluon training complete, total runtime = 4950.1s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 711.1 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.9-1093955/Predictor_S20 (SBS22 - 0.99)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       181.01 GB / 203.90 GB (88.8%)
+Disk Space Avail:   1167.08 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.9-1093955/Predictor_S21 (SBS23 - 0.94)"
+Train Data Rows:    14495
+Train Data Columns: 116
+Label Column:       S21 (SBS23 - 0.94)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185362.58 MB
+	Train Data (Original)  Memory Usage: 10.89 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 20 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 20 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 20 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	9.4s = Fit runtime
+	116 features in original data used to generate 116 features in processed data.
+	Train Data (Processed) Memory Usage: 10.89 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 9.94s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+	0.851	 = Validation score   (accuracy)
+	1.84s	 = Training   runtime
+	0.62s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.8517	 = Validation score   (accuracy)
+	2.29s	 = Training   runtime
+	0.49s	 = Validation runtime
+Fitting model: LightGBMXT ...
+	0.8276	 = Validation score   (accuracy)
+	291.46s	 = Training   runtime
+	0.11s	 = Validation runtime
+Fitting model: LightGBM ...
+	0.8807	 = Validation score   (accuracy)
+	210.18s	 = Training   runtime
+	0.11s	 = Validation runtime
+Fitting model: LightGBM ...
+No improvement since epoch 7: early stopping
+	0.8407	 = Validation score   (accuracy)
+	2498.26s	 = Training   runtime
+	1.5s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8697	 = Validation score   (accuracy)
+	217.81s	 = Training   runtime
+	0.08s	 = Validation runtime
+Fitting model: RandomForestGini ...
+	0.8476	 = Validation score   (accuracy)
+	17.66s	 = Training   runtime
+	4.44s	 = Validation runtime
+Fitting model: RandomForestEntr ...
+	0.8483	 = Validation score   (accuracy)
+	17.52s	 = Training   runtime
+	5.51s	 = Validation runtime
+Fitting model: CatBoost ...
+	0.8745	 = Validation score   (accuracy)
+	393.03s	 = Training   runtime
+	0.09s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+No improvement since epoch 3: early stopping
+	0.8545	 = Validation score   (accuracy)
+	67.3s	 = Training   runtime
+	0.24s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Ensemble Weights: {'LightGBMXT': 0.667, 'LightGBM': 0.333}
+	0.8883	 = Validation score   (accuracy)
+	14.43s	 = Training   runtime
+	0.07s	 = Validation runtime
+AutoGluon training complete, total runtime = 4777.25s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 4893.5 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.1-6511788/Predictor_S22 (SBS26 - 0.94)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       180.88 GB / 203.90 GB (88.7%)
+Disk Space Avail:   1166.93 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-0.1-6511788/Predictor_S23 (SBS28 - 0.96)"
+Train Data Rows:    14495
+Train Data Columns: 118
+Label Column:       S23 (SBS28 - 0.96)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185230.19 MB
+	Train Data (Original)  Memory Usage: 10.92 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 22 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 22 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 22 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	8.3s = Fit runtime
+	118 features in original data used to generate 118 features in processed data.
+	0.8469	 = Validation score   (accuracy)
+	2128.99s	 = Training   runtime
+	1.78s	 = Validation runtime
+Fitting model: XGBoost ...
+	Train Data (Processed) Memory Usage: 10.92 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 8.91s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+	0.8234	 = Validation score   (accuracy)
+	1.41s	 = Training   runtime
+	0.48s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.8241	 = Validation score   (accuracy)
+	1.36s	 = Training   runtime
+	0.62s	 = Validation runtime
+Fitting model: LightGBMXT ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.8848	 = Validation score   (accuracy)
+	163.95s	 = Training   runtime
+	0.06s	 = Validation runtime
+Fitting model: LightGBM ...
+	0.8841	 = Validation score   (accuracy)
+	182.77s	 = Training   runtime
+	0.06s	 = Validation runtime
+Fitting model: RandomForestGini ...
+	0.8593	 = Validation score   (accuracy)
+	2653.17s	 = Training   runtime
+	1.85s	 = Validation runtime
+Fitting model: XGBoost ...
+	0.8676	 = Validation score   (accuracy)
+	102.86s	 = Training   runtime
+	0.32s	 = Validation runtime
+Fitting model: ExtraTreesGini ...
+	0.8848	 = Validation score   (accuracy)
+	82.97s	 = Training   runtime
+	0.29s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	0.86	 = Validation score   (accuracy)
+	18.78s	 = Training   runtime
+	8.7s	 = Validation runtime
+Fitting model: RandomForestEntr ...
+	0.8559	 = Validation score   (accuracy)
+	18.5s	 = Training   runtime
+	7.01s	 = Validation runtime
+Fitting model: ExtraTreesEntr ...
+	0.8586	 = Validation score   (accuracy)
+	24.97s	 = Training   runtime
+	7.07s	 = Validation runtime
+Fitting model: CatBoost ...
+	0.8538	 = Validation score   (accuracy)
+	23.6s	 = Training   runtime
+	4.8s	 = Validation runtime
+Fitting model: NeuralNetFastAI ...
+	Warning: Exception caused NeuralNetTorch to fail during training... Skipping this model.
+		ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Detailed Traceback:
+Traceback (most recent call last):
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 2106, in _train_and_save
+    model = self._train_single(**model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/trainer/abstract_trainer.py", line 1993, in _train_single
+    model = model.fit(X=X, y=y, X_val=X_val, y_val=y_val, X_test=X_test, y_test=y_test, total_resources=total_resources, **model_fit_kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/core/models/abstract/abstract_model.py", line 925, in fit
+    out = self._fit(**kwargs)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 201, in _fit
+    train_dataset = self._generate_dataset(X, y, train_params=processor_kwargs, is_train=True)
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 669, in _generate_dataset
+    dataset = self._process_train_data(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/torch/tabular_nn_torch.py", line 734, in _process_train_data
+    self.processor = create_preprocessor(
+  File "/home/baderlab/mzarant/SignatureInference/.venv/lib/python3.10/site-packages/autogluon/tabular/models/tabular_nn/utils/data_preprocessor.py", line 40, in create_preprocessor
+    return ColumnTransformer(
+TypeError: ColumnTransformer.__init__() got an unexpected keyword argument 'force_int_remainder_cols'
+Fitting model: LightGBMLarge ...
+	0.9621	 = Validation score   (accuracy)
+	466.21s	 = Training   runtime
+	0.07s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ...
+	Ensemble Weights: {'LightGBM': 1.0}
+	0.9669	 = Validation score   (accuracy)
+	12.69s	 = Training   runtime
+	0.04s	 = Validation runtime
+AutoGluon training complete, total runtime = 3970.7s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 10627.4 rows/s (1450 batch size)
+Disabling decision threshold calibration for metric `accuracy` due to having fewer than 10000 rows of validation data for calibration, to avoid overfitting (1450 rows).
+	`accuracy` is generally not improved through threshold calibration. Force calibration via specifying `calibrate_decision_threshold=True`.
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-1-9697457/Predictor_S19 (SBS20 - 0.98)")
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.10.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025
+CPU Count:          272
+Memory Avail:       180.81 GB / 203.90 GB (88.7%)
+Disk Space Avail:   1166.63 GB / 5020.26 GB (23.2%)
+===================================================
+Presets specified: ['medium_quality']
+	0.8262	 = Validation score   (accuracy)
+	296.85s	 = Training   runtime
+	0.1s	 = Validation runtime
+Fitting model: RandomForestGini ...
+Beginning AutoGluon training ...
+AutoGluon will save models to "/home/baderlab/mzarant/SignatureInference/models/unlimited/Predictior-1-9697457/Predictor_S20 (SBS22 - 0.99)"
+Train Data Rows:    14495
+Train Data Columns: 115
+Label Column:       S20 (SBS22 - 0.99)
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = True, class 0 = False
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    185154.32 MB
+	Train Data (Original)  Memory Usage: 10.88 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	0.8759	 = Validation score   (accuracy)
+	86.13s	 = Training   runtime
+	0.48s	 = Validation runtime
+Fitting model: NeuralNetTorch ...
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 19 features to boolean dtype as they only contain 2 unique values.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Types of features in original data (raw dtype, special dtypes):
+		('bool', []) : 19 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+		('int', [])  : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('int', [])       : 96 | ['A[C>A]A', 'A[C>A]C', 'A[C>A]G', 'A[C>A]T', 'A[C>G]A', ...]
+		('int', ['bool']) : 19 | ['S1 (SBS1 - 0.99)', 'S2 (SBS2 - 0.99)', 'S3 (SBS3 - 0.97)', 'S4 (SBS4 - 0.98)', 'S5 (SBS5 - 0.98)', ...]
+	11.4s = Fit runtime
+	115 features in original data used to generate 115 features in processed data.
+	Train Data (Processed) Memory Usage: 10.88 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 12.52s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+	To change this, specify the eval_metric parameter of Predictor()
+Automatically generating train/validation split with holdout_frac=0.1, Train Rows: 13045, Val Rows: 1450
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}],
+	'XGB': [{}],
+	'FASTAI': [{}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+}
+Fitting 13 L1 models, fit_strategy="sequential" ...
+Fitting model: KNeighborsUnif ...
+	0.8876	 = Validation score   (accuracy)
+	156.95s	 = Training   runtime
+	0.05s	 = Validation runtime
+Fitting model: RandomForestGini ...
+	0.7228	 = Validation score   (accuracy)
+	3.19s	 = Training   runtime
+	0.57s	 = Validation runtime
+Fitting model: KNeighborsDist ...
+	0.7241	 = Validation score   (accuracy)
+	3.72s	 = Training   runtime
+	0.8s	 = Validation runtime
+Fitting model: LightGBMXT ...
+	0.7828	 = Validation score   (accuracy)
+	20.75s	 = Training   runtime
+	7.38s	 = Validation runtime
+Fitting model: RandomForestEntr ...
+	0.8676	 = Validation score   (accuracy)
+	19.11s	 = Training   runtime
+	7.58s	 = Validation runtime
+Fitting model: RandomForestEntr ...
+	0.7814	 = Validation score   (accuracy)
+	26.47s	 = Training   runtime
+	9.12s	 = Validation runtime
+Fitting model: CatBoost ...
+slurmstepd: error: *** JOB 37023 ON dc02 CANCELLED AT 2025-05-01T11:41:22 DUE TO TIME LIMIT ***
