@@ -117,3 +117,7 @@ if __name__ == "__main__":
     ) 
 
     er.run_evaluations()
+    
+# sbatch --job-name default run_job.slurm --gt_type default --save_evaluation default --save_models default --hyp_type lightgbmxt
+# sbatch --job-name cosmic run_job.slurm --gt_type cosmic --save_evaluation cosmic --save_models cosmic --hyp_type lightgbmxt
+# sbatch --job-name reference run_job.slurm --gt_type reference --save_evaluation reference --save_models reference --hyp_type lightgbmxt
