@@ -14,3 +14,11 @@
 18:11:51: Run 2 and sample 0.01 lock aquired
 18:11:51: Run 2 and sample 0.01 lock released
 18:11:51: -----------------------------------
+05:28:49: Starting run 3 and sample 0.01
+05:28:53: For sample 0.01 the train and test dataframes are created
+10:49:57: For sample 0.01 the models are trained
+10:54:50: For sample 0.01 the best models are saved
+10:54:50: Run 3 and sample 0.01 evaluation done
+10:54:50: Run 3 and sample 0.01 lock aquired
+10:54:50: Run 3 and sample 0.01 lock released
+10:54:50: -----------------------------------
