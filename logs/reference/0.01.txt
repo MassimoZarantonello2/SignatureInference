@@ -40,3 +40,5 @@
 09:37:37: Run 4 and sample 0.01 lock aquired
 09:37:37: Run 4 and sample 0.01 lock released
 09:37:37: -----------------------------------
+15:37:58: Starting run 5 and sample 0.01
+15:38:03: For sample 0.01 the train and test dataframes are created

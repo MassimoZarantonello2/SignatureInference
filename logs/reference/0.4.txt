@@ -28,3 +28,11 @@
 00:52:33: -----------------------------------
 02:02:20: Starting run 4 and sample 0.4
 02:02:25: For sample 0.4 the train and test dataframes are created
+14:53:01: For sample 0.4 the models are trained
+14:58:26: For sample 0.4 the best models are saved
+14:58:26: Run 4 and sample 0.4 evaluation done
+14:58:26: Run 4 and sample 0.4 lock aquired
+14:58:26: Run 4 and sample 0.4 lock released
+14:58:26: -----------------------------------
+15:37:58: Starting run 5 and sample 0.4
+15:38:03: For sample 0.4 the train and test dataframes are created
