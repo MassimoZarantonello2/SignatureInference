@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=128
 #SBATCH --mem=128GB
-#SBATCH --time=48:00:00
+#SBATCH --time=60:00:00
 
 source /home/baderlab/mzarant/SignatureInference/.venv/bin/activate
 export OPENBLAS_NUM_THREADS=60
