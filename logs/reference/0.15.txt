@@ -50,3 +50,4 @@
 03:10:08: -----------------------------------
 05:26:37: Starting run 6 and sample 0.15
 05:26:41: For sample 0.15 the train and test dataframes are created
+17:17:19: For sample 0.15 the models are trained
