@@ -142,3 +142,43 @@
 17:16:18: -----------------------------------
 18:47:57: Starting run 19 and sample 0.01
 18:48:00: For sample 0.01 the train and test dataframes are created
+20:34:48: For sample 0.01 the models are trained
+20:35:53: For sample 0.01 the best models are saved
+20:35:53: Run 19 and sample 0.01 evaluation done
+20:35:53: Run 19 and sample 0.01 lock aquired
+20:35:53: Run 19 and sample 0.01 lock released
+20:35:53: -----------------------------------
+22:43:30: Starting run 20 and sample 0.01
+22:43:34: For sample 0.01 the train and test dataframes are created
+00:32:38: For sample 0.01 the models are trained
+00:33:44: For sample 0.01 the best models are saved
+00:33:44: Run 20 and sample 0.01 evaluation done
+00:33:44: Run 20 and sample 0.01 lock aquired
+00:33:44: Run 20 and sample 0.01 lock released
+00:33:44: -----------------------------------
+02:25:33: Starting run 21 and sample 0.01
+02:25:38: For sample 0.01 the train and test dataframes are created
+04:17:24: For sample 0.01 the models are trained
+04:18:29: For sample 0.01 the best models are saved
+04:18:29: Run 21 and sample 0.01 evaluation done
+04:18:29: Run 21 and sample 0.01 lock aquired
+04:18:29: Run 21 and sample 0.01 lock released
+04:18:29: -----------------------------------
+06:20:06: Starting run 22 and sample 0.01
+06:20:11: For sample 0.01 the train and test dataframes are created
+08:18:01: For sample 0.01 the models are trained
+08:19:06: For sample 0.01 the best models are saved
+08:19:06: Run 22 and sample 0.01 evaluation done
+08:19:06: Run 22 and sample 0.01 lock aquired
+08:19:06: Run 22 and sample 0.01 lock released
+08:19:06: -----------------------------------
+10:05:23: Starting run 23 and sample 0.01
+10:05:28: For sample 0.01 the train and test dataframes are created
+12:04:19: For sample 0.01 the models are trained
+12:05:34: For sample 0.01 the best models are saved
+12:05:34: Run 23 and sample 0.01 evaluation done
+12:05:34: Run 23 and sample 0.01 lock aquired
+12:05:34: Run 23 and sample 0.01 lock released
+12:05:34: -----------------------------------
+14:00:49: Starting run 24 and sample 0.01
+14:00:54: For sample 0.01 the train and test dataframes are created
