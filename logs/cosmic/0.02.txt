@@ -86,3 +86,11 @@
 10:16:58: -----------------------------------
 13:11:11: Starting run 11 and sample 0.02
 13:11:15: For sample 0.02 the train and test dataframes are created
+18:18:23: For sample 0.02 the models are trained
+18:21:36: For sample 0.02 the best models are saved
+18:21:36: Run 11 and sample 0.02 evaluation done
+18:21:36: Run 11 and sample 0.02 lock aquired
+18:21:36: Run 11 and sample 0.02 lock released
+18:21:36: -----------------------------------
+21:19:12: Starting run 12 and sample 0.02
+21:19:17: For sample 0.02 the train and test dataframes are created

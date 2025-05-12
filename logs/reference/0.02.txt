@@ -56,3 +56,5 @@
 15:00:37: Run 6 and sample 0.02 lock aquired
 15:00:38: Run 6 and sample 0.02 lock released
 15:00:38: -----------------------------------
+19:13:35: Starting run 7 and sample 0.02
+19:13:40: For sample 0.02 the train and test dataframes are created
