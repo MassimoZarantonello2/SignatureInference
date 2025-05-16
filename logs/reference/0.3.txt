@@ -53,3 +53,43 @@
 18:33:24: -----------------------------------
 19:13:35: Starting run 7 and sample 0.3
 19:13:40: For sample 0.3 the train and test dataframes are created
+14:46:35: Run 1 and sample 0.3 already evaluated, skipping
+14:46:36: Run 2 and sample 0.3 already evaluated, skipping
+14:46:37: Run 3 and sample 0.3 already evaluated, skipping
+14:46:38: Run 4 and sample 0.3 already evaluated, skipping
+14:46:39: Run 5 and sample 0.3 already evaluated, skipping
+14:46:40: Run 6 and sample 0.3 already evaluated, skipping
+14:46:41: Starting run 7 and sample 0.3
+14:46:46: For sample 0.3 the train and test dataframes are created
+03:00:26: For sample 0.3 the models are trained
+03:06:07: For sample 0.3 the best models are saved
+03:06:07: Run 7 and sample 0.3 evaluation done
+03:06:07: Run 7 and sample 0.3 lock aquired
+03:06:07: Run 7 and sample 0.3 lock released
+03:06:07: -----------------------------------
+03:45:29: Starting run 8 and sample 0.3
+03:45:34: For sample 0.3 the train and test dataframes are created
+15:45:26: For sample 0.3 the models are trained
+15:53:36: For sample 0.3 the best models are saved
+15:53:36: Run 8 and sample 0.3 evaluation done
+15:53:36: Run 8 and sample 0.3 lock aquired
+15:53:36: Run 8 and sample 0.3 lock released
+15:53:36: -----------------------------------
+16:41:03: Starting run 9 and sample 0.3
+16:41:08: For sample 0.3 the train and test dataframes are created
+04:47:11: For sample 0.3 the models are trained
+04:52:42: For sample 0.3 the best models are saved
+04:52:42: Run 9 and sample 0.3 evaluation done
+04:52:42: Run 9 and sample 0.3 lock aquired
+04:52:42: Run 9 and sample 0.3 lock released
+04:52:42: -----------------------------------
+05:55:22: Starting run 10 and sample 0.3
+05:55:27: For sample 0.3 the train and test dataframes are created
+17:50:36: For sample 0.3 the models are trained
+17:56:36: For sample 0.3 the best models are saved
+17:56:36: Run 10 and sample 0.3 evaluation done
+17:56:36: Run 10 and sample 0.3 lock aquired
+17:56:36: Run 10 and sample 0.3 lock released
+17:56:36: -----------------------------------
+18:54:39: Starting run 11 and sample 0.3
+18:54:44: For sample 0.3 the train and test dataframes are created
