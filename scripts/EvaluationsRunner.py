@@ -22,10 +22,7 @@ class EvaluationsRunner:
         hyperparameters_type,
         save_evaluation_path,
         save_evaluation_name,
-        sampling_values,
-        run_values,
         num_run,
-        train_test_split_value,
         time_limit,
         label_correlation,
         save_models_path,
@@ -38,16 +35,33 @@ class EvaluationsRunner:
         self.problem_type = None
         self.fit_quality = fit_quality
         self.hyperparameters = get_hyperparameters(hyperparameters_type)
-        self.run_values = run_values
+        self.run_values = [str(i) for i in range(1, 101)]
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
-        self.sampling_values = sampling_values
+        self.sampling_values = [
+        "1",
+        "0.9",
+        "0.8",
+        "0.7",
+        "0.6",
+        "0.5",
+        "0.4",
+        "0.3",
+        "0.2",
+        "0.15",
+        "0.1",
+        "0.05",
+        "0.04",
+        "0.03",
+        "0.02",
+        "0.01",
+    ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
         self.save_models = False
         self.time_limit = time_limit
         self.label_correlation = label_correlation
-        self.train_test_split_value = train_test_split_value
+        self.train_test_split_value = 0.8
         self.save_models_path = save_models_path
 
     def train_and_evaluate_framework(self, evaluation_df, sample, lc):
