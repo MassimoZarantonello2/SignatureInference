@@ -7,27 +7,6 @@ if __name__ == "__main__":
         description="Esecuzione del modello di valutazione con parametri opzionali"
     )
     bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
-    tissues_path = "./simulations/ground_truth/tumor_site.csv"
-    sampling_values = [
-        "1",
-        "0.9",
-        "0.8",
-        "0.7",
-        "0.6",
-        "0.5",
-        "0.4",
-        "0.3",
-        "0.2",
-        "0.15",
-        "0.1",
-        "0.05",
-        "0.04",
-        "0.03",
-        "0.02",
-        "0.01",
-    ]
-    run_values = [str(i) for i in range(1, 101)]
-    train_test_split_value = 0.8
     time_limit = None
     num_run = None
     
@@ -36,6 +15,12 @@ if __name__ == "__main__":
         type=str,
         default="default",
         help="Path del ground truth binarizzato",
+    )
+    parser.add_argument(
+        "--threshold",
+        type=float,
+        default=0,
+        help="Threshold value for considering a segnature active in a sample"
     )
     parser.add_argument(
         "--save_evaluations",
@@ -107,10 +92,7 @@ if __name__ == "__main__":
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
         save_evaluation_name=args.save_evaluations,
-        sampling_values=sampling_values,
-        run_values=run_values,
         num_run=args.runs,
-        train_test_split_value=train_test_split_value,
         time_limit=args.time_limit,
         label_correlation = args.label_correlation,
         save_models_path=save_model_path,
