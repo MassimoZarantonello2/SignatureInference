@@ -63,7 +63,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.gt_type == "default":
-        bin_ground_truth_path = "./simulations/ground_truth/exposures_0.csv"
+        bin_ground_truth_path = "./simulations/ground_truth/exposures_"+args.threshold+".csv"
     else:
         bin_ground_truth_path = "./simulations/ground_truth_" + args.gt_type + "/exposures_"+args.threshold+".csv"
         
