@@ -280,3 +280,41 @@
 09:58:38: -----------------------------------
 13:40:53: Starting run 28 and sample 0.02
 13:40:57: For sample 0.02 the train and test dataframes are created
+19:15:22: For sample 0.02 the models are trained
+19:18:52: For sample 0.02 the best models are saved
+19:18:52: Run 28 and sample 0.02 evaluation done
+19:18:52: Run 28 and sample 0.02 lock aquired
+19:18:52: Run 28 and sample 0.02 lock released
+19:18:52: -----------------------------------
+22:23:58: Starting run 29 and sample 0.02
+22:24:02: For sample 0.02 the train and test dataframes are created
+03:55:46: For sample 0.02 the models are trained
+03:59:34: For sample 0.02 the best models are saved
+03:59:34: Run 29 and sample 0.02 evaluation done
+03:59:34: Run 29 and sample 0.02 lock aquired
+03:59:34: Run 29 and sample 0.02 lock released
+03:59:34: -----------------------------------
+07:00:23: Starting run 30 and sample 0.02
+07:00:28: For sample 0.02 the train and test dataframes are created
+12:47:44: For sample 0.02 the models are trained
+12:51:19: For sample 0.02 the best models are saved
+12:51:20: Run 30 and sample 0.02 evaluation done
+12:51:20: Run 30 and sample 0.02 lock aquired
+12:51:20: Run 30 and sample 0.02 lock released
+12:51:20: -----------------------------------
+15:34:11: Starting run 31 and sample 0.02
+15:34:16: For sample 0.02 the train and test dataframes are created
+20:48:35: For sample 0.02 the models are trained
+20:52:35: For sample 0.02 the best models are saved
+20:52:35: Run 31 and sample 0.02 evaluation done
+20:52:35: Run 31 and sample 0.02 lock aquired
+20:52:35: Run 31 and sample 0.02 lock released
+20:52:35: -----------------------------------
+00:19:44: Starting run 32 and sample 0.02
+00:19:49: For sample 0.02 the train and test dataframes are created
+05:24:34: For sample 0.02 the models are trained
+05:28:28: For sample 0.02 the best models are saved
+05:28:28: Run 32 and sample 0.02 evaluation done
+05:28:28: Run 32 and sample 0.02 lock aquired
+05:28:28: Run 32 and sample 0.02 lock released
+05:28:28: -----------------------------------

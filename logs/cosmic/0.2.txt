@@ -280,3 +280,41 @@
 13:13:11: -----------------------------------
 13:40:52: Starting run 28 and sample 0.2
 13:40:57: For sample 0.2 the train and test dataframes are created
+20:54:09: For sample 0.2 the models are trained
+20:57:37: For sample 0.2 the best models are saved
+20:57:37: Run 28 and sample 0.2 evaluation done
+20:57:37: Run 28 and sample 0.2 lock aquired
+20:57:37: Run 28 and sample 0.2 lock released
+20:57:37: -----------------------------------
+22:23:58: Starting run 29 and sample 0.2
+22:24:02: For sample 0.2 the train and test dataframes are created
+06:18:33: For sample 0.2 the models are trained
+06:22:17: For sample 0.2 the best models are saved
+06:22:18: Run 29 and sample 0.2 evaluation done
+06:22:18: Run 29 and sample 0.2 lock aquired
+06:22:18: Run 29 and sample 0.2 lock released
+06:22:18: -----------------------------------
+07:00:23: Starting run 30 and sample 0.2
+07:00:28: For sample 0.2 the train and test dataframes are created
+14:55:22: For sample 0.2 the models are trained
+14:58:51: For sample 0.2 the best models are saved
+14:58:51: Run 30 and sample 0.2 evaluation done
+14:58:51: Run 30 and sample 0.2 lock aquired
+14:58:51: Run 30 and sample 0.2 lock released
+14:58:51: -----------------------------------
+15:34:11: Starting run 31 and sample 0.2
+15:34:16: For sample 0.2 the train and test dataframes are created
+22:36:15: For sample 0.2 the models are trained
+22:39:51: For sample 0.2 the best models are saved
+22:39:51: Run 31 and sample 0.2 evaluation done
+22:39:52: Run 31 and sample 0.2 lock aquired
+22:39:52: Run 31 and sample 0.2 lock released
+22:39:52: -----------------------------------
+00:19:43: Starting run 32 and sample 0.2
+00:19:49: For sample 0.2 the train and test dataframes are created
+07:37:28: For sample 0.2 the models are trained
+07:41:05: For sample 0.2 the best models are saved
+07:41:05: Run 32 and sample 0.2 evaluation done
+07:41:05: Run 32 and sample 0.2 lock aquired
+07:41:05: Run 32 and sample 0.2 lock released
+07:41:05: -----------------------------------
