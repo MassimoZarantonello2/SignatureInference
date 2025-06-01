@@ -17,8 +17,8 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--threshold",
-        type=float,
-        default=0,
+        type=str,
+        default="0",
         help="Threshold value for considering a segnature active in a sample"
     )
     parser.add_argument(
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.gt_type == "default":
-        bin_ground_truth_path = "./simulations/ground_truth/exposures_"+args.threshold+".csv"
+        bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
     else:
         bin_ground_truth_path = "./simulations/ground_truth_" + args.gt_type + "/exposures_"+args.threshold+".csv"
         
