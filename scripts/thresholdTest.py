@@ -61,6 +61,11 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+    if args.gt_path is not None:
+        ground_truth_path = "./simulations/" + args.gt_path
+    else:
+        ground_truth_path = None
+        
     if args.save_evaluations is not None:
         save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
     else:
@@ -71,7 +76,7 @@ if __name__ == "__main__":
     else:
         save_model_path = "./models/unspecified/"      
 
-    print(f"Taking the ground truth from: {args.gt_path}")
+    print(f"Taking the ground truth from: {ground_truth_path}")
     print(f"Saving the evaluation in: {save_evaluation_path}")
     print(f"Saving the models in: {save_model_path}")
     print(f"Using quality of: {args.quality}")
