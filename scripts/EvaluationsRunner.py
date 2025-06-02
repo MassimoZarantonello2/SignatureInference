@@ -17,7 +17,6 @@ class EvaluationsRunner:
     def __init__(
         self,
         ground_truth_path,
-        gt_type,
         fit_quality,
         hyperparameters_type,
         save_evaluation_path,
@@ -28,8 +27,6 @@ class EvaluationsRunner:
         save_models_path,
     ):
         self.data_path = "/trinucleotides_counts_sampling_"
-        self.ground_truth = None
-        self.gt_type = gt_type
         self.ground_truth_path = ground_truth_path
         self.labels = None
         self.problem_type = None
