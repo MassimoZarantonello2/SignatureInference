@@ -1,0 +1,28 @@
+18:44:22: Starting run 1 and sample 0.05
+18:44:27: For sample 0.05 the train and test dataframes are created
+18:58:55: Starting run 1 and sample 0.05
+18:58:59: For sample 0.05 the train and test dataframes are created
+20:59:22: For sample 0.05 the models are trained
+21:08:57: For sample 0.05 the best models are saved
+21:08:58: Run 1 and sample 0.05 evaluation done
+21:08:58: Run 1 and sample 0.05 lock aquired
+21:08:59: Run 1 and sample 0.05 lock released
+21:09:00: -----------------------------------
+21:17:45: Starting run 2 and sample 0.05
+21:17:49: For sample 0.05 the train and test dataframes are created
+23:18:18: For sample 0.05 the models are trained
+23:28:36: For sample 0.05 the best models are saved
+23:28:37: Run 2 and sample 0.05 evaluation done
+23:28:37: Run 2 and sample 0.05 lock aquired
+23:28:37: Run 2 and sample 0.05 lock released
+23:28:38: -----------------------------------
+23:36:46: Starting run 3 and sample 0.05
+23:36:51: For sample 0.05 the train and test dataframes are created
+01:37:48: For sample 0.05 the models are trained
+01:48:51: For sample 0.05 the best models are saved
+01:48:52: Run 3 and sample 0.05 evaluation done
+01:48:52: Run 3 and sample 0.05 lock aquired
+01:48:52: Run 3 and sample 0.05 lock released
+01:48:53: -----------------------------------
+01:55:52: Starting run 4 and sample 0.05
+01:55:56: For sample 0.05 the train and test dataframes are created

@@ -1,0 +1,42 @@
+18:44:25: Starting run 1 and sample 0.05
+18:44:29: For sample 0.05 the train and test dataframes are created
+18:58:55: Starting run 1 and sample 0.05
+18:59:00: For sample 0.05 the train and test dataframes are created
+21:00:11: For sample 0.05 the models are trained
+21:08:34: For sample 0.05 the best models are saved
+21:08:34: Run 1 and sample 0.05 evaluation done
+21:08:34: Run 1 and sample 0.05 lock aquired
+21:08:35: Run 1 and sample 0.05 lock released
+21:08:35: -----------------------------------
+21:17:43: Starting run 2 and sample 0.05
+21:17:48: For sample 0.05 the train and test dataframes are created
+23:20:10: For sample 0.05 the models are trained
+23:32:55: For sample 0.05 the best models are saved
+23:32:55: Run 2 and sample 0.05 evaluation done
+23:32:55: Run 2 and sample 0.05 lock aquired
+23:32:55: Run 2 and sample 0.05 lock released
+23:32:55: -----------------------------------
+23:37:42: Starting run 3 and sample 0.05
+23:37:46: For sample 0.05 the train and test dataframes are created
+01:39:11: For sample 0.05 the models are trained
+01:49:12: For sample 0.05 the best models are saved
+01:49:12: Run 3 and sample 0.05 evaluation done
+01:49:12: Run 3 and sample 0.05 lock aquired
+01:49:12: Run 3 and sample 0.05 lock released
+01:49:12: -----------------------------------
+01:56:45: Starting run 4 and sample 0.05
+01:56:50: For sample 0.05 the train and test dataframes are created
+03:56:53: For sample 0.05 the models are trained
+04:04:16: For sample 0.05 the best models are saved
+04:04:16: Run 4 and sample 0.05 evaluation done
+04:04:16: Run 4 and sample 0.05 lock aquired
+04:04:16: Run 4 and sample 0.05 lock released
+04:04:16: -----------------------------------
+04:16:34: Starting run 5 and sample 0.05
+04:16:38: For sample 0.05 the train and test dataframes are created
+06:17:49: For sample 0.05 the models are trained
+06:27:16: For sample 0.05 the best models are saved
+06:27:16: Run 5 and sample 0.05 evaluation done
+06:27:16: Run 5 and sample 0.05 lock aquired
+06:27:16: Run 5 and sample 0.05 lock released
+06:27:16: -----------------------------------

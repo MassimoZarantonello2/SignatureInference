@@ -1,0 +1,42 @@
+18:44:23: Starting run 1 and sample 0.4
+18:44:27: For sample 0.4 the train and test dataframes are created
+18:58:55: Starting run 1 and sample 0.4
+18:59:00: For sample 0.4 the train and test dataframes are created
+20:59:11: For sample 0.4 the models are trained
+21:08:14: For sample 0.4 the best models are saved
+21:08:14: Run 1 and sample 0.4 evaluation done
+21:08:15: Run 1 and sample 0.4 lock aquired
+21:08:15: Run 1 and sample 0.4 lock released
+21:08:15: -----------------------------------
+21:17:28: Starting run 2 and sample 0.4
+21:17:32: For sample 0.4 the train and test dataframes are created
+23:21:49: For sample 0.4 the models are trained
+23:33:59: For sample 0.4 the best models are saved
+23:34:00: Run 2 and sample 0.4 evaluation done
+23:34:00: Run 2 and sample 0.4 lock aquired
+23:34:00: Run 2 and sample 0.4 lock released
+23:34:00: -----------------------------------
+23:36:43: Starting run 3 and sample 0.4
+23:36:48: For sample 0.4 the train and test dataframes are created
+01:36:12: For sample 0.4 the models are trained
+01:43:15: For sample 0.4 the best models are saved
+01:43:15: Run 3 and sample 0.4 evaluation done
+01:43:15: Run 3 and sample 0.4 lock aquired
+01:43:15: Run 3 and sample 0.4 lock released
+01:43:15: -----------------------------------
+01:56:13: Starting run 4 and sample 0.4
+01:56:18: For sample 0.4 the train and test dataframes are created
+03:57:00: For sample 0.4 the models are trained
+04:06:13: For sample 0.4 the best models are saved
+04:06:14: Run 4 and sample 0.4 evaluation done
+04:06:15: Run 4 and sample 0.4 lock aquired
+04:06:15: Run 4 and sample 0.4 lock released
+04:06:15: -----------------------------------
+04:16:06: Starting run 5 and sample 0.4
+04:16:11: For sample 0.4 the train and test dataframes are created
+06:17:48: For sample 0.4 the models are trained
+06:28:55: For sample 0.4 the best models are saved
+06:28:55: Run 5 and sample 0.4 evaluation done
+06:28:56: Run 5 and sample 0.4 lock aquired
+06:28:56: Run 5 and sample 0.4 lock released
+06:28:56: -----------------------------------
