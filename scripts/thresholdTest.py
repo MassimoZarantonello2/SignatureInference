@@ -86,7 +86,7 @@ if __name__ == "__main__":
     print(f"Num run: {args.runs}")
 
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
-        ground_truth_path=args.gt_path,  # Give the binarized ground truth data
+        ground_truth_path=ground_truth_path,  # Give the binarized ground truth data
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
