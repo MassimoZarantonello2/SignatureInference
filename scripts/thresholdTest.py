@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     if args.gt_path is not None:
-        ground_truth_path = "./simulations/" + args.gt_path
+        ground_truth_path = "./simulations/" + args.gt_path + ".csv"
     else:
         ground_truth_path = None
         
