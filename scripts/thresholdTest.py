@@ -12,7 +12,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--gt_path",
         type=str,
-        default="./simulations/ground_truth/bin_exposures.csv",
         help="Path del ground truth binarizzato",
     )
     parser.add_argument(
@@ -64,7 +63,7 @@ if __name__ == "__main__":
     if args.gt_path is not None:
         ground_truth_path = "./simulations/" + args.gt_path + ".csv"
     else:
-        ground_truth_path = None
+        ground_truth_path = "./simulations/ground_truth/bin_exposures.csv",
         
     if args.save_evaluations is not None:
         save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
