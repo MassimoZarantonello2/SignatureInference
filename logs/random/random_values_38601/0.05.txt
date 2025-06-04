@@ -1,2 +1,0 @@
-19:45:15: Starting run 1 and sample 0.05
-19:45:19: For sample 0.05 the train and test dataframes are created
