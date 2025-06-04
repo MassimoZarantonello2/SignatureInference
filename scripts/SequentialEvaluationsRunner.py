@@ -13,7 +13,7 @@ from utils.EvaluationsHelper import format_model_result, create_empty_json_file,
 from utils.Log import LogClass
 
 
-class EvaluationsRunner:
+class SequentialEvaluationsRunner:
     def __init__(
         self,
         ground_truth_path,
@@ -37,7 +37,7 @@ class EvaluationsRunner:
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = [
         "1",
-        "0.9"
+        "0.9",
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
@@ -85,6 +85,7 @@ class EvaluationsRunner:
                 time_limit=self.time_limit, 
                 hyperparameters=self.hyperparameters, 
                 presets=self.fit_quality,
+                fit_strategy = "parallel"
             )            
             lc.log(f"For sample {sample} the models are trained")
             signature_model_info = format_model_result(predictor, test_df)
@@ -95,8 +96,7 @@ class EvaluationsRunner:
             lc.log(f"Error: {e}")
             return None
 
-
-    def multhithread_framework(self, run, sample, output_dict, lock, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
+    def multithread_framework(self, run, sample, output_dict, lock, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
         """
         ### Input
         - run: The run number
@@ -151,30 +151,18 @@ class EvaluationsRunner:
                 if (all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None):
                     print(f"Running run {run} and sample {sample}")
                     lc.log(f"Starting run {run} and sample {sample}")
-                    t = threading.Thread(
-                        target=self.multhithread_framework,
-                        args=(run, sample, output_dict, lock, lc),
-                    )
-                    signature_inference_thread.append(t)
-                    t.start()
+                    self.multithread_framework(run, sample, output_dict, lock, lc)
                 else:
                     lc.log(
                         f"Run {run} and sample {sample} already evaluated, skipping"
                     )
                     print(f"Skiping run {run} and sample {sample}")
-
-            for t in signature_inference_thread:        # Wait for all the threads relative to each sample in a run to finish
-                t.join()
                 
             for key in output_dict:         # Update the evaluation dictionary with the new results
                 all_evaluations_df[run_index]["sampling_" + key] = output_dict[key]
 
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))     # Rewrite the whole dataset into a json file TODO: try and save it in a more efficient way
-
-            if self.save_models_path and os.path.exists(self.save_models_path):         # Delete the models folder
-                pass
-                #shutil.rmtree(self.save_models_path)
 
             if self.num_run is not None:            # If the number of runs is set, the program will stop after the number of runs
                 run_done += 1

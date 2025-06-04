@@ -9,7 +9,7 @@ export OPENBLAS_NUM_THREADS=10
 export GOTO_NUM_THREADS=10
 export OMP_NUM_THREADS=10
 # Passa tutti i parametri ricevuti a Python
-python /home/baderlab/mzarant/SignatureInference/scripts/main.py "$@"
+python /home/baderlab/mzarant/SignatureInference/scripts/sequential.py "$@"
 
 
 # sbatch --job-name cosmic run_job.slurm --gt_type cosmic --save_evaluation cosmic --save_models cosmic --hyp_type lightgbmxt
