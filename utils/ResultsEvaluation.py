@@ -3,7 +3,7 @@ import json
 class ResultsEvaluation:
     
     def __init__(self, file_name):
-        self.evaluations_df = json.load(open(f'../results/{file_name}.json'))
+        self.evaluations_df = json.load(open(f'../results/{file_name}'))
         self.run_labels, self.sampling_labels, self.signature_labels = self.get_runs_sample_labels()
         self.per_run_accuracy = self.get_runs_sample_metrics('accuracy')
         self.per_run_balanced_accuracy = self.get_runs_sample_metrics('balanced_accuracy')
