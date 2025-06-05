@@ -37,7 +37,21 @@ class EvaluationsRunner:
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = [
         "1",
-        "0.9"
+        "0.9",
+        "0.8",
+        "0.7",
+        "0.6",
+        "0.5",
+        "0.4",
+        "0.3",
+        "0.2",
+        "0.15"
+        "0.1"
+        "0.05",
+        "0.04",
+        "0.03",
+        "0.02",
+        "0.01"        
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name

@@ -38,6 +38,20 @@ class SequentialEvaluationsRunner:
         self.sampling_values = [
         "1",
         "0.9",
+        "0.8",
+        "0.7",
+        "0.6",
+        "0.5",
+        "0.4",
+        "0.3",
+        "0.2",
+        "0.15"
+        "0.1"
+        "0.05",
+        "0.04",
+        "0.03",
+        "0.02",
+        "0.01"        
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
@@ -96,7 +110,7 @@ class SequentialEvaluationsRunner:
             lc.log(f"Error: {e}")
             return None
 
-    def multithread_framework(self, run, sample, output_dict, lock, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
+    def multithread_framework(self, run, sample, lc):       # Here the evaluation for a single sample are done and the output_dic is filled
         """
         ### Input
         - run: The run number
@@ -105,6 +119,7 @@ class SequentialEvaluationsRunner:
         ### Output
         - None
         """
+        output_dict = {}
         run_sample_df = pd.read_csv(
             self.runs_path + run + self.data_path + sample + ".csv"
         )  # Create the evaluation dataframe
@@ -116,12 +131,9 @@ class SequentialEvaluationsRunner:
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
         signature_model_info = self.train_and_evaluate_framework(evaluation_df, sample, lc)     # Eva
         lc.log(f"Run {run} and sample {sample} evaluation done")
-        with lock:
-            lc.log(f"Run {run} and sample {sample} lock aquired")
-            output_dict[sample] = signature_model_info
-            lc.log
-            lc.log(f"Run {run} and sample {sample} lock released")
+        output_dict[sample] = signature_model_info
         lc.log("-----------------------------------")
+        return output_dict
         
     def run_evaluations(self):      # Checks which run and sample has already been evaluated and starts the sample missing or the next run
         if not os.path.exists(self.save_evaluation_path):
@@ -142,8 +154,6 @@ class SequentialEvaluationsRunner:
             run_index = "run_" + run
             signature_inference_thread = []
             all_evaluations_df = json.load(open(self.save_evaluation_path))     # Load the whole dataset into a dataframe
-            lock = threading.Lock()
-            output_dict = {}
             
             for sample in self.sampling_values:
                 sample_index = "sampling_" + sample
@@ -151,19 +161,19 @@ class SequentialEvaluationsRunner:
                 if (all_evaluations_df[run_index][sample_index] == {} or all_evaluations_df[run_index][sample_index] == None):
                     print(f"Running run {run} and sample {sample}")
                     lc.log(f"Starting run {run} and sample {sample}")
-                    self.multithread_framework(run, sample, output_dict, lock, lc)
+                    output_dict = self.multithread_framework(run, sample, lc)
+                    for key in output_dict:         # Update the evaluation dictionary with the new results
+                       all_evaluations_df[run_index]["sampling_" + key] = output_dict[key]
+                    lc.log(f"Evaluations for {sample} saved")
+                    
+                    if signature_inference_thread.__len__() != 0:
+                        json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))     # Rewrite the whole dataset into a json file TODO: try and save it in a more efficient way
                 else:
                     lc.log(
                         f"Run {run} and sample {sample} already evaluated, skipping"
                     )
                     print(f"Skiping run {run} and sample {sample}")
                 
-            for key in output_dict:         # Update the evaluation dictionary with the new results
-                all_evaluations_df[run_index]["sampling_" + key] = output_dict[key]
-
-            if signature_inference_thread.__len__() != 0:
-                json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))     # Rewrite the whole dataset into a json file TODO: try and save it in a more efficient way
-
             if self.num_run is not None:            # If the number of runs is set, the program will stop after the number of runs
                 run_done += 1
                 if run_done >= self.num_run:
