@@ -6,20 +6,18 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Esecuzione del modello di valutazione con parametri opzionali"
     )
-    bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
     time_limit = None
     num_run = None
     
     parser.add_argument(
-        "--gt_type",
+        "--gt_path",
         type=str,
-        default="default",
         help="Path del ground truth binarizzato",
     )
     parser.add_argument(
         "--threshold",
-        type=float,
-        default=0,
+        type=str,
+        default="0",
         help="Threshold value for considering a segnature active in a sample"
     )
     parser.add_argument(
@@ -62,21 +60,22 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
-    if args.gt_type == "default":
-        bin_ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
+    if args.gt_path is not None:
+        ground_truth_path = "./simulations/" + args.gt_path + ".csv"
     else:
-        bin_ground_truth_path = "./simulations/ground_truth_" + args.gt_type + "/bin_exposures.csv"
+        ground_truth_path = "./simulations/ground_truth/bin_exposures.csv"
         
-    if args.save_evaluations is None:
-        save_evaluation_path = "./results/" + args.gt_type + "_evaluations.json"
-    else:
+    if args.save_evaluations is not None:
         save_evaluation_path = "./results/" + args.save_evaluations + "_evaluations.json"
-   
-    if args.save_models is not None:
-        save_model_path = "./models/" + args.save_models + "/"        
+    else:
+        save_evaluation_path = "./results/unspecified_evaluations.json"
 
-    print(f"Taking the ground truth from: {bin_ground_truth_path}")
+    if args.save_models is not None:
+        save_model_path = "./models/" + args.save_models + "/"  
+    else:
+        save_model_path = "./models/unspecified/"      
+
+    print(f"Taking the ground truth from: {ground_truth_path}")
     print(f"Saving the evaluation in: {save_evaluation_path}")
     print(f"Saving the models in: {save_model_path}")
     print(f"Using quality of: {args.quality}")
@@ -86,8 +85,7 @@ if __name__ == "__main__":
     print(f"Num run: {args.runs}")
 
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
-        ground_truth_path=bin_ground_truth_path,  # Give the binarized ground truth data
-        gt_type=args.gt_type,
+        ground_truth_path=ground_truth_path,  # Give the binarized ground truth data
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
@@ -103,3 +101,5 @@ if __name__ == "__main__":
 # sbatch --job-name default run_job.slurm --gt_type default --save_evaluation default --save_models default --hyp_type lightgbmxt
 # sbatch --job-name cosmic run_job.slurm --gt_type cosmic --save_evaluation cosmic --save_models cosmic --hyp_type lightgbmxt
 # sbatch --job-name reference run_job.slurm --gt_type reference --save_evaluation reference --save_models reference --hyp_type lightgbmxt
+
+# sbatch --job-name th n run_job.slurm --gt_type default --threshold n --save_evaluation default_n --save_models default_n --hyp_type lightgbxt
