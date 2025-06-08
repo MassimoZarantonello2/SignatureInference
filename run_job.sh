@@ -9,7 +9,7 @@ export OPENBLAS_NUM_THREADS=10
 export GOTO_NUM_THREADS=10
 export OMP_NUM_THREADS=10
 # Passa tutti i parametri ricevuti a Python
-python ./scripts/thresholdTest.py "$@"
+python ./scripts/main.py "$@"
 
 
 # sbatch --job-name cosmic run_job.slurm --gt_type cosmic --save_evaluation cosmic --save_models cosmic --hyp_type lightgbmxt

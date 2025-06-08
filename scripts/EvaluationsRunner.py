@@ -36,22 +36,7 @@ class EvaluationsRunner:
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = [
-        "1",
-        "0.9",
-        "0.8",
-        "0.7",
-        "0.6",
-        "0.5",
-        "0.4",
-        "0.3",
-        "0.2",
-        "0.15"
-        "0.1"
-        "0.05",
-        "0.04",
-        "0.03",
-        "0.02",
-        "0.01"        
+        "1",       
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
@@ -89,7 +74,7 @@ class EvaluationsRunner:
         lc.log(f"For sample {sample} the train and test dataframes are created")
         try:
             predictor = MultilabelPredictor(         #Creates the MultiLabel predictor
-                path=os.path.join(self.save_models_path, f"Predictior-{sample}"),                
+                path=os.path.join(self.save_models_path, f"Predictor-{sample}"),                
                 labels=self.labels,
                 problem_types=self.problem_type,
                 consider_labels_correlation=self.label_correlation,
