@@ -68,6 +68,10 @@ def plot_per_run_metric(rs, attr_name="per_run_accuracy", metric_name="Accuracy"
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
+    
+def per_sample_signature_metric(rs, attr_name="per_run_balanced_accuracy", metric_name="Balanced Accuracy"):
+    metric = getattr(rs, attr_name)
+
 
     
 def plot_violins(re):
@@ -220,7 +224,9 @@ def plot_all_signature_all_sampling_graph(re, folder_name=None, bins = False):
     fig.set_figwidth(max(0.25 * len(active_segnature),15))
     plt.tight_layout()
     plt.show()
-
+    
+    
+from scipy.stats import pearsonr
 def plot_correlation_scatter_plot(rs, attr_name, ground_truth, gt_name):
     metric = getattr(rs, attr_name)
     signature_gt_path = f'../simulations/ground_truth{ground_truth}/bin_exposures.csv'
@@ -235,6 +241,9 @@ def plot_correlation_scatter_plot(rs, attr_name, ground_truth, gt_name):
 
     # Plot
     plt.figure(figsize=(8, 6))
+    r, p = pearsonr(df['Signature Activity'], df['Average Accuracy'])
+    plt.text(0.05, 0.95, f'r = {r:.3f}, p = {p:.3g}', transform=plt.gca().transAxes, 
+         verticalalignment='top', fontsize=12, bbox=dict(facecolor='white', alpha=0.6, edgecolor='gray'))
     sns.scatterplot(data=df, x='Signature Activity', y='Average Accuracy')
     sns.regplot(data=df, x='Signature Activity', y='Average Accuracy', ci=None, scatter_kws={"s": 60})
     plt.title(f'Correlation between Signature Balanced Activity and Accuracy for {gt_name}')
