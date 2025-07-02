@@ -1,2 +1,7 @@
-12:40:41: Starting run 1 and sample 0.02
-12:40:45: For sample 0.02 the train and test dataframes are created
+00:25:27: Starting run 1 and sample 0.02
+00:25:27: For sample 0.02 the train and test dataframes are created
+13:36:42: For sample 0.02 the models are trained
+13:42:32: For sample 0.02 the best models are saved
+13:42:32: Run 1 and sample 0.02 evaluation done
+13:42:32: -----------------------------------
+13:42:32: Evaluations for 0.02 saved

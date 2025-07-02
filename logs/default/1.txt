@@ -916,3 +916,205 @@
 16:07:28: Run 14 and sample 1 already evaluated, skipping
 16:07:31: Run 15 and sample 1 already evaluated, skipping
 16:07:35: Run 16 and sample 1 already evaluated, skipping
+17:51:32: Run 1 and sample 1 already evaluated, skipping
+17:51:35: Run 2 and sample 1 already evaluated, skipping
+17:51:38: Run 3 and sample 1 already evaluated, skipping
+17:51:42: Run 4 and sample 1 already evaluated, skipping
+17:51:45: Run 5 and sample 1 already evaluated, skipping
+17:51:48: Run 6 and sample 1 already evaluated, skipping
+17:51:51: Run 7 and sample 1 already evaluated, skipping
+17:51:54: Run 8 and sample 1 already evaluated, skipping
+17:51:57: Run 9 and sample 1 already evaluated, skipping
+17:52:01: Run 10 and sample 1 already evaluated, skipping
+17:52:04: Run 11 and sample 1 already evaluated, skipping
+17:52:07: Run 12 and sample 1 already evaluated, skipping
+17:52:10: Run 13 and sample 1 already evaluated, skipping
+17:52:13: Run 14 and sample 1 already evaluated, skipping
+17:52:16: Run 15 and sample 1 already evaluated, skipping
+17:52:20: Run 16 and sample 1 already evaluated, skipping
+17:52:23: Run 17 and sample 1 already evaluated, skipping
+17:52:26: Run 18 and sample 1 already evaluated, skipping
+17:52:29: Run 19 and sample 1 already evaluated, skipping
+17:52:32: Run 20 and sample 1 already evaluated, skipping
+17:52:35: Run 21 and sample 1 already evaluated, skipping
+17:52:38: Run 22 and sample 1 already evaluated, skipping
+17:52:41: Run 23 and sample 1 already evaluated, skipping
+17:52:44: Run 24 and sample 1 already evaluated, skipping
+17:52:47: Run 25 and sample 1 already evaluated, skipping
+17:52:50: Run 26 and sample 1 already evaluated, skipping
+17:52:53: Run 27 and sample 1 already evaluated, skipping
+17:52:56: Run 28 and sample 1 already evaluated, skipping
+17:52:59: Run 29 and sample 1 already evaluated, skipping
+17:53:03: Run 30 and sample 1 already evaluated, skipping
+17:53:06: Run 31 and sample 1 already evaluated, skipping
+17:53:08: Run 32 and sample 1 already evaluated, skipping
+17:53:12: Run 33 and sample 1 already evaluated, skipping
+17:53:15: Run 34 and sample 1 already evaluated, skipping
+17:53:18: Run 35 and sample 1 already evaluated, skipping
+17:53:20: Run 36 and sample 1 already evaluated, skipping
+17:53:24: Run 37 and sample 1 already evaluated, skipping
+17:53:26: Run 38 and sample 1 already evaluated, skipping
+17:53:30: Run 39 and sample 1 already evaluated, skipping
+17:53:32: Run 40 and sample 1 already evaluated, skipping
+17:53:35: Run 41 and sample 1 already evaluated, skipping
+17:53:39: Run 42 and sample 1 already evaluated, skipping
+17:53:41: Run 43 and sample 1 already evaluated, skipping
+17:53:44: Run 44 and sample 1 already evaluated, skipping
+17:53:47: Run 45 and sample 1 already evaluated, skipping
+17:53:50: Run 46 and sample 1 already evaluated, skipping
+17:53:53: Run 47 and sample 1 already evaluated, skipping
+17:53:56: Run 48 and sample 1 already evaluated, skipping
+17:53:59: Run 49 and sample 1 already evaluated, skipping
+17:54:02: Run 50 and sample 1 already evaluated, skipping
+17:54:05: Run 51 and sample 1 already evaluated, skipping
+17:54:08: Run 52 and sample 1 already evaluated, skipping
+17:54:11: Run 53 and sample 1 already evaluated, skipping
+17:54:14: Run 54 and sample 1 already evaluated, skipping
+17:54:17: Run 55 and sample 1 already evaluated, skipping
+17:54:20: Run 56 and sample 1 already evaluated, skipping
+17:54:23: Run 57 and sample 1 already evaluated, skipping
+17:54:26: Run 58 and sample 1 already evaluated, skipping
+17:54:28: Run 59 and sample 1 already evaluated, skipping
+17:54:32: Run 60 and sample 1 already evaluated, skipping
+17:54:34: Run 61 and sample 1 already evaluated, skipping
+17:54:37: Run 62 and sample 1 already evaluated, skipping
+17:54:40: Run 63 and sample 1 already evaluated, skipping
+17:54:43: Run 64 and sample 1 already evaluated, skipping
+17:54:46: Run 65 and sample 1 already evaluated, skipping
+17:54:49: Run 66 and sample 1 already evaluated, skipping
+17:54:52: Run 67 and sample 1 already evaluated, skipping
+17:54:55: Run 68 and sample 1 already evaluated, skipping
+17:54:58: Run 69 and sample 1 already evaluated, skipping
+17:55:01: Run 70 and sample 1 already evaluated, skipping
+17:55:03: Run 71 and sample 1 already evaluated, skipping
+17:55:06: Run 72 and sample 1 already evaluated, skipping
+17:55:09: Starting run 73 and sample 1
+17:55:10: For sample 1 the train and test dataframes are created
+20:25:57: For sample 1 the models are trained
+20:31:42: For sample 1 the best models are saved
+20:31:42: Run 73 and sample 1 evaluation done
+20:31:42: Run 73 and sample 1 lock aquired
+20:31:42: Run 73 and sample 1 lock released
+20:31:42: -----------------------------------
+20:31:58: Starting run 74 and sample 1
+20:31:59: For sample 1 the train and test dataframes are created
+22:58:05: For sample 1 the models are trained
+23:03:42: For sample 1 the best models are saved
+23:03:42: Run 74 and sample 1 evaluation done
+23:03:42: Run 74 and sample 1 lock aquired
+23:03:42: Run 74 and sample 1 lock released
+23:03:42: -----------------------------------
+23:03:58: Starting run 75 and sample 1
+23:03:59: For sample 1 the train and test dataframes are created
+01:28:25: For sample 1 the models are trained
+01:34:11: For sample 1 the best models are saved
+01:34:11: Run 75 and sample 1 evaluation done
+01:34:11: Run 75 and sample 1 lock aquired
+01:34:11: Run 75 and sample 1 lock released
+01:34:11: -----------------------------------
+01:34:27: Starting run 76 and sample 1
+01:34:28: For sample 1 the train and test dataframes are created
+04:01:54: For sample 1 the models are trained
+04:07:17: For sample 1 the best models are saved
+04:07:17: Run 76 and sample 1 evaluation done
+04:07:17: Run 76 and sample 1 lock aquired
+04:07:17: Run 76 and sample 1 lock released
+04:07:17: -----------------------------------
+04:07:33: Starting run 77 and sample 1
+04:07:35: For sample 1 the train and test dataframes are created
+06:30:31: For sample 1 the models are trained
+06:35:56: For sample 1 the best models are saved
+06:35:56: Run 77 and sample 1 evaluation done
+06:35:56: Run 77 and sample 1 lock aquired
+06:35:56: Run 77 and sample 1 lock released
+06:35:56: -----------------------------------
+06:36:13: Starting run 78 and sample 1
+06:36:14: For sample 1 the train and test dataframes are created
+09:04:03: For sample 1 the models are trained
+09:09:38: For sample 1 the best models are saved
+09:09:38: Run 78 and sample 1 evaluation done
+09:09:38: Run 78 and sample 1 lock aquired
+09:09:38: Run 78 and sample 1 lock released
+09:09:38: -----------------------------------
+09:09:54: Starting run 79 and sample 1
+09:09:56: For sample 1 the train and test dataframes are created
+11:38:10: For sample 1 the models are trained
+11:43:36: For sample 1 the best models are saved
+11:43:36: Run 79 and sample 1 evaluation done
+11:43:36: Run 79 and sample 1 lock aquired
+11:43:36: Run 79 and sample 1 lock released
+11:43:36: -----------------------------------
+11:43:53: Starting run 80 and sample 1
+11:43:54: For sample 1 the train and test dataframes are created
+14:12:02: For sample 1 the models are trained
+14:17:39: For sample 1 the best models are saved
+14:17:39: Run 80 and sample 1 evaluation done
+14:17:39: Run 80 and sample 1 lock aquired
+14:17:39: Run 80 and sample 1 lock released
+14:17:39: -----------------------------------
+14:17:56: Starting run 81 and sample 1
+14:17:57: For sample 1 the train and test dataframes are created
+16:45:52: For sample 1 the models are trained
+16:51:08: For sample 1 the best models are saved
+16:51:08: Run 81 and sample 1 evaluation done
+16:51:08: Run 81 and sample 1 lock aquired
+16:51:08: Run 81 and sample 1 lock released
+16:51:08: -----------------------------------
+16:51:25: Starting run 82 and sample 1
+16:51:26: For sample 1 the train and test dataframes are created
+19:14:12: For sample 1 the models are trained
+19:19:57: For sample 1 the best models are saved
+19:19:57: Run 82 and sample 1 evaluation done
+19:19:57: Run 82 and sample 1 lock aquired
+19:19:57: Run 82 and sample 1 lock released
+19:19:57: -----------------------------------
+19:20:14: Starting run 83 and sample 1
+19:20:15: For sample 1 the train and test dataframes are created
+21:44:33: For sample 1 the models are trained
+21:50:02: For sample 1 the best models are saved
+21:50:02: Run 83 and sample 1 evaluation done
+21:50:02: Run 83 and sample 1 lock aquired
+21:50:02: Run 83 and sample 1 lock released
+21:50:02: -----------------------------------
+21:50:19: Starting run 84 and sample 1
+21:50:20: For sample 1 the train and test dataframes are created
+00:12:06: For sample 1 the models are trained
+00:17:34: For sample 1 the best models are saved
+00:17:34: Run 84 and sample 1 evaluation done
+00:17:34: Run 84 and sample 1 lock aquired
+00:17:34: Run 84 and sample 1 lock released
+00:17:34: -----------------------------------
+00:17:50: Starting run 85 and sample 1
+00:17:51: For sample 1 the train and test dataframes are created
+02:40:49: For sample 1 the models are trained
+02:46:24: For sample 1 the best models are saved
+02:46:24: Run 85 and sample 1 evaluation done
+02:46:24: Run 85 and sample 1 lock aquired
+02:46:24: Run 85 and sample 1 lock released
+02:46:24: -----------------------------------
+02:46:41: Starting run 86 and sample 1
+02:46:42: For sample 1 the train and test dataframes are created
+05:12:42: For sample 1 the models are trained
+05:18:02: For sample 1 the best models are saved
+05:18:02: Run 86 and sample 1 evaluation done
+05:18:02: Run 86 and sample 1 lock aquired
+05:18:02: Run 86 and sample 1 lock released
+05:18:02: -----------------------------------
+05:18:18: Starting run 87 and sample 1
+05:18:19: For sample 1 the train and test dataframes are created
+07:45:06: For sample 1 the models are trained
+07:50:48: For sample 1 the best models are saved
+07:50:48: Run 87 and sample 1 evaluation done
+07:50:48: Run 87 and sample 1 lock aquired
+07:50:48: Run 87 and sample 1 lock released
+07:50:48: -----------------------------------
+07:51:04: Starting run 88 and sample 1
+07:51:06: For sample 1 the train and test dataframes are created
+10:26:03: For sample 1 the models are trained
+10:31:26: For sample 1 the best models are saved
+10:31:26: Run 88 and sample 1 evaluation done
+10:31:26: Run 88 and sample 1 lock aquired
+10:31:26: Run 88 and sample 1 lock released
+10:31:26: -----------------------------------
+10:31:43: Starting run 89 and sample 1
+10:31:44: For sample 1 the train and test dataframes are created

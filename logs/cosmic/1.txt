@@ -312,3 +312,103 @@
 00:04:27: -----------------------------------
 00:19:43: Starting run 32 and sample 1
 00:19:48: For sample 1 the train and test dataframes are created
+17:54:00: Run 1 and sample 1 already evaluated, skipping
+17:54:03: Run 2 and sample 1 already evaluated, skipping
+17:54:06: Run 3 and sample 1 already evaluated, skipping
+17:54:10: Run 4 and sample 1 already evaluated, skipping
+17:54:13: Run 5 and sample 1 already evaluated, skipping
+17:54:17: Run 6 and sample 1 already evaluated, skipping
+17:54:20: Run 7 and sample 1 already evaluated, skipping
+17:54:23: Run 8 and sample 1 already evaluated, skipping
+17:54:27: Run 9 and sample 1 already evaluated, skipping
+17:54:30: Run 10 and sample 1 already evaluated, skipping
+17:54:34: Run 11 and sample 1 already evaluated, skipping
+17:54:37: Run 12 and sample 1 already evaluated, skipping
+17:54:41: Run 13 and sample 1 already evaluated, skipping
+17:54:44: Run 14 and sample 1 already evaluated, skipping
+17:54:47: Run 15 and sample 1 already evaluated, skipping
+17:54:51: Run 16 and sample 1 already evaluated, skipping
+17:54:54: Run 17 and sample 1 already evaluated, skipping
+17:54:58: Run 18 and sample 1 already evaluated, skipping
+17:55:01: Run 19 and sample 1 already evaluated, skipping
+17:55:05: Run 20 and sample 1 already evaluated, skipping
+17:55:08: Run 21 and sample 1 already evaluated, skipping
+17:55:11: Run 22 and sample 1 already evaluated, skipping
+17:55:15: Run 23 and sample 1 already evaluated, skipping
+17:55:18: Run 24 and sample 1 already evaluated, skipping
+17:55:21: Run 25 and sample 1 already evaluated, skipping
+17:55:25: Run 26 and sample 1 already evaluated, skipping
+17:55:28: Run 27 and sample 1 already evaluated, skipping
+17:55:31: Run 28 and sample 1 already evaluated, skipping
+17:55:35: Run 29 and sample 1 already evaluated, skipping
+17:55:38: Run 30 and sample 1 already evaluated, skipping
+17:55:42: Run 31 and sample 1 already evaluated, skipping
+17:55:45: Starting run 32 and sample 1
+17:56:04: Starting run 33 and sample 1
+17:56:22: Starting run 34 and sample 1
+17:56:41: Starting run 35 and sample 1
+17:57:00: Starting run 36 and sample 1
+17:57:18: Starting run 37 and sample 1
+17:57:37: Starting run 38 and sample 1
+17:57:55: Starting run 39 and sample 1
+17:58:14: Starting run 40 and sample 1
+17:58:32: Starting run 41 and sample 1
+17:58:50: Starting run 42 and sample 1
+17:59:09: Starting run 43 and sample 1
+17:59:27: Starting run 44 and sample 1
+17:59:46: Starting run 45 and sample 1
+18:00:04: Starting run 46 and sample 1
+18:00:23: Starting run 47 and sample 1
+18:00:41: Starting run 48 and sample 1
+18:01:00: Starting run 49 and sample 1
+18:01:18: Starting run 50 and sample 1
+18:01:37: Starting run 51 and sample 1
+18:01:55: Starting run 52 and sample 1
+18:02:14: Starting run 53 and sample 1
+18:02:32: Starting run 54 and sample 1
+18:02:51: Starting run 55 and sample 1
+18:03:09: Starting run 56 and sample 1
+18:03:27: Starting run 57 and sample 1
+18:03:46: Starting run 58 and sample 1
+18:04:04: Starting run 59 and sample 1
+18:04:23: Starting run 60 and sample 1
+18:04:41: Starting run 61 and sample 1
+18:05:00: Starting run 62 and sample 1
+18:05:18: Starting run 63 and sample 1
+18:05:36: Starting run 64 and sample 1
+18:05:55: Starting run 65 and sample 1
+18:06:13: Starting run 66 and sample 1
+18:06:32: Starting run 67 and sample 1
+18:06:50: Starting run 68 and sample 1
+18:07:08: Starting run 69 and sample 1
+18:07:27: Starting run 70 and sample 1
+18:07:45: Starting run 71 and sample 1
+18:08:04: Starting run 72 and sample 1
+18:08:22: Starting run 73 and sample 1
+18:08:41: Starting run 74 and sample 1
+18:08:59: Starting run 75 and sample 1
+18:09:17: Starting run 76 and sample 1
+18:09:36: Starting run 77 and sample 1
+18:09:54: Starting run 78 and sample 1
+18:10:12: Starting run 79 and sample 1
+18:10:31: Starting run 80 and sample 1
+18:10:49: Starting run 81 and sample 1
+18:11:08: Starting run 82 and sample 1
+18:11:26: Starting run 83 and sample 1
+18:11:44: Starting run 84 and sample 1
+18:12:03: Starting run 85 and sample 1
+18:12:21: Starting run 86 and sample 1
+18:12:39: Starting run 87 and sample 1
+18:12:58: Starting run 88 and sample 1
+18:13:16: Starting run 89 and sample 1
+18:13:34: Starting run 90 and sample 1
+18:13:52: Starting run 91 and sample 1
+18:14:11: Starting run 92 and sample 1
+18:14:29: Starting run 93 and sample 1
+18:14:48: Starting run 94 and sample 1
+18:15:06: Starting run 95 and sample 1
+18:15:24: Starting run 96 and sample 1
+18:15:43: Starting run 97 and sample 1
+18:16:01: Starting run 98 and sample 1
+18:16:20: Starting run 99 and sample 1
+18:16:38: Starting run 100 and sample 1
