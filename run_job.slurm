@@ -11,6 +11,6 @@ export OMP_NUM_THREADS=10
 # Passa tutti i parametri ricevuti a Python
 python /home/baderlab/mzarant/SignatureInference/scripts/main.py "$@"
 
-
-# sbatch --job-name cosmic run_job.slurm --gt_type cosmic --save_evaluation cosmic --save_models cosmic --hyp_type lightgbmxt
-# sbatch --job-name reference run_job.slurm --gt_type reference --save_evaluation reference --save_models reference --hyp_type lightgbmxt
+# sbatch --job-name default run_job.slurm --gt_path ground_truth/bin_exposure --save_evaluations default --save_models default
+# sbatch --job-name cosmic run_job.slurm --gt_path ground_truth_cosmic/bin_exposure --save_evaluations cosmic --save_models cosmic
+# sbatch --job-name reference run_job.slurm --gt_path ground_truth_reference/bin_exposure --save_evaluations reference --save_models reference
