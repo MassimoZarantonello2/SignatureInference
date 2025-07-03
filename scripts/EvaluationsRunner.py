@@ -31,7 +31,11 @@ class EvaluationsRunner:
         self.labels = None
         self.problem_type = None
         self.fit_quality = fit_quality
-        self.hyperparameters = get_hyperparameters(hyperparameters_type)
+        self.hyperparameters = {
+            "GBM": [
+            {"extra_trees": True, "ag_args": {"name_suffix": "XT"}}
+                ]
+            }
         self.run_values = [str(i) for i in range(1, 101)]
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
