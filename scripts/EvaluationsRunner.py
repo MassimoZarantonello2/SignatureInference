@@ -17,6 +17,7 @@ class EvaluationsRunner:
     def __init__(
         self,
         ground_truth_path,
+        input_problem_type,
         fit_quality,
         hyperparameters_type,
         save_evaluation_path,
@@ -28,14 +29,11 @@ class EvaluationsRunner:
     ):
         self.data_path = "/trinucleotides_counts_sampling_"
         self.ground_truth_path = ground_truth_path
+        self.input_problem_type = input_problem_type
         self.labels = None
         self.problem_type = None
         self.fit_quality = fit_quality
-        self.hyperparameters = {
-            "GBM": [
-            {"extra_trees": True, "ag_args": {"name_suffix": "XT"}}
-                ]
-            }
+        self.hyperparameters = get_hyperparameters(hyperparameters_type)
         self.run_values = [str(i) for i in range(1, 101)]
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
@@ -138,7 +136,9 @@ class EvaluationsRunner:
         )
 
         self.labels = self.ground_truth_df.columns[1:]
-        self.problem_type = ["binary"] * len(self.labels)
+        if self.input_problem_type == "binary":
+            self.problem_type = ["binary"] * len(self.labels)
+
         
         run_done = 0
         for run in self.run_values:

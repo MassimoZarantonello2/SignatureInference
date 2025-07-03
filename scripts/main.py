@@ -15,6 +15,11 @@ if __name__ == "__main__":
         help="Path del ground truth binarizzato",
     )
     parser.add_argument(
+        "--problem_type",
+        type=str,
+        default = None
+    )
+    parser.add_argument(
         "--threshold",
         type=str,
         default="0",
@@ -76,16 +81,17 @@ if __name__ == "__main__":
         save_model_path = "./models/unspecified/"      
 
     print(f"Taking the ground truth from: {ground_truth_path}")
+    print(f"Using binary problem type:{args.problem_type == 'binary'}")
     print(f"Saving the evaluation in: {save_evaluation_path}")
     print(f"Saving the models in: {save_model_path}")
     print(f"Using quality of: {args.quality}")
-    print(f"Taking the hyperparameters from: {args.hyp_type}")
     print(f"Time limit: {args.time_limit}")
     print(f"Using label correlation: {args.label_correlation}")
     print(f"Num run: {args.runs}")
 
     er = EvaluationsRunner(          # The labels are the names of the columns of the binarized ground truth df
         ground_truth_path=ground_truth_path,  # Give the binarized ground truth data
+        input_problem_type = args.problem_type,
         fit_quality=args.quality,
         hyperparameters_type= args.hyp_type,
         save_evaluation_path=save_evaluation_path,
