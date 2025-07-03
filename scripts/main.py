@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--problem_type",
         type=str,
-        default = None
+        default = "binary"
     )
     parser.add_argument(
         "--threshold",
