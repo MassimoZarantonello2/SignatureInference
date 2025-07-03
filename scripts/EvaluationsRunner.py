@@ -12,7 +12,6 @@ from utils.HyperparametersModels import get_hyperparameters
 from utils.EvaluationsHelper import format_model_result, create_empty_json_file, update_json_file
 from utils.Log import LogClass
 
-
 class EvaluationsRunner:
     def __init__(
         self,
@@ -38,7 +37,22 @@ class EvaluationsRunner:
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = [
-        "1",       
+        "1",
+        "0.9",
+        "0.8",
+        "0.7",
+        "0.6",
+        "0.5",
+        "0.4",
+        "0.3",
+        "0.2",
+        "0.15",
+        "0.1"
+        "0.05",
+        "0.04",
+        "0.03",
+        "0.02",     
+        "0.01"
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
@@ -174,7 +188,7 @@ class EvaluationsRunner:
 
             if signature_inference_thread.__len__() != 0:
                 json.dump(all_evaluations_df, open(self.save_evaluation_path, "w"))     # Rewrite the whole dataset into a json file TODO: try and save it in a more efficient way
-
+                lc.log(f"Values saved in {self.save_evaluation_path}")
             if self.save_models_path and os.path.exists(self.save_models_path):         # Delete the models folder
                 pass
                 #shutil.rmtree(self.save_models_path)
