@@ -56,7 +56,6 @@ class EvaluationsRunner:
     ]
         self.save_evaluation_path = save_evaluation_path
         self.save_evaluation_name = save_evaluation_name
-        self.save_models = False
         self.time_limit = time_limit
         self.label_correlation = label_correlation
         self.train_test_split_value = 0.8

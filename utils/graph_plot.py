@@ -7,7 +7,7 @@ def heat_map(rs, f):
     x_labels = rs.sampling_labels
     y_labels = rs.signature_labels
 
-    ra = rs.get_runs_sample_metrics('accuracy')  # shape: [num_runs][num_sampling][num_signature]
+    ra = rs.get_runs_sample_metrics('balanced_accuracy')  # shape: [num_runs][num_sampling][num_signature]
 
     # Converti in array numpy e calcola la media sulle run (asse 0)
     ra = np.array(ra)
