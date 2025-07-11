@@ -16,10 +16,10 @@ def heat_map(rs, f):
     # Crea un DataFrame per la heatmap
     df = pd.DataFrame(mean_accuracy.T, index=y_labels, columns=x_labels)  # trasposta per avere signature come righe
 
-    plt.figure(figsize=(10, max(0.21 * len(rs.signature_labels),15)))
-    ax = sns.heatmap(df, annot=False, fmt=".2f", cmap="viridis")
-    plt.xlabel("Sampling Method")
-    plt.ylabel("Signature Type")
+    plt.figure(figsize=(max(0.21 * len(rs.signature_labels),15),10))
+    ax = sns.heatmap(df.T, annot=False, fmt=".2f", cmap="viridis")
+    plt.ylabel("Sampling Method")
+    plt.xlabel("Signature Type")
     plt.title(f"Average Balanced Accuracy for {f}")
 
     # Annotazioni personalizzate
@@ -61,7 +61,7 @@ def plot_per_run_metric(rs, attr_name="per_run_accuracy", metric_name="Accuracy"
     std_err = per_run_mean_metric.std(axis=0, ddof=1) / np.sqrt(per_run_mean_metric.shape[0])
     conf_interval = 1.96 * std_err  # 95% CI
 
-    plt.errorbar(rs.sampling_labels, means,  marker='o', label=metric_name, capsize=5)
+    plt.errorbar(rs.sampling_labels, means, yerr=conf_interval, marker='o', label=metric_name, capsize=5)
     plt.xticks(rotation=90)
     plt.ylabel(attr_name[8:])
     plt.xlabel("Sampling Level")
