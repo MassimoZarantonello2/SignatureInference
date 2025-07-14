@@ -57,7 +57,6 @@ train_df.drop(columns=["Unnamed: 0"], inplace=True)
 train_df_indexed = train_df.reset_index(drop=True)
 train_idx, test_idx = train_test_split(train_df_indexed.index, test_size=0.2, random_state=42)
 train_data = train_df_indexed.loc[train_idx].reset_index(drop=True)
-test_data = train_df_indexed.loc[test_idx].reset_index(drop=True)
 
 if not os.path.exists(f'models/{sample_size}_exposures_autogluon'):
     print("Model doesn't exists training it from scratch")
@@ -70,6 +69,10 @@ else:
     print('Model already exists loading it')
     # Caricamento modello
     predictor = MultilabelPredictor.load(path=f'models/{sample_size}_exposures_autogluon')
+
+    # Caricamento indici di test
+    test_idx = np.loadtxt(f"{sample_size}_test_indices.txt", dtype=int)
+    test_data = train_df_indexed.loc[test_idx].reset_index(drop=True)
 
     # Predizione sul test set
     prediction = predictor.predict(test_data)
