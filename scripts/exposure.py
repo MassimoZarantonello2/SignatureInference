@@ -34,7 +34,7 @@ def print_stats(r2_1, mse_1, thresholds=[0.5, 0.8], output_file="0.03_results.tx
         for line in lines:
             f.write(line + "\n")
 
-sample_size = '0.03'
+sample_size = '1'
 
 # Definizione delle label
 labels = ["S1 (SBS1 - 0.99)_y", "S2 (SBS2 - 0.99)_y", "S3 (SBS3 - 0.97)_y", "S4 (SBS4 - 0.98)_y", 
