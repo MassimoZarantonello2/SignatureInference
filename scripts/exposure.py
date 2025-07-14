@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 import sys
 import os
+from sklearn.model_selection import KFold
+
 
 sys.path.append("./")
 from utils.MultiLabelPredictor import MultilabelPredictor
@@ -93,3 +95,31 @@ else:
 
     # Stampa statistiche
     print_stats(r2_list, mse_list)
+    print("\n[Valutazione su test set alternativi]")
+
+    all_idx = np.arange(len(train_df_indexed))
+    train_idx_set = np.setdiff1d(all_idx, test_idx)  # sample non visti
+
+    kf = KFold(n_splits=5, shuffle=True, random_state=42)
+    r2_scores_per_fold = []
+    mse_scores_per_fold = []
+
+    for i, (_, test_idx_alt) in enumerate(kf.split(train_idx_set)):
+        idx = train_idx_set[test_idx_alt]
+        test_data_alt = train_df_indexed.loc[idx].reset_index(drop=True)
+        prediction_alt = predictor.predict(test_data_alt)
+        gt_alt = test_data_alt[labels]
+
+        r2_list = []
+        mse_list = []
+        for sig in prediction_alt.columns.intersection(gt_alt.columns):
+            r2 = r2_score(gt_alt[sig], prediction_alt[sig])
+            mse = mean_squared_error(gt_alt[sig], prediction_alt[sig])
+            r2_list.append(r2)
+            mse_list.append(mse)
+
+        r2_scores_per_fold.append(np.nanmean(r2_list))
+        mse_scores_per_fold.append(np.nanmean(mse_list))
+
+    print(f"\nR² mean ± std (alt. test): {np.mean(r2_scores_per_fold):.4f} ± {np.std(r2_scores_per_fold):.4f}")
+    print(f"MSE mean ± std (alt. test): {np.mean(mse_scores_per_fold):.2e} ± {np.std(mse_scores_per_fold):.2e}")
