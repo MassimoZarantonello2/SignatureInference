@@ -69,7 +69,7 @@ if not os.path.exists(f'models/{sample_size}_exposures_autogluon'):
 else:
     print('Model already exists loading it')
     # Caricamento modello
-    predictor = MultilabelPredictor.load(path=f'models/{sample_size}_exposures_autogluon', labels=labels)
+    predictor = MultilabelPredictor.load(path=f'models/{sample_size}_exposures_autogluon')
 
     # Predizione sul test set
     prediction = predictor.predict(test_data)
