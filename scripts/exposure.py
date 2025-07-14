@@ -8,7 +8,7 @@ import os
 sys.path.append("./")
 from utils.MultiLabelPredictor import MultilabelPredictor
 
-def print_stats(r2_1, mse_1, thresholds=[0.5, 0.8], output_file="results.txt"):
+def print_stats(r2_1, mse_1, thresholds=[0.5, 0.8], output_file="0.03_results.txt"):
     r2_1, mse_1 = np.array(r2_1), np.array(mse_1)
 
     def summary_stats(metric):
@@ -48,7 +48,7 @@ labels = ["S1 (SBS1 - 0.99)_y", "S2 (SBS2 - 0.99)_y", "S3 (SBS3 - 0.97)_y", "S4 
 
 # Caricamento dati
 bin_exposure = pd.read_csv('simulations/ground_truth/bin_exposures.csv')
-mutation_count = pd.read_csv('simulations/data/run_1/trinucleotides_counts_sampling_1.csv')
+mutation_count = pd.read_csv('simulations/data/run_1/trinucleotides_counts_sampling_0.03.csv')
 target_exposures = pd.read_csv('simulations/ground_truth/exposures.csv')
 
 df = pd.merge(bin_exposure, mutation_count, on="Unnamed: 0")
@@ -60,14 +60,14 @@ train_df_indexed = train_df.reset_index(drop=True)
 train_idx, test_idx = train_test_split(train_df_indexed.index, test_size=0.2, random_state=42)
 train_data = train_df_indexed.loc[train_idx].reset_index(drop=True)
 test_data = train_df_indexed.loc[test_idx].reset_index(drop=True)
-np.savetxt("test_indices.txt", test_idx, fmt='%d')
+np.savetxt("0.03_test_indices.txt", test_idx, fmt='%d')
 
 # Training e salvataggio modello
-predictor = MultilabelPredictor(path='models/exposures_autogluon', labels=labels)
+predictor = MultilabelPredictor(path='models/0.03_exposures_autogluon', labels=labels)
 predictor.fit(train_data=train_data, time_limit = 240)
 
 # Caricamento modello
-predictor = MultilabelPredictor.load(path='models/exposures_autogluon', labels=labels)
+predictor = MultilabelPredictor.load(path='models/0.03_exposures_autogluon', labels=labels)
 
 # Predizione sul test set
 prediction = predictor.predict(test_data)

@@ -1,0 +1,38 @@
+16:55:21: Starting run 1 and sample 0.01
+16:55:25: For sample 0.01 the train and test dataframes are created
+18:56:51: For sample 0.01 the models are trained
+19:15:38: For sample 0.01 the best models are saved
+19:15:38: Run 1 and sample 0.01 evaluation done
+19:15:38: Run 1 and sample 0.01 lock aquired
+19:15:38: Run 1 and sample 0.01 lock released
+19:15:38: -----------------------------------
+19:15:38: Values saved in ./results/exposures_evaluations.json
+19:15:39: Starting run 2 and sample 0.01
+19:15:43: For sample 0.01 the train and test dataframes are created
+21:16:29: For sample 0.01 the models are trained
+21:30:01: For sample 0.01 the best models are saved
+21:30:01: Run 2 and sample 0.01 evaluation done
+21:30:01: Run 2 and sample 0.01 lock aquired
+21:30:02: Run 2 and sample 0.01 lock released
+21:30:02: -----------------------------------
+21:35:45: Values saved in ./results/exposures_evaluations.json
+21:35:46: Starting run 3 and sample 0.01
+21:35:50: For sample 0.01 the train and test dataframes are created
+23:38:34: For sample 0.01 the models are trained
+23:56:40: For sample 0.01 the best models are saved
+23:56:40: Run 3 and sample 0.01 evaluation done
+23:56:40: Run 3 and sample 0.01 lock aquired
+23:56:40: Run 3 and sample 0.01 lock released
+23:56:40: -----------------------------------
+23:56:40: Values saved in ./results/exposures_evaluations.json
+23:56:41: Starting run 4 and sample 0.01
+23:56:44: For sample 0.01 the train and test dataframes are created
+01:57:00: For sample 0.01 the models are trained
+02:16:32: For sample 0.01 the best models are saved
+02:16:33: Run 4 and sample 0.01 evaluation done
+02:16:33: Run 4 and sample 0.01 lock aquired
+02:16:34: Run 4 and sample 0.01 lock released
+02:16:34: -----------------------------------
+02:18:02: Values saved in ./results/exposures_evaluations.json
+02:18:03: Starting run 5 and sample 0.01
+02:18:06: For sample 0.01 the train and test dataframes are created
