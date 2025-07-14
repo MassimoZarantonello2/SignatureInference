@@ -34,7 +34,7 @@ def print_stats(r2_1, mse_1, thresholds=[0.5, 0.8], output_file="0.03_results.tx
         for line in lines:
             f.write(line + "\n")
 
-
+sample_size = '0.03'
 
 # Definizione delle label
 labels = ["S1 (SBS1 - 0.99)_y", "S2 (SBS2 - 0.99)_y", "S3 (SBS3 - 0.97)_y", "S4 (SBS4 - 0.98)_y", 
@@ -48,43 +48,45 @@ labels = ["S1 (SBS1 - 0.99)_y", "S2 (SBS2 - 0.99)_y", "S3 (SBS3 - 0.97)_y", "S4 
 
 # Caricamento dati
 bin_exposure = pd.read_csv('simulations/ground_truth/bin_exposures.csv')
-mutation_count = pd.read_csv('simulations/data/run_1/trinucleotides_counts_sampling_0.03.csv')
+mutation_count = pd.read_csv(f'simulations/data/run_1/trinucleotides_counts_sampling_{sample_size}.csv')
 target_exposures = pd.read_csv('simulations/ground_truth/exposures.csv')
-
 df = pd.merge(bin_exposure, mutation_count, on="Unnamed: 0")
 train_df = pd.merge(df, target_exposures, on="Unnamed: 0")
 train_df.drop(columns=["Unnamed: 0"], inplace=True)
-
 # Split e salvataggio indici test
 train_df_indexed = train_df.reset_index(drop=True)
 train_idx, test_idx = train_test_split(train_df_indexed.index, test_size=0.2, random_state=42)
 train_data = train_df_indexed.loc[train_idx].reset_index(drop=True)
 test_data = train_df_indexed.loc[test_idx].reset_index(drop=True)
-np.savetxt("0.03_test_indices.txt", test_idx, fmt='%d')
 
-# Training e salvataggio modello
-predictor = MultilabelPredictor(path='models/0.03_exposures_autogluon', labels=labels)
-predictor.fit(train_data=train_data, time_limit = 240)
+if not os.path.exists(f'models/{sample_size}_exposures_autogluon'):
+    print("Model doesn't exists training it from scratch")
+    np.savetxt(f"{sample_size}_test_indices.txt", test_idx, fmt='%d')
 
-# Caricamento modello
-predictor = MultilabelPredictor.load(path='models/0.03_exposures_autogluon', labels=labels)
+    # Training e salvataggio modello
+    #predictor = MultilabelPredictor(path=f'models/{sample_size}_exposures_autogluon', labels=labels)
+    #predictor.fit(train_data=train_data, time_limit = 240)
+else:
+    print('Model already exists loading it')
+    # Caricamento modello
+    predictor = MultilabelPredictor.load(path=f'models/{sample_size}_exposures_autogluon', labels=labels)
 
-# Predizione sul test set
-prediction = predictor.predict(test_data)
+    # Predizione sul test set
+    prediction = predictor.predict(test_data)
 
-# Caricamento ground truth
-signature_exposure = test_data[labels]
+    # Caricamento ground truth
+    signature_exposure = test_data[labels]
 
-# Calcolo metriche
-r2_list = []
-mse_list = []
-signatures = prediction.columns.intersection(signature_exposure.columns)
+    # Calcolo metriche
+    r2_list = []
+    mse_list = []
+    signatures = prediction.columns.intersection(signature_exposure.columns)
 
-for sig in signatures:
-    r2 = r2_score(signature_exposure[sig], prediction[sig])
-    mse = mean_squared_error(signature_exposure[sig], prediction[sig])
-    r2_list.append(r2)
-    mse_list.append(mse)
+    for sig in signatures:
+        r2 = r2_score(signature_exposure[sig], prediction[sig])
+        mse = mean_squared_error(signature_exposure[sig], prediction[sig])
+        r2_list.append(r2)
+        mse_list.append(mse)
 
-# Stampa statistiche
-print_stats(r2_list, mse_list)
+    # Stampa statistiche
+    print_stats(r2_list, mse_list)
