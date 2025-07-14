@@ -64,7 +64,7 @@ np.savetxt("test_indices.txt", test_idx, fmt='%d')
 
 # Training e salvataggio modello
 predictor = MultilabelPredictor(path='models/exposures_autogluon', labels=labels)
-predictor.fit(train_data=train_data, presets='high_quality')
+predictor.fit(train_data=train_data, time_limit = 240)
 
 # Caricamento modello
 predictor = MultilabelPredictor.load(path='models/exposures_autogluon', labels=labels)
