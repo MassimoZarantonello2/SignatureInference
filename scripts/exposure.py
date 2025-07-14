@@ -121,5 +121,15 @@ else:
         r2_scores_per_fold.append(np.nanmean(r2_list))
         mse_scores_per_fold.append(np.nanmean(mse_list))
 
-    print(f"\nR² mean ± std (alt. test): {np.mean(r2_scores_per_fold):.4f} ± {np.std(r2_scores_per_fold):.4f}")
-    print(f"MSE mean ± std (alt. test): {np.mean(mse_scores_per_fold):.2e} ± {np.std(mse_scores_per_fold):.2e}")
+     # Salva risultati in DataFrame
+    results_df = pd.DataFrame({
+        "fold": np.arange(1, len(r2_scores_per_fold) + 1),
+        "R2_mean": r2_scores_per_fold,
+        "MSE_mean": mse_scores_per_fold
+    })
+
+    print("\nValutazione su test set alternativi:")
+    print(results_df)
+
+    # Salva anche su CSV per uso successivo (opzionale)
+    results_df.to_csv(f"{sample_size}_testset_variability.csv", index=False)
