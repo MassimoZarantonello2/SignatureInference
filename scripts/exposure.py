@@ -36,7 +36,7 @@ def print_stats(r2_1, mse_1, thresholds=[0.5, 0.8], output_file="0.03_results.tx
         for line in lines:
             f.write(line + "\n")
 
-sample_size = '1'
+sample_size = '0.03'
 
 # Definizione delle label
 labels = ["S1 (SBS1 - 0.99)_y", "S2 (SBS2 - 0.99)_y", "S3 (SBS3 - 0.97)_y", "S4 (SBS4 - 0.98)_y", 
@@ -100,7 +100,7 @@ else:
     all_idx = np.arange(len(train_df_indexed))
     train_idx_set = np.setdiff1d(all_idx, test_idx)  # sample non visti
 
-    kf = KFold(n_splits=5, shuffle=True, random_state=42)
+    kf = KFold(n_splits=20, shuffle=True, random_state=42)
     r2_scores_per_fold = []
     mse_scores_per_fold = []
 
