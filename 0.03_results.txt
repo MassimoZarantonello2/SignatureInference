@@ -1,4 +1,0 @@
-Model 1 R²: Mean=0.6126, Median=0.7370, Max=0.9812, Min=-0.9105
-Model 1 MSE: Mean=2.91e+07, Median=2.04e+06, Max=2.43e+08, Min=1.32e+05
-Signatures with R² > 0.5: 20
-Signatures with R² > 0.8: 12

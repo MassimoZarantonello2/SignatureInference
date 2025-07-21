@@ -1,7 +1,5 @@
-from EvaluationsRunner import EvaluationsRunner
+from utils.EvaluationsRunner import EvaluationsRunner
 import argparse
-from utils.Log import LogClass
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Esecuzione del modello di valutazione con parametri opzionali"

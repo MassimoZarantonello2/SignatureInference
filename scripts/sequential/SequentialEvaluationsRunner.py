@@ -36,8 +36,7 @@ class SequentialEvaluationsRunner:
         self.num_run = num_run
         self.runs_path = "./simulations/data/run_"
         self.sampling_values = [
-        "0.04",
-        "0.03",
+        "1",
         "0.02",      
     ]
         self.save_evaluation_path = save_evaluation_path
@@ -68,11 +67,7 @@ class SequentialEvaluationsRunner:
                     "recall":
                     "best_model":
         """
-        train_df = evaluation_df.sample(
-            frac=self.train_test_split_value, 
-            random_state=42
-        )
-        test_df = evaluation_df.drop(train_df.index)
+        train_df = evaluation_df
         lc.log(f"For sample {sample} the train and test dataframes are created")
         try:
             predictor = MultilabelPredictor(         #Creates the MultiLabel predictor
@@ -89,9 +84,8 @@ class SequentialEvaluationsRunner:
                 fit_strategy = "parallel"
             )            
             lc.log(f"For sample {sample} the models are trained")
-            signature_model_info = format_model_result(predictor, test_df)
             lc.log(f"For sample {sample} the best models are saved")
-            return signature_model_info
+            return None
 
         except Exception as e:
             lc.log(f"Error: {e}")
@@ -118,7 +112,7 @@ class SequentialEvaluationsRunner:
         evaluation_df.drop(columns=["Unnamed: 0"], inplace=True)
         signature_model_info = self.train_and_evaluate_framework(evaluation_df, sample, lc)     # Eva
         lc.log(f"Run {run} and sample {sample} evaluation done")
-        output_dict[sample] = signature_model_info
+        output_dict[sample] = None
         lc.log("-----------------------------------")
         return output_dict
         

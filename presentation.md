@@ -22,8 +22,6 @@ In real clinical or research situations, having complete whole-genome sequencing
 So instead of using full WGS, and then reduce the number of mutations — starting from 100% and going down to just 1%.
 This helps test how well we can still detect signatures when we only have part of the data.
 
-I focus especially on the 2% level, since that’s roughly what we get from exome sequencing, which is way more common in real cases.
-
 The pipeline works like this:
 
 First, I get the WGS data and compute the trinucleotide mutation counts for each sample.
@@ -178,25 +176,6 @@ Given that we need to train 100 × 16 models in total, fit time becomes a critic
 
 > To conclude the core analysis, here’s the average balanced accuracy per signature across all runs.
 > We can see that some signature can be predicted very well across all sampling size such as S5 and S1 keeping a balanced accuracy value higher than 0.85 whereas some signature like S12 recive a value close ti 0.5 meaning that mathcing the one of a random prediction.
-
----
-
-### Slide 16 
-In this slide, we compare Accuracy and Balanced Accuracy across all signatures.
-
-While Accuracy appears consistently higher, this is misleading in imbalanced settings, where frequent signatures dominate the metric.For example, 
-S1 shows a major accuracy boost due to its high prevalence.
-S19, despite being rarely present, achieves high accuracy simply because the model almost always predicts it as absent.
-
-This discrepancy reveals where the model benefits from class imbalance rather than actual predictive skill.
-Comparing these two metrics helps identify underperforming signatures and guides targeted improvements, such as:
-- applying oversampling or focal loss,
-- or designing separate strategies for rare signatures.
-
-### Slide 17 – How Much Can We Trust the Results?
-
-> To assess the robustness of our predictions, we measure correlations between predicted and true signature profiles across multiple runs and sampling levels.
-> This helps ensure that our results are not overly sensitive to stochastic variability in the simulations.
 
 ---
 
