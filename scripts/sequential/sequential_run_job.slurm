@@ -12,6 +12,6 @@ export OMP_NUM_THREADS=10
 python /home/baderlab/mzarant/SignatureInference/scripts/sequential/sequential.py "$@"
 
 
-# sbatch --job_name default --gt_path ground_truth/bin_exposures --save_evaluations default --save_models default
-# sbatch --job_name default --gt_path ground_truth_cosmic/bin_exposures --save_evaluations cosmic --save_models cosmic
-# sbatch --job_name default --gt_path ground_truth_reference/bin_exposures --save_evaluations reference --save_models reference
+# sbatch --job-name default scripts/sequential/sequential_run_job.slurm --gt_path ground_truth/bin_exposures --save_evaluations sm_default --save_models default
+# sbatch --job-name cosmic scripts/sequential/sequential_run_job.slurm --gt_path ground_truth_cosmic/bin_exposures --save_evaluations sm_cosmic --save_models cosmic
+#   
