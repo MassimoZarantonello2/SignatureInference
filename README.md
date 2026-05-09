@@ -1,23 +1,27 @@
 # SignatureInference
 
-Repository per l’inferenza e l’analisi delle **mutational signatures** (SBS) su dati genomici, con workflow che comprende simulazioni, esposizioni, regressione/classificazione e valutazioni.
+Repository for the inference and analysis of **mutational signatures** (SBS) on genomic data, covering a full workflow that includes simulations, exposure estimation, regression/classification, and evaluation.
 
-## Contenuto della cartella
+---
 
-* `logs/` — directory per i log delle esecuzioni e tracking dei run.
-* `results/` — output del workflow: metriche, grafici, file di esposizione e classificazione.
-* `scripts/` — script principali che avviano gli step del workflow.
-* `simulations/` — dati simulati con ground‐truth delle firme (binaria o continua).
-* `utils/` — funzioni ausiliarie: parsing, formattazione, metriche, helper vari.
-* `README.md` — questo file.
-* `presentation.md` — presentazione associata al progetto.
-* `run_job.sh`, `run_job.slurm`, `run_job_exposure.slurm` — script di esecuzione batch/cluster (es. Slurm).
+## Repository Structure
 
-## Requisiti
+| Path | Description |
+|---|---|
+| `logs/` | Execution logs and run tracking |
+| `results/` | Workflow outputs: metrics, plots, exposure and classification files |
+| `scripts/` | Main scripts that drive the workflow steps |
+| `simulations/` | Simulated data with ground-truth signatures (binary or continuous) |
+| `tool/` | Inference tool: pre-trained models and `tool.py` entry point |
+| `utils/` | Helper functions: parsing, formatting, metrics, etc. |
+| `run_job.sh`, `run_job.slurm`, `run_job_exposure.slurm` | Batch/cluster execution scripts (Slurm) |
 
-* Python ≥ 3.10
-* Librerie principali (esempi):
+---
 
+## Requirements
+
+- Python ≥ 3.10
+- Core libraries:
   ```
   numpy
   pandas
@@ -26,10 +30,11 @@ Repository per l’inferenza e l’analisi delle **mutational signatures** (SBS)
   seaborn
   scipy
   ```
-* Ambiente cluster / Slurm se si eseguono i job batch.
-* Dati genomici di mutazione o simulazioni pronte.
+- A Slurm-compatible cluster environment if running batch jobs.
 
-## Installazione
+---
+
+## Installation
 
 ```bash
 git clone https://github.com/MassimoZarantonello2/SignatureInference.git
@@ -39,65 +44,52 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-*(Se manca `requirements.txt`, crealo con le librerie sopra.)*
+---
 
-## Utilizzo
+## Research Workflow
 
-### 1. Simulazione o caricamento dati
+The repository implements a full research pipeline for mutational signature analysis:
 
-Esegui gli script in `simulations/` per generare dati con ground‐truth o caricare dataset reali.
+1. **Data generation / loading** — run scripts in `simulations/` to generate synthetic data with known ground-truth signatures, or load real mutation matrices.
+2. **Sampling / preprocessing** — down-sampling or other dataset manipulations.
+3. **Signature activity prediction** — multi-label classification to predict presence/absence of each signature.
+4. **Exposure estimation** — continuous regression to estimate the contribution of each active signature.
+5. **Evaluation** — metrics, statistical tests, and comparative plots.
 
-### 2. Esecuzione workflow
+### Running the workflow
 
-Esempio per job singolo:
-
+Single job:
 ```bash
 ./run_job.sh
 ```
 
-Oppure via Slurm:
-
+Via Slurm:
 ```bash
-sbatch run_job.slurm
+sbatch run_job.slurm       # classification + regression
+sbatch run_job_exposure.slurm  # exposure estimation only
 ```
 
-Per esposizioni:
+Results (classifications, regressions, performance matrices, plots) are written to `results/`.
+
+### Expected outputs
+
+- Impact analysis of sampling on signature presence prediction.
+- Comparison of regression methods for exposure estimation.
+- Plots: similarity heatmaps, performance violin plots, learning curves.
+- Final metrics report and hypothesis-driven analysis.
+
+---
+
+## Inference Tool
+
+`tool/tool.py` is a standalone command-line tool that infers active mutational signatures and estimates their exposures from a raw SBS96 mutation count matrix.
+
+It combines a pre-trained multi-label classifier (to detect which signatures are active per sample) with a non-negative least squares (NNLS) solver (to estimate exposure magnitudes), using the selected reference signature matrix.
+
+### Usage
 
 ```bash
-sbatch run_job_exposure.slurm
-```
-
-### 3. Risultati
-
-I risultati (classificazioni, regressioni, matrici performance, grafici) si trovano in `results/`.
-Puoi poi usarli con gli script in `utils/` per analisi aggiuntive o grafici.
-
-## Struttura del workflow
-
-* Generazione/simulazione matrici delle mutazioni.
-* Sampling o elaborazione del dataset (down‐sampling, etc.).
-* Predizione della presenza/assenza delle firme (multi‐label classification).
-* Stima dell’esposizione alle firme (regressione continua).
-* Valutazione: metriche, test statistici, grafici comparativi.
-
-## Risultati attesi
-
-* Valutazione dell’impatto del sampling sulla previsione della presenza di firme.
-* Confronto tra metodi di regressione per l’esposizione.
-* Grafici: heatmap di similarità, violini di performance, curve di apprendimento.
-* Report delle metriche finali e analisi per ipotesi.
-
-## Contributi
-
-1. Fork del progetto.
-2. Creare o modificare file/branch.
-3. Aprire Pull Request.
-4. Discutere issue prima di cambi sostanziali.
-
-## Usage
-
-```bash
-python tool.py -i <input_file> [options]
+python tool/tool.py -i <input_file> [options]
 ```
 
 ### Arguments
@@ -105,17 +97,49 @@ python tool.py -i <input_file> [options]
 | Argument | Short | Required | Default | Description |
 |---|---|---|---|---|
 | `--input` | `-i` | ✅ | — | Path to the mutation count matrix (CSV) |
-| `--dataset` | `-d` | ❌ | `default` | Signature dataset: `default`, `cosmic`, `reference` |
+| `--dataset` | `-d` | ❌ | `default` | Reference signature set: `default`, `cosmic`, `reference` |
 | `--sequencing` | `-s` | ❌ | `wgs` | Sequencing type: `wgs` (whole genome) or `wes` (whole exome) |
-| `--output` | `-o` | ❌ | `results` | Output directory for results |
+| `--output` | `-o` | ❌ | `results` | Directory where output files will be saved |
 
 ### Input Format
 
-The input CSV must contain samples as rows and the 96 SBS (Single Base Substitution) trinucleotide mutation counts as columns, following the COSMIC notation (e.g., `A[C>A]A`). The first column contains the sample ID (no column header).
+The input CSV must follow the **COSMIC SBS96** format: samples as rows, 96 trinucleotide mutation types as columns. The first column contains the sample ID with no column header.
 
-Example (truncated):
+```
 ,"A[C>A]A","A[C>A]C",...,"T[T>G]T"
 "0009b464-b376-4fbc-8a56-da538269a02f",38,54,...,18
 "1a2b3c4d-...",12,7,...,5
+```
 
-> The tool expects exactly 96 mutation type columns in COSMIC SBS96 order.
+> The tool expects exactly 96 mutation type columns in standard COSMIC SBS96 channel order.
+
+### Output
+
+The tool writes `exposures.csv` to the output directory. Each row corresponds to a sample and each column to a mutational signature. Values represent the **absolute number of mutations** attributed to each signature.
+
+```
+,SBS1,SBS2,SBS3,...
+0009b464-...,120,0,45,...
+1a2b3c4d-...,0,88,12,...
+```
+
+### Examples
+
+WGS data with COSMIC signatures:
+```bash
+python tool/tool.py -i data/mutation_counts.csv -d cosmic -s wgs -o results/
+```
+
+WES data with default signatures:
+```bash
+python tool/tool.py -i data/mutation_counts.csv -s wes
+```
+
+---
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Open a Pull Request.
+4. Discuss substantial changes in an issue before implementing them.
