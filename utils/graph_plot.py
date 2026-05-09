@@ -39,7 +39,7 @@ def plot_standard_deviations(rs, f):
     ax = sns.heatmap(std, xticklabels=rs.signature_labels, yticklabels=rs.sampling_labels, cmap='viridis', annot=True, fmt=".2f")
     plt.xlabel("Signature Labels")
     plt.ylabel("Sampling Labels")
-    plt.title(f"Standard Deviation of Per-Run Accuracy {f}")
+    plt.title(f"Standard Deviation of Per-Run Accuracy RESOLVE dataset")
     plt.xticks(rotation=45, ha='right')
     plt.yticks(rotation=0)
     plt.tight_layout()

@@ -1,49 +1,121 @@
-Daniele Ramazzotti
-10:08
-https://github.com/AlexandrovLab
-https://github.com/AlexandrovLab/SigProfilerExtractor
-https://github.com/AlexandrovLab/SigProfilerAssignment
-Daniele Ramazzotti
-10:10
-https://www.nature.com/articles/s41467-020-17388-x
-https://www.nature.com/articles/s41588-024-01659-0
+# SignatureInference
 
+Repository per l’inferenza e l’analisi delle **mutational signatures** (SBS) su dati genomici, con workflow che comprende simulazioni, esposizioni, regressione/classificazione e valutazioni.
 
-                 Welcome to New DC Cluster, University of Toronto               
-     !!!! Visit http://itwiki.ccbr.utoronto.ca/index.php/Clusters for lastest updates !!!!
-      !!!! Please SUBMIT JOBS to cluster with sbatch, srun, salloc whenever possible !!!!
+## Contenuto della cartella
 
-****** Brief Info & Notes ******
-1). 8 Compute+1 Master nodes, compute nodes have 68 Cores, 272 threads, 200GB RAM, OS RHEL9
-2). 28TB SSD Storage, 8 partitions, /home[2,3,5,6], /scrtach[1,4,7,8]
-3). Scratch storage available for everyone per request with reasonable time line
-4). Slurm cluster, use sbatch, srun, salloc, scancel, sinfo, squeue, scontrol to manage jobs
-5). PBS compatible scripts, try qsub, qstat, qdel, qhold, qalter, qrerun, qrls, pbsnodes 
-6). Master node: dc10, DO NOT RUN CPU/MEMORY INTENSIVE processes on master
-7). Slave nodes: dc[01-08], recommended to login & work on slaves
-8). Change password, run "passwd" on master node, change 2b propagated to nodes in 1 hour
-9). List of some installed apps
-    R-4.4.2 https://www.r-project.org/
-    Bioconductor-3.19 https://www.bioconductor.org
-    Boltz-1/Alphafold3 https://github.com/jwohlwend/boltz 
-    Localcolabfold/Alphafold2.3 https://github.com/YoshitakaMo/localcolabfold
-    Chrombpnet https://github.com/kundajelab/chrombpnet
-    Rstudio Server https://posit.co/, access at http://dc0N.ccbr.utoronto.ca
-    Singularity https://github.com/sylabs/singularity
-    Cellprofiler4 https://cellprofiler.org/
-    Python-3.9 (System) and 3.12 (Conda) https://www.python.org/
-    Miniconda https://docs.anaconda.com/miniconda/
-    Perl-5.38.2 https://www.perl.org/
-    BioPerl-1.7.8 https://bioperl.org/
-    Go-1.23.2 https://go.dev/
-    aws-cli & google-cloud-cli https://aws.amazon.com/cli & https://cloud.google.com/sdk
-    Java openjdk https://www.java.com/
-    Samtools, Bcftools, Htslib, Parallel
-10). Limited 2 ssh login sessions on each node per user
-11). Email support@rt.ccbr.utoronto.ca or jeffs.liu@utoronto.ca for questions & help
-===============================================================================================
-Last login: Fri Jul  4 16:50:44 2025 from 192.168.182.25
-Identity added: /home/baderlab/mzarant/.ssh/toronto_git_key (m.zarantonello2@campus.unimib.it)
-[mzarant@dc01 ~]$ 
+* `logs/` — directory per i log delle esecuzioni e tracking dei run.
+* `results/` — output del workflow: metriche, grafici, file di esposizione e classificazione.
+* `scripts/` — script principali che avviano gli step del workflow.
+* `simulations/` — dati simulati con ground‐truth delle firme (binaria o continua).
+* `utils/` — funzioni ausiliarie: parsing, formattazione, metriche, helper vari.
+* `README.md` — questo file.
+* `presentation.md` — presentazione associata al progetto.
+* `run_job.sh`, `run_job.slurm`, `run_job_exposure.slurm` — script di esecuzione batch/cluster (es. Slurm).
 
+## Requisiti
 
+* Python ≥ 3.10
+* Librerie principali (esempi):
+
+  ```
+  numpy
+  pandas
+  scikit-learn
+  matplotlib
+  seaborn
+  scipy
+  ```
+* Ambiente cluster / Slurm se si eseguono i job batch.
+* Dati genomici di mutazione o simulazioni pronte.
+
+## Installazione
+
+```bash
+git clone https://github.com/MassimoZarantonello2/SignatureInference.git
+cd SignatureInference
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+*(Se manca `requirements.txt`, crealo con le librerie sopra.)*
+
+## Utilizzo
+
+### 1. Simulazione o caricamento dati
+
+Esegui gli script in `simulations/` per generare dati con ground‐truth o caricare dataset reali.
+
+### 2. Esecuzione workflow
+
+Esempio per job singolo:
+
+```bash
+./run_job.sh
+```
+
+Oppure via Slurm:
+
+```bash
+sbatch run_job.slurm
+```
+
+Per esposizioni:
+
+```bash
+sbatch run_job_exposure.slurm
+```
+
+### 3. Risultati
+
+I risultati (classificazioni, regressioni, matrici performance, grafici) si trovano in `results/`.
+Puoi poi usarli con gli script in `utils/` per analisi aggiuntive o grafici.
+
+## Struttura del workflow
+
+* Generazione/simulazione matrici delle mutazioni.
+* Sampling o elaborazione del dataset (down‐sampling, etc.).
+* Predizione della presenza/assenza delle firme (multi‐label classification).
+* Stima dell’esposizione alle firme (regressione continua).
+* Valutazione: metriche, test statistici, grafici comparativi.
+
+## Risultati attesi
+
+* Valutazione dell’impatto del sampling sulla previsione della presenza di firme.
+* Confronto tra metodi di regressione per l’esposizione.
+* Grafici: heatmap di similarità, violini di performance, curve di apprendimento.
+* Report delle metriche finali e analisi per ipotesi.
+
+## Contributi
+
+1. Fork del progetto.
+2. Creare o modificare file/branch.
+3. Aprire Pull Request.
+4. Discutere issue prima di cambi sostanziali.
+
+## Usage
+
+```bash
+python tool.py -i <input_file> [options]
+```
+
+### Arguments
+
+| Argument | Short | Required | Default | Description |
+|---|---|---|---|---|
+| `--input` | `-i` | ✅ | — | Path to the mutation count matrix (CSV) |
+| `--dataset` | `-d` | ❌ | `default` | Signature dataset: `default`, `cosmic`, `reference` |
+| `--sequencing` | `-s` | ❌ | `wgs` | Sequencing type: `wgs` (whole genome) or `wes` (whole exome) |
+| `--output` | `-o` | ❌ | `results` | Output directory for results |
+
+### Input Format
+
+The input CSV must contain samples as rows and the 96 SBS (Single Base Substitution) trinucleotide mutation counts as columns, following the COSMIC notation (e.g., `A[C>A]A`). The first column contains the sample ID (no column header).
+
+Example (truncated):
+,"A[C>A]A","A[C>A]C",...,"T[T>G]T"
+"0009b464-b376-4fbc-8a56-da538269a02f",38,54,...,18
+"1a2b3c4d-...",12,7,...,5
+
+> The tool expects exactly 96 mutation type columns in COSMIC SBS96 order.
